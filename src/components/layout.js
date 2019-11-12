@@ -23,8 +23,10 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const niceGradient = `linear-gradient(21deg, rgba(179,219,173,1) 0%, rgba(255,220,198,1) 100%)`;
+
   return (
-    <>
+    <div style={{ background: niceGradient }}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -41,7 +43,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

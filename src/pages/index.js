@@ -8,12 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>STATE DEBUGGER FOR REACT</h1>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
+    <p>The only time-travel debugging tool you need to develop your React application by tracking, visualizing, and reverting state changes.</p>
+    <p>Interested in contributing? Reactime is open-source: help make React state debugging easier!</p>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
