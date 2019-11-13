@@ -4,7 +4,7 @@ import React from "react"
 import styled from 'styled-components';
 
 const Header1 = styled.header`
-  background: white;
+  background: #F7FBF9;
   margin-bottom: 1.45rem;
 `;
 
