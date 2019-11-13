@@ -5,9 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from "gatsby";
 import styled from 'styled-components';
 
 import "./layout.css"
@@ -44,6 +45,22 @@ const StyledGridElement = styled.div`
 
 const Layout = ({ children }) => {
 
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      file(relativePath: {eq: "yujin.jpeg"}) {
+        childImageSharp {
+          fluid {
+            base64
+            aspectRatio
+            sizes
+            src
+            srcSet
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <>
       <StyledWrapper>
@@ -51,18 +68,42 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
-              <StyledGridElement />
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
+              <StyledGridElement>
+                <Img fluid={data.file.childImageSharp.fluid} alt="yujin kang" />
+              </StyledGridElement>
             </Grid>
             <footer>
               © {new Date().getFullYear()}, Built with

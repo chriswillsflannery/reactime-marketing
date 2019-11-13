@@ -13,11 +13,11 @@ import styled from 'styled-components';
 import Header from "./header"
 import "./layout.css"
 
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   background: linear-gradient(354deg, rgba(156,216,199,1) 0%, rgba(226,192,187,1) 100%);
 `;
 
-const Div1 = styled.div`
+const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 960;
   padding: 0px 1.0875rem 1.45rem;
@@ -43,14 +43,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Wrapper>
+      <StyledWrapper>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Div1>
+        <StyledDiv>
           <StyledMain>
             {children}
           </StyledMain>
-        </Div1>
-      </Wrapper>
+        </StyledDiv>
+      </StyledWrapper>
     </>
   )
 }
