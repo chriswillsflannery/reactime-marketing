@@ -18,10 +18,10 @@ const StyledImage = styled(Img)`
   min-width: 200px;
 `
 
-const Image = () => {
+const DemoImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "reactime-logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "demo.gif" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -31,7 +31,9 @@ const Image = () => {
     }
   `)
 
+  console.log(data)
+
   return <StyledImage fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default Image
+export default DemoImage
