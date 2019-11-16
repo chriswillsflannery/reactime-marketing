@@ -31,8 +31,9 @@ const StyledMain = styled.main`
 `
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
 `
 
 const StyledGridElement = styled.div`

@@ -21,15 +21,15 @@ const IndexPage = () => (
   <>
     <Splash>
       <SEO title="Home" />
-      <h1 style={{ fontWeight: 400, color: styles.reactGreen }}>STATE DEBUGGER FOR REACT</h1>
+      <h1 style={{ fontWeight: `400`, color: styles.reactGreen, paddingTop: `5%` }}>STATE DEBUGGER FOR REACT</h1>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>
-      <p style={{ color: styles.reactGreen }}>
+      <p style={{ textAlign: `center`, color: styles.reactGreen }}>
         The only time-travel debugging tool you need to develop your React
         application by tracking, visualizing, and reverting state changes.
       </p>
-      <p style={{ color: styles.reactGreen }}>
+      <p style={{ fontSize: `16px`, color: `#45716f` }}>
         Interested in contributing? Reactime is open-source: help make React
         state debugging easier!
       </p>
@@ -40,7 +40,7 @@ const IndexPage = () => (
     </VisualState>
     <Features>
       <h2>FEATURES</h2>
-      <h4>
+      <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.reactGreen }}>
         VISUALIZING, RECORDING, AND TRACKING STATE HAS NEVER BEEN SIMPLER.
       </h4>
     </Features>

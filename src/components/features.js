@@ -13,7 +13,7 @@ import styled from "styled-components"
 import "./layout.css"
 
 const StyledWrapper = styled.div`
-  background: #f7fbf9;
+  background: #edf5f2;
 `
 
 const StyledDiv = styled.div`
@@ -30,16 +30,21 @@ const StyledMain = styled.main`
 `
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 `
 
 const StyledGridElement = styled.div`
   background: white;
-  width: 200px;
+  width: 295px;
   height: 100px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 0;
+  padding: 15px;
+  text-align: center;
+  font-family: "Open Sans", serif;
+  margin-bottom: 5px;
 `
 
 const Layout = ({ children }) => {
