@@ -6,14 +6,28 @@ import GitHubButton from 'react-github-btn'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChrome, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
+const styles = {
+  reactGreen: `#072D2B`,
+  lighterGreen: `#002e2b`,
+  lightestGreen: `#0c4c41`,
+  reactGold: `#ECCB98`,
+  lighterGold: `#E4C2B3`
+}
 
 const HeaderContainer = styled.header`
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  padding: 50px;
+  z-index: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #F7FBF9;
-  height: 70px
-  // margin-bottom: 1.45rem;
+  background: ${styles.reactGreen};
+  transition: 0.2s;
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 const HeaderTitle = styled.div`
@@ -21,42 +35,58 @@ const HeaderTitle = styled.div`
 `;
 
 const HeaderRight = styled.div`
-  ul{
+  ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
   }
-  li{
+  li {
     margin: 0;
     padding: 0;
     display: inline-block;
     padding-left: 15px;
   }
-  ul li a{
-    color: #006666;
+  ul li a {
+    color: ${styles.lighterGold};
     text-decoration: none;
     font-size: 15px;
+    font-family: sans-serif;
+  }
+  @media (max-width: 600px) {
+    ul {
+      display: none;
+    }
   }
 `;
 
 const H1 = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-size: 1.4rem;
   letter-spacing: 3px;
   margin: 0;
-  color: #066355;
-  font-weight: 500;
+  font-weight: 400;
 `;
 
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.padding = "1px";
+  } else {
+    document.getElementById("header").style.padding = "50px";
+  }
+})
+
 const Header = ({ siteTitle }) => (
-  <HeaderContainer>
+  <HeaderContainer id="header">
     <HeaderTitle>
       <H1>
         <Link
           to="/"
           style={{
-            color: `black`,
+            color: styles.lighterGold,
             textDecoration: `none`,
           }}
         >
@@ -66,7 +96,7 @@ const Header = ({ siteTitle }) => (
     </HeaderTitle>
     <HeaderRight>
       <ul>
-        <li>
+        <li style={{ marginBottom: `2px` }}>
           <a href="https://www.npmjs.com/package/reactime" title="ReacTime NPM Package">npm</a>
         </li>
         <li>
@@ -84,8 +114,8 @@ const Header = ({ siteTitle }) => (
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </li>
-        <li>
-        <GitHubButton href="https://github.com/open-source-labs/reactime" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star open-source-labs/reactime on GitHub">Star</GitHubButton>
+        <li style={{ marginTop: `7px` }}>
+          <GitHubButton href="https://github.com/open-source-labs/reactime" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star open-source-labs/reactime on GitHub">Star</GitHubButton>
         </li>
       </ul>
     </HeaderRight>

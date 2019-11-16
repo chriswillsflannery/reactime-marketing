@@ -10,10 +10,18 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components';
 
-import "./layout.css"
+// import "./layout.css"
+
+const styles = {
+  reactGreen: `#072D2B`,
+  lighterGreen: `#002e2b`,
+  lightestGreen: `#0c4c41`,
+  reactGold: `#ECCB98`,
+  lighterGold: `#E4C2B3`
+}
 
 const StyledWrapper = styled.div`
-  background: #ffffff;
+  background: ${styles.reactGreen};
 `;
 
 const StyledDiv = styled.div`
