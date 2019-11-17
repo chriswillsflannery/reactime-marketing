@@ -54,6 +54,9 @@ const HeaderRight = styled.div`
     font-size: 15px;
     font-family: sans-serif;
   }
+  ul li a:hover {
+    color: white;
+  }
   @media (max-width: 600px) {
     ul {
       display: none;

@@ -12,8 +12,16 @@ import styled from "styled-components"
 
 import "./layout.css"
 
+const styles = {
+  reactGreen: `#072D2B`,
+  lighterGreen: `#002e2b`,
+  lightestGreen: `#0c4c41`,
+  reactGold: `#ECCB98`,
+  lighterGold: `#E4C2B3`
+}
+
 const StyledWrapper = styled.div`
-  background: #edf5f2;
+  background: ${styles.lightestGreen};
 `
 
 const StyledDiv = styled.div`
@@ -33,18 +41,30 @@ const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 40px;
 `
 
 const StyledGridElement = styled.div`
-  background: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: ${styles.reactGold};
   width: 295px;
   height: 100px;
   margin: 10px;
-  border-radius: 0;
-  padding: 15px;
-  text-align: center;
-  font-family: "Open Sans", serif;
-  margin-bottom: 5px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+  h4 {
+    color: ${styles.reactGreen};
+    margin: 0;
+  }
+  p {
+    text-align: center;
+    margin-bottom: -5px;
+    line-height: 20px;
+  }
 `
 
 const Layout = ({ children }) => {
@@ -56,27 +76,27 @@ const Layout = ({ children }) => {
             {children}
             <Grid>
               <StyledGridElement>
-                <div className="box--title">React Hooks</div>
-                <p>State tracking for useState.</p>
+                <h4>React Hooks</h4>
+                <p>State tracking for useState, useEffect & more.</p>
               </StyledGridElement>
               <StyledGridElement>
-                <div className="box--title">Context API</div>
-                <p>Additional Support for Context API.</p>
+                <h4>Context API</h4>
+                <p>Additional Support for Context + useContext.</p>
               </StyledGridElement>
               <StyledGridElement>
-                <div className="box--title">React Router</div>
-                <p>Support for React Router.</p>
+                <h4>React Router</h4>
+                <p>View page state and previous URLs.</p>
               </StyledGridElement>
               <StyledGridElement>
-                <div className="box--title">Stateful Components</div>
+                <h4>Stateful Components</h4>
                 <p>Prop-drilling? Track your state easily.</p>
               </StyledGridElement>
               <StyledGridElement>
-                <div className="box--title">React Hooks</div>
-                <p>Visualize and track state changes.</p>
+                <h4>Concurrent Mode</h4>
+                <p>Experiment with new features like Suspense and useTransition.</p>
               </StyledGridElement>
               <StyledGridElement>
-                <div className="box--title">TRY REACTIME WITH OUR DEMOS</div>
+                <h4>TRY REACTIME WITH OUR DEMOS</h4>
                 <p>
                   <a href="http://reactime-demo1.us-east-1.elasticbeanstalk.com/">
                     Calculator
@@ -89,6 +109,7 @@ const Layout = ({ children }) => {
                 </p>
               </StyledGridElement>
             </Grid>
+            <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.reactGold, textAlign: `center` }}>Read more about what's new in version 3.0 <a style={{ textDecoration: `none`, color: `white` }} href="http://www.medium.com">here</a></h4>
           </StyledMain>
         </StyledDiv>
       </StyledWrapper>

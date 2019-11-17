@@ -13,8 +13,16 @@ import styled from "styled-components"
 
 import "./layout.css"
 
+const styles = {
+  reactGreen: `#072D2B`,
+  lighterGreen: `#002e2b`,
+  lightestGreen: `#0c4c41`,
+  reactGold: `#ECCB98`,
+  lighterGold: `#E4C2B3`
+}
+
 const StyledWrapper = styled.div`
-  background: #f7fbf9;
+  background: ${styles.lighterGold};
 `
 
 const StyledDiv = styled.div`
@@ -37,11 +45,27 @@ justify-content: center;
 `
 
 const StyledGridElement = styled.div`
-  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  background: ${styles.reactGold};
   width: 200px;
-  height: 300px;
+  height: 400px;
   margin: 10px;
   border-radius: 10px;
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: justify-left;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 8px;
+  }
 `
 
 const Layout = ({ children }) => {
@@ -73,7 +97,7 @@ const Layout = ({ children }) => {
     }
 
     const imageSizes = image.node.childImageSharp.sizes
-    return <Img alt={personName} sizes={imageSizes} />
+    return <Img style={{ borderRadius: `100px`, marginTop: `10px`, width: `100px`, height: `100px` }} alt={personName} sizes={imageSizes} />
   }
 
   return (
@@ -83,14 +107,46 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
-              <StyledGridElement>{getImage("andy")}</StyledGridElement>
-              <StyledGridElement>{getImage("bryan")}</StyledGridElement>
-              <StyledGridElement>{getImage("david")}</StyledGridElement>
-              <StyledGridElement>{getImage("josh")}</StyledGridElement>
-              <StyledGridElement>{getImage("ruth")}</StyledGridElement>
-              <StyledGridElement>{getImage("ryan")}</StyledGridElement>
-              <StyledGridElement>{getImage("sierra")}</StyledGridElement>
-              <StyledGridElement>{getImage("yujin")}</StyledGridElement>
+              <StyledGridElement>{getImage("andy")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("bryan")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("david")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("josh")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("ruth")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("ryan")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("sierra")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("yujin")}
+                <h4>Andy Wong</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>github</p>
+              </StyledGridElement>
             </Grid>
             <footer>
               © {new Date().getFullYear()}, Built with
