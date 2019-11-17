@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import "./layout.css"
 
@@ -18,7 +20,8 @@ const styles = {
   lighterGreen: `#002e2b`,
   lightestGreen: `#0c4c41`,
   reactGold: `#ECCB98`,
-  lighterGold: `#E4C2B3`
+  lighterGold: `#E4C2B3`,
+  redCode: `#a83a32`,
 }
 
 const StyledWrapper = styled.div`
@@ -66,7 +69,12 @@ const StyledGridElement = styled.div`
     line-height: 15px;
     margin-left: 8px;
   }
-`
+  a:hover {
+    color: ${styles.redCode};
+  }
+`;
+
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -110,42 +118,86 @@ const Layout = ({ children }) => {
               <StyledGridElement>{getImage("andy")}
                 <h4>Andy Wong</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("bryan")}
-                <h4>Andy Wong</h4>
+                <h4>Bryan Lee</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("chris")}
+                <h4>Chris Flannery</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("david")}
-                <h4>Andy Wong</h4>
+                <h4>David Chai</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("josh")}
-                <h4>Andy Wong</h4>
+                <h4>Josh Kim</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("pras")}
+                <h4>Prasanna Malla</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("rajeeb")}
+                <h4>Rajeeb Banstola</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </StyledGridElement>
+              <StyledGridElement>{getImage("rocky")}
+                <h4>Rocky Lin</h4>
+                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("ruth")}
-                <h4>Andy Wong</h4>
+                <h4>Ruth Anam</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("ryan")}
-                <h4>Andy Wong</h4>
+                <h4>Ryan Dang</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("sierra")}
-                <h4>Andy Wong</h4>
+                <h4>Sierra Swaby</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("yujin")}
-                <h4>Andy Wong</h4>
+                <h4>Yujin Kang</h4>
                 <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
-                <p>github</p>
+                <a href="https://github.com" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </StyledGridElement>
             </Grid>
             <footer>
