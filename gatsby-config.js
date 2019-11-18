@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `REACTIME 3.0 BETA`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Time travel debugger for React.`,
     author: `@gatsbyjs`,
   },
   plugins: [
