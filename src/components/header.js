@@ -23,7 +23,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: ${styles.reactGreen};
+  background: ${styles.lightestGreen};
   transition: 0.2s;
   @media (max-width: 600px) {
     justify-content: center;

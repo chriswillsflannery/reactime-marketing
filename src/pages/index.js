@@ -46,7 +46,7 @@ const IndexPage = () => (
     </VisualState>
     <Features>
       <h2>FEATURES</h2>
-      <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.reactGold, textAlign: `center` }}>
+      <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.lighterGold, textAlign: `center` }}>
         VISUALIZING, RECORDING, AND TRACKING STATE HAS NEVER BEEN SIMPLER.
       </h4>
     </Features>

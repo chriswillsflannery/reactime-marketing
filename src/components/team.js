@@ -25,7 +25,7 @@ const styles = {
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.lighterGold};
+  background: ${styles.reactGold};
 `
 
 const StyledDiv = styled.div`
@@ -53,7 +53,7 @@ const StyledGridElement = styled.div`
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  background: ${styles.reactGold};
+  background: ${styles.lighterGold};
   width: 200px;
   height: 400px;
   margin: 10px;
@@ -124,77 +124,77 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement>{getImage("bryan")}
                 <h4>Bryan Lee</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Bryan is a passionate software engineer with an interest in data analysis, AI, and machine learning. He builds fullstack applications using React and Node.Js with a focus on scalability and usability. When he's not giving a talk about SQL database management, Bryan listens to John Mayer or plays ping pong in his downtime. He is a CS graduate of Boston College.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("chris")}
                 <h4>Chris Flannery</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>chris</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("david")}
                 <h4>David Chai</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>David is a multicultural fullstack developer with a passion for React, SQL, and Express. He has an uncanny ability to explain complex topics, simply. He has a ton of love for j-pop, gadgets, and dad jokes (especially as a proud father to his exuberant dog, Ayumi, named after his favorite j-pop singer). Chai recently gave talks about React Fiber under the hood and an introduction to gRPCs.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("josh")}
                 <h4>Josh Kim</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Josh is a product-driven software engineer with incredible passion for solving everyday problems. He takes delight in thinking about user experience when building scalable fullstack applications with React, Redux, and Node and giving talks about wrapping Rest API in GraphQL. Besides coding, he enjoys playing soccer, cooking Korean style bbq, and going on spontaneous road trips.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("pras")}
                 <h4>Prasanna Malla</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Pras</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("rajeeb")}
                 <h4>Rajeeb Banstola</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Rajeeb</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("rocky")}
                 <h4>Rocky Lin</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Rocky</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("ruth")}
                 <h4>Ruth Anam</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Ruth is a creative developer who loves simplicity in design and scalable, maintainable applications. She's passionate about Docker, Kubernetes, React Hooks, gRPC-web, Envy, and Twirp. In her spare time she can be found at Boston Celtics games, dabbling in art, or playing Blokus Trigon. She recently gave an intro talk about Kubernetes and another one about Golang with Andy.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("ryan")}
                 <h4>Ryan Dang</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Ryan is an experienced fullstack developer with an expertise in React and Node. He loves contributing to open-source developer tools, tinkering with minecraft modpacks, and watching Scrubs. But above all else, Ryan adores algorithms, the more complex the better. Ryan recently gave a talk on dependency injection in JS. He is a CS graduate of uMich, Ann Arbor.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("sierra")}
                 <h4>Sierra Swaby</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Sierra is a fullstack software engineer who enjoys creating amazing, interactive projects. She leverages her ux/ui engineering experience from higher education institutions towards specializing in client-facing applications. In her free time, Sierra gives public talks about Docker & Kubernetes, walks around the Brooklyn Bridge, and can be found traveling and trying new food.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
               <StyledGridElement>{getImage("yujin")}
                 <h4>Yujin Kang</h4>
-                <p>Andy is an experienced software engineer based in New York. At JPMorgan Chase, he previously specialized in robotics process automation and enterprise cloud software. His interests include running marathons all over the globe, Rube Goldberg Machines, and animals with opposable thumbs. Andy recently gave a talk about WebAssembly and another one about GoLang with Ruth.</p>
+                <p>Yujin is a methodical software developer passionate about product design, user experience, utilizing effective project management methods, refactoring code to a few lines, and using the right tools for the job. When she's not coding, Yujin enjoys rollerblading in Domino park, making Korean fusion food, ninja curling, and giving talks on either Angular or system design.</p>
                 <a href="https://github.com" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>

@@ -23,7 +23,7 @@ const styles = {
 };
 
 const StyledWrapper = styled.div`
-  background: ${styles.reactGold};
+  background: ${styles.lighterGold};
 `;
 
 const StyledDiv = styled.div`

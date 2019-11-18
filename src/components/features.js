@@ -21,7 +21,7 @@ const styles = {
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.lightestGreen};
+  background: ${styles.lighterGreen};
 `
 
 const StyledDiv = styled.div`
@@ -50,7 +50,7 @@ const StyledGridElement = styled.div`
   align-content: center;
   align-items: center;
   justify-content: center;
-  background: ${styles.reactGold};
+  background: ${styles.lighterGold};
   width: 295px;
   height: 100px;
   margin: 10px;
@@ -109,7 +109,7 @@ const Layout = ({ children }) => {
                 </p>
               </StyledGridElement>
             </Grid>
-            <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.reactGold, textAlign: `center` }}>Read more about what's new in version 3.0 <a style={{ textDecoration: `none`, color: `white` }} href="http://www.medium.com">here</a></h4>
+            <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.lighterGold, textAlign: `center` }}>Read more about what's new in version 3.0 <a style={{ textDecoration: `none`, color: `white` }} href="http://www.medium.com">here</a></h4>
           </StyledMain>
         </StyledDiv>
       </StyledWrapper>

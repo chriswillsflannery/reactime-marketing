@@ -21,7 +21,7 @@ const styles = {
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.reactGreen};
+  background: ${styles.lightestGreen};
 `;
 
 const StyledDiv = styled.div`
