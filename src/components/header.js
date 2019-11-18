@@ -74,56 +74,78 @@ const H1 = styled.h1`
   font-weight: 400;
 `;
 
-window.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.padding = "1px";
-  } else {
-    document.getElementById("header").style.padding = "50px";
-  }
-})
+// window.addEventListener('scroll', () => {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     document.getElementById("header").style.padding = "1px";
+//   } else {
+//     document.getElementById("header").style.padding = "50px";
+//   }
+// })
 
-const Header = ({ siteTitle }) => (
-  <HeaderContainer id="header">
-    <HeaderTitle>
-      <H1>
-        <Link
-          to="/"
-          style={{
-            color: styles.lighterGold,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </H1>
-    </HeaderTitle>
-    <HeaderRight>
-      <ul>
-        <li style={{ marginBottom: `2px` }}>
-          <a href="https://www.npmjs.com/package/reactime" title="ReacTime NPM Package">npm</a>
-        </li>
-        <li>
-          <a href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US" title="ReacTime Chrome">
-            <FontAwesomeIcon icon={faChrome} />
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/reactime" title="ReacTime Twitter">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/company/reactime" title="ReacTime LinkedIn">
-            <FontAwesomeIcon icon={faLinkedinIn} />
-          </a>
-        </li>
-        <li style={{ marginTop: `7px` }}>
-          <GitHubButton href="https://github.com/open-source-labs/reactime" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star open-source-labs/reactime on GitHub">Star</GitHubButton>
-        </li>
-      </ul>
-    </HeaderRight>
-  </HeaderContainer>
-)
+
+class Header extends React.Component {
+
+  handleScroll = () => {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").style.padding = "1px";
+    } else {
+      document.getElementById("header").style.padding = "50px";
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componetWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  render() {
+    return (
+      <HeaderContainer id="header">
+        <HeaderTitle>
+          <H1>
+            <Link
+              to="/"
+              style={{
+                color: styles.lighterGold,
+                textDecoration: `none`,
+              }}
+            >
+              {this.props.siteTitle}
+            </Link>
+          </H1>
+        </HeaderTitle>
+        <HeaderRight>
+          <ul>
+            <li style={{ marginBottom: `2px` }}>
+              <a href="https://www.npmjs.com/package/reactime" title="ReacTime NPM Package">npm</a>
+            </li>
+            <li>
+              <a href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US" title="ReacTime Chrome">
+                <FontAwesomeIcon icon={faChrome} />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/reactime" title="ReacTime Twitter">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/company/reactime" title="ReacTime LinkedIn">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </li>
+            <li style={{ marginTop: `7px` }}>
+              <GitHubButton href="https://github.com/open-source-labs/reactime" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star open-source-labs/reactime on GitHub">Star</GitHubButton>
+            </li>
+          </ul>
+        </HeaderRight>
+      </HeaderContainer>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
