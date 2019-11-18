@@ -159,7 +159,7 @@ const Layout = ({ children }) => {
               <StyledGridElement>
                 {getImage("chris")}
                 <h4>Chris Flannery</h4>
-                <p>chris</p>
+                <p>Chris is a creative engineer with a passion for chicken parm and ultra-slick UX. He recently gave talks in NYC on webservers vs. serverless and Typescript, and plans on leveraging his deep knowledge of React and Abstract Syntax Trees in interesting new ways later throughout 2020. In his spare (Reac)time, Chris enjoys attending local punk shows and designing logos.</p>
                 <a href="https://github.com/chriswillsflannery" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
