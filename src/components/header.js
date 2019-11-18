@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
 import GitHubButton from 'react-github-btn'
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChrome, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
