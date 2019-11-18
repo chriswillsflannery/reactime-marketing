@@ -630,3 +630,8 @@ pre tt:after {
 .box--title{
   text-transform: uppercase;
 }
+a[title="Github"] {
+  position: absolute;
+  bottom: 20px;
+  color: #000;
+}

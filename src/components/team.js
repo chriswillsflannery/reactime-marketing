@@ -58,6 +58,7 @@ const StyledGridElement = styled.div`
   height: 400px;
   margin: 10px;
   border-radius: 10px;
+  position: relative;
   h4 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -67,7 +68,7 @@ const StyledGridElement = styled.div`
     font-family: sans-serif;
     font-size: 12px;
     line-height: 15px;
-    margin-left: 8px;
+    margin: 0 8px;
   }
   a:hover {
     color: ${styles.redCode};
@@ -199,8 +200,8 @@ const Layout = ({ children }) => {
               <StyledGridElement>
                 {getImage("pras")}
                 <h4>Prasanna Malla</h4>
-                <p>Pras</p>
-                <a href="https://github.com/" title="Github">
+                <p>Pras is an experienced full stack software engineer passionate about mobile first progressive web apps, specializing in React and Node.js to build scalable and performant applications. His interests include contributing to open-source, tinkering with IoT devices, meditating, nature & hiking. Pras recently gave a talk on future of Frontend in New York.</p>
+                <a href="https://github.com/prasmalla" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>
