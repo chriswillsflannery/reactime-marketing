@@ -34,7 +34,11 @@ const HeaderContainer = styled.header`
 `;
 
 const HeaderTitle = styled.div`
-  // padding: 0 1.0875rem;
+  @media (max-width: 375px) {
+    h1{
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 const HeaderRight = styled.div`

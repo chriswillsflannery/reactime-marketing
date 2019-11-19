@@ -41,7 +41,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r git@github.com:Reactime/Reactime.github.io.git"
-  },
+},
   "repository": {
     "type": "git",
     "url": "https://reactime.github.io"
