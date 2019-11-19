@@ -41,7 +41,9 @@ const StyledMain = styled.main`
 
 const StyledOL = styled.ol`
   @media (max-width: 700px) {
-    max-width: 400px;
+    max-width: 600px;
+    padding: 0 40px;
+    width: 100%;
   }
 `;
 

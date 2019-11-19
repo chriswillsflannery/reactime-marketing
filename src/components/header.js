@@ -29,6 +29,7 @@ const HeaderContainer = styled.header`
   transition: 0.2s;
   @media (max-width: 600px) {
     justify-content: center;
+    flex-direction: column;
   }
 `;
 
@@ -60,9 +61,7 @@ const HeaderRight = styled.div`
     color: white;
   }
   @media (max-width: 600px) {
-    ul {
-      display: none;
-    }
+    // padding-top: 20px;
   }
 `;
 
@@ -88,8 +87,11 @@ const H1 = styled.h1`
 class Header extends React.Component {
 
   handleScroll = () => {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("header").style.padding = "1px";
+    if(window.innerWidth < 600 && (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)){
+      document.getElementById("header").style.padding = "50px";
+    }
+    else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").style.padding = "30px";
     } else {
       document.getElementById("header").style.padding = "50px";
     }
