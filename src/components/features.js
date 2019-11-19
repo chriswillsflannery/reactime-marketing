@@ -109,7 +109,7 @@ const Layout = ({ children }) => {
                 </p>
               </StyledGridElement>
             </Grid>
-            <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.lighterGold, textAlign: `center` }}>Read more about what's new in version 3.0 <a style={{ textDecoration: `none`, color: `white` }} href="http://www.medium.com">here</a></h4>
+            <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.lighterGold, textAlign: `center` }}>Read more about what's new in version 3.0 <a style={{ textDecoration: `none`, color: `white` }} href="https://tinyurl.com/reactimeMedium">here</a></h4>
           </StyledMain>
         </StyledDiv>
       </StyledWrapper>
