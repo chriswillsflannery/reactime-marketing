@@ -27,6 +27,7 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -41,7 +42,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r git@github.com:Reactime/Reactime.github.io.git"
-},
+  },
   "repository": {
     "type": "git",
     "url": "https://reactime.github.io"
