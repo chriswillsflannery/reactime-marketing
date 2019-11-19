@@ -177,7 +177,7 @@ const Layout = ({ children }) => {
                   singer). Chai recently gave talks about React Fiber under the
                   hood and an introduction to gRPCs.
                 </p>
-                <a href="https://github.com/davidchailatte" title="Github">
+                <a href="https://github.com/davidchai717" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </StyledGridElement>

@@ -88,8 +88,8 @@ const Layout = ({ children }) => {
                     {/* <!-- react treats app /> as a react components and tries to render it --> */}
                     <p>
                       import <span style={{ color: styles.redCode }}>reactime</span> from 'reactime'; <br />
-                      const rootContainer = document.getElementById('root');<br />
-                      ReactDOM.<span style={{ color: styles.blueCode }}>createRoot</span>(rootContainer).render({`<App />`});<br />
+                      const rootContainer = ReactDOM.<span style={{ color: styles.blueCode }}>createRoot</span>(document.getElementById('root'));<br />
+                      rootContainer.render({`<App />`});<br />
                       <span style={{ color: styles.redCode }}>reactime</span>(rootContainer);
                     </p>
                   </code>
