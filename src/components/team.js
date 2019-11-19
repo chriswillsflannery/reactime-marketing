@@ -160,7 +160,15 @@ const Layout = ({ children }) => {
               <StyledGridElement>
                 {getImage("chris")}
                 <h4>Chris Flannery</h4>
-                <p>Chris is a creative engineer with a passion for chicken parm and ultra-slick UX. He recently gave talks in NYC on webservers vs. serverless and Typescript, and plans on leveraging his deep knowledge of React and Abstract Syntax Trees in interesting new ways later throughout 2020. In his spare (Reac)time, Chris enjoys attending local punk shows and designing logos.</p>
+                <p>
+                  Chris is a creative engineer with a passion for chicken parm
+                  and ultra-slick UX. He recently gave talks in NYC on
+                  webservers vs. serverless and Typescript, and plans on
+                  leveraging his deep knowledge of React and Abstract Syntax
+                  Trees in interesting new ways later throughout 2020. In his
+                  spare (Reac)time, Chris enjoys attending local punk shows and
+                  designing logos.
+                </p>
                 <a href="https://github.com/chriswillsflannery" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -200,7 +208,14 @@ const Layout = ({ children }) => {
               <StyledGridElement>
                 {getImage("pras")}
                 <h4>Prasanna Malla</h4>
-                <p>Pras is an experienced full stack software engineer passionate about mobile first progressive web apps, specializing in React and Node.js to build scalable and performant applications. His interests include contributing to open-source, tinkering with IoT devices, meditating, nature & hiking. Pras recently gave a talk on future of Frontend in New York.</p>
+                <p>
+                  Pras is an experienced full stack software engineer passionate
+                  about mobile first progressive web apps, specializing in React
+                  and Node.js to build scalable and performant applications. His
+                  interests include contributing to open-source, tinkering with
+                  IoT devices, meditating, nature & hiking. Pras recently gave a
+                  talk on future of Frontend in New York.
+                </p>
                 <a href="https://github.com/prasmalla" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
