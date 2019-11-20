@@ -13,15 +13,15 @@ import styled from "styled-components"
 import "./layout.css"
 
 const styles = {
-  reactGreen: `#072D2B`,
-  lighterGreen: `#002e2b`,
+  reactGreen: `#072D2B`, //h4 font-color #072D2B
+  feaBColor: `#e0e3e4`, // feature bg-color #002e2b
   lightestGreen: `#0c4c41`,
-  reactGold: `#ECCB98`,
-  lighterGold: `#E4C2B3`
+  // reactGold: `#ECCB98`,
+  iconBColor: `#f8f9fa`, // feature icon bg #E4C2B3
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.lighterGreen};
+  background: ${styles.feaBColor};
 `
 
 const StyledDiv = styled.div`
@@ -50,11 +50,11 @@ const StyledGridElement = styled.div`
   align-content: center;
   align-items: center;
   justify-content: center;
-  background: ${styles.lighterGold};
+  background: ${styles.iconBColor};
   width: 295px;
   height: 100px;
   margin: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   border-radius: 10px;
   h4 {
     color: ${styles.reactGreen};
@@ -93,7 +93,9 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement>
                 <h4>Concurrent Mode</h4>
-                <p>Experiment with new features like Suspense and useTransition.</p>
+                <p>
+                  Experiment with new features like Suspense and useTransition.
+                </p>
               </StyledGridElement>
               <StyledGridElement>
                 <h4>TRY REACTIME WITH OUR DEMOS</h4>
@@ -109,7 +111,22 @@ const Layout = ({ children }) => {
                 </p>
               </StyledGridElement>
             </Grid>
-            <h4 style={{ fontWeight: `400`, fontSize: `13px`, color: styles.lighterGold, textAlign: `center` }}>Read more about what's new in version 3.0 <a style={{ textDecoration: `none`, color: `white` }} href="https://tinyurl.com/reactimeMedium">here</a></h4>
+            <h4
+              style={{
+                fontWeight: `400`,
+                fontSize: `13px`,
+                color: styles.lightestGreen,
+                textAlign: `center`,
+              }}
+            >
+              Read more about what's new in version 3.0{" "}
+              <a
+                style={{ textDecoration: `none`, color: `#a83a32` }}
+                href="https://tinyurl.com/reactimeMedium"
+              >
+                here
+              </a>
+            </h4>
           </StyledMain>
         </StyledDiv>
       </StyledWrapper>

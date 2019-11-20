@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `REACTIME 3.0 BETA`,
     description: `Time travel debugger for React.`,
-    author: `@gatsbyjs`,
+    author: `@reactime`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,11 +28,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-zopfli',
+      resolve: "gatsby-plugin-zopfli",
       options: {
-        extensions: ['css', 'html', 'js', 'svg'],
-        path: 'zopfli',
-      }
+        extensions: ["css", "html", "js", "svg"],
+        path: "zopfli",
+      },
     },
     {
       resolve: `gatsby-plugin-styled-components`,

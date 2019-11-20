@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 :root {
-  --reactGreen: #072D2B;
+  --reactGreen: #072d2b;
   --lighterGreen: #002e2b;
   --lightestGreen: #0c4c41;
-  --reactGold: #ECCB98;
-  --lighterGold: #E4C2B3;
+  --reactGold: #eccb98;
+  --lighterGold: #e4c2b3;
 }
 
 html {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: var(--reactGreen);
@@ -34,23 +34,12 @@ section,
 summary {
   display: block;
 }
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-progress {
-  vertical-align: baseline;
-}
+
 [hidden],
 template {
   display: none;
 }
+
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -59,11 +48,13 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
+
 b,
 strong {
   font-weight: inherit;
@@ -120,8 +111,7 @@ hr {
 button,
 input,
 optgroup,
-select,
-textarea {
+select {
   font: inherit;
   margin: 0;
 }
@@ -168,9 +158,7 @@ legend {
   padding: 0;
   white-space: normal;
 }
-textarea {
-  overflow: auto;
-}
+
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -197,7 +185,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 400 15px/1.8 "Open Sans",Verdana,sans-serif;
+  font: 400 15px/1.8 "Open Sans", Verdana, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -250,13 +238,13 @@ h1 {
   line-height: 1.1;
 }
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
   margin: 50px 0 25px 0;
-  color: var(--lighterGold);
+  color: var(--reactGreen);
 }
 h3 {
   margin-left: 0;
@@ -625,13 +613,7 @@ pre tt:after {
   }
 }
 
-
 /** Custom **/
-.box--title{
+.box--title {
   text-transform: uppercase;
-}
-a[title="Github"] {
-  position: absolute;
-  bottom: 20px;
-  color: #000;
 }

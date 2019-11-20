@@ -1,19 +1,23 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import styled from 'styled-components'
-import GitHubButton from 'react-github-btn'
-import { config } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChrome, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
-config.autoAddCss = false;
+import styled from "styled-components"
+import GitHubButton from "react-github-btn"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faChrome,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
+config.autoAddCss = false
 
 const styles = {
-  reactGreen: `#072D2B`,
-  lighterGreen: `#002e2b`,
-  lightestGreen: `#0c4c41`,
-  reactGold: `#ECCB98`,
-  lighterGold: `#E4C2B3`
+  // reactGreen: `#072D2B`,
+  // lighterGreen: `#002e2b`,
+  headerBColor: `#106153`, // #106153 // #0c4c41
+  // reactGold: `#ECCB98`,
+  headFontColor: `#f8f9fa`, // #f8f9fa
 }
 
 const HeaderContainer = styled.header`
@@ -25,21 +29,21 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: ${styles.lightestGreen};
+  background: ${styles.headerBColor};
   transition: 0.2s;
   @media (max-width: 600px) {
     justify-content: center;
     flex-direction: column;
   }
-`;
+`
 
 const HeaderTitle = styled.div`
   @media (max-width: 375px) {
-    h1{
+    h1 {
       font-size: 1.1rem;
     }
   }
-`;
+`
 
 const HeaderRight = styled.div`
   ul {
@@ -56,7 +60,7 @@ const HeaderRight = styled.div`
     padding-left: 15px;
   }
   ul li a {
-    color: ${styles.lighterGold};
+    color: ${styles.headFontColor};
     text-decoration: none;
     font-size: 15px;
     font-family: sans-serif;
@@ -67,8 +71,7 @@ const HeaderRight = styled.div`
   @media (max-width: 600px) {
     // padding-top: 20px;
   }
-`;
-
+`
 const H1 = styled.h1`
   display: flex;
   justify-content: center;
@@ -77,36 +80,31 @@ const H1 = styled.h1`
   letter-spacing: 3px;
   margin: 0;
   font-weight: 400;
-`;
-
-// window.addEventListener('scroll', () => {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("header").style.padding = "1px";
-//   } else {
-//     document.getElementById("header").style.padding = "50px";
-//   }
-// })
-
+`
 
 class Header extends React.Component {
-
   handleScroll = () => {
-    if(window.innerWidth < 600 && (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)){
-      document.getElementById("header").style.padding = "50px";
-    }
-    else if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("header").style.padding = "30px";
+    if (
+      window.innerWidth < 600 &&
+      (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+    ) {
+      document.getElementById("header").style.padding = "50px"
+    } else if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.getElementById("header").style.padding = "30px"
     } else {
-      document.getElementById("header").style.padding = "50px";
+      document.getElementById("header").style.padding = "50px"
     }
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll)
   }
 
   componetWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll)
   }
 
   render() {
@@ -117,7 +115,7 @@ class Header extends React.Component {
             <Link
               to="/"
               style={{
-                color: styles.lighterGold,
+                color: styles.headFontColor,
                 textDecoration: `none`,
               }}
             >
@@ -128,10 +126,18 @@ class Header extends React.Component {
         <HeaderRight>
           <ul>
             <li style={{ marginBottom: `2px` }}>
-              <a href="https://www.npmjs.com/package/reactime" title="ReacTime NPM Package">npm</a>
+              <a
+                href="https://www.npmjs.com/package/reactime"
+                title="ReacTime NPM Package"
+              >
+                npm
+              </a>
             </li>
             <li>
-              <a href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US" title="ReacTime Chrome">
+              <a
+                href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+                title="ReacTime Chrome"
+              >
                 <FontAwesomeIcon icon={faChrome} />
               </a>
             </li>
@@ -141,12 +147,23 @@ class Header extends React.Component {
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/company/reactime" title="ReacTime LinkedIn">
+              <a
+                href="https://linkedin.com/company/reactime"
+                title="ReacTime LinkedIn"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </li>
             <li style={{ marginTop: `7px` }}>
-              <GitHubButton href="https://github.com/open-source-labs/reactime" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star open-source-labs/reactime on GitHub">Star</GitHubButton>
+              <GitHubButton
+                href="https://github.com/open-source-labs/reactime"
+                data-color-scheme="no-preference: light; light: light; dark: light;"
+                data-size="medium"
+                data-show-count="true"
+                aria-label="Star open-source-labs/reactime on GitHub"
+              >
+                Star
+              </GitHubButton>
             </li>
           </ul>
         </HeaderRight>
