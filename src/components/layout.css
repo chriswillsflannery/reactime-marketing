@@ -635,6 +635,7 @@ pre tt:after {
   transition: all 0.3s ease-in-out;
 }
 .teamStyle:hover {
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 15px;
-  transform: translate3d(0px, -2px, 0px);
+  cursor: pointer;
+  box-shadow: rgba(75, 175, 225, 0.22) 5px 15px 25px 5px;
+  transform: translate3d(0px, -3px, 0px);
 }

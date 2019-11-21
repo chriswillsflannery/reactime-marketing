@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `REACTIME 3.0 BETA`,
+    title: `Reactime 3.0 beta`,
     description: `Time travel debugger for React.`,
     author: `@reactime`,
   },

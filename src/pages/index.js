@@ -75,13 +75,13 @@ const IndexPage = () => (
     </Splash>
     <VisualState>
       <h2 style={{ textAlign: `center` }}>
-        <strong>STATE:</strong> TRACK, REVERT, VISUALIZE
+        <strong>STATE:</strong> Track, Revert, Visualize
       </h2>
       <img src={demogif} alt="ReacTime Demo" />
     </VisualState>
     <Features>
       <h2>
-        <strong>FEATURES</strong>
+        <strong>Features</strong>
       </h2>
       <h4
         style={{
@@ -91,25 +91,26 @@ const IndexPage = () => (
           textAlign: `center`,
         }}
       >
-        VISUALIZING, RECORDING, AND TRACKING STATE HAS NEVER BEEN SIMPLER.
+        Visualizing, Recording, and Tracking <strong>STATE</strong> has never
+        been Simpler.
       </h4>
     </Features>
     <Installation>
       <h2 style={{ color: styles.reactGreen }}>
-        <strong>SIMPLE INSTALLATION</strong>
+        <strong>Simple Installation</strong>
       </h2>
       <h6>
         <a
           style={{ textDecoration: `none`, color: styles.redCode }}
           href="https://www.youtube.com/watch?v=lmG1X7Kf6zo&t="
         >
-          YOUTUBE TUTORIAL
+          Youtube Tutorial
         </a>
       </h6>
     </Installation>
     <Team>
       <h2 style={{ color: styles.reactGreen }}>
-        <strong>MEET THE TEAM</strong>
+        <strong>Meet the Team</strong>
       </h2>
     </Team>
   </>
