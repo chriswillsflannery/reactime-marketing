@@ -47,6 +47,11 @@ const StyledOL = styled.ol`
     width: 100%;
   }
 `
+const StyledPre = styled.pre`
+  border-radius: 3px;
+  border: 1px solid rgba(184, 196, 194, 0.25);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.15);
+`
 
 const Layout = ({ children }) => {
   return (
@@ -60,20 +65,20 @@ const Layout = ({ children }) => {
               <li>
                 Install the npm package into your terminal/code editor inside of
                 your application folder. <br />
-                <pre>
+                <StyledPre>
                   <code>
                     <p>
                       npm i{" "}
                       <span style={{ color: styles.redCode }}>reactime</span>
                     </p>
                   </code>
-                </pre>
+                </StyledPre>
               </li>
               <li>
                 Call the library method on your root container after rendering
                 your App.
                 <br />
-                <pre>
+                <StyledPre>
                   <code>
                     {/* <!-- react treats app /> as a react components and tries to render it --> */}
                     <p>
@@ -89,10 +94,10 @@ const Layout = ({ children }) => {
                       (rootContainer);
                     </p>
                   </code>
-                </pre>
+                </StyledPre>
                 If you are using Concurrent mode, call the library like below:
                 <br />
-                <pre>
+                <StyledPre>
                   <code>
                     {/* <!-- react treats app /> as a react components and tries to render it --> */}
                     <p>
@@ -109,7 +114,7 @@ const Layout = ({ children }) => {
                       (rootContainer);
                     </p>
                   </code>
-                </pre>
+                </StyledPre>
               </li>
             </StyledOL>
           </StyledMain>

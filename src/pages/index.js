@@ -80,7 +80,9 @@ const IndexPage = () => (
       <img src={demogif} alt="ReacTime Demo" />
     </VisualState>
     <Features>
-      <h2>FEATURES</h2>
+      <h2>
+        <strong>FEATURES</strong>
+      </h2>
       <h4
         style={{
           fontWeight: `400`,
@@ -93,7 +95,9 @@ const IndexPage = () => (
       </h4>
     </Features>
     <Installation>
-      <h2 style={{ color: styles.reactGreen }}>SIMPLE INSTALLATION</h2>
+      <h2 style={{ color: styles.reactGreen }}>
+        <strong>SIMPLE INSTALLATION</strong>
+      </h2>
       <h6>
         <a
           style={{ textDecoration: `none`, color: styles.redCode }}
@@ -104,7 +108,9 @@ const IndexPage = () => (
       </h6>
     </Installation>
     <Team>
-      <h2 style={{ color: styles.reactGreen }}>MEET THE TEAM</h2>
+      <h2 style={{ color: styles.reactGreen }}>
+        <strong>MEET THE TEAM</strong>
+      </h2>
     </Team>
   </>
 )

@@ -13,7 +13,7 @@ import styled from "styled-components"
 import Header from "./header"
 import "./layout.css"
 
-// #FAFBFC
+// Background-color LOGO
 const StyledWrapper = styled.div`
   background: linear-gradient(
     325deg,

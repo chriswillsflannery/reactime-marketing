@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import GitHubButton from "react-github-btn"
 import { config } from "@fortawesome/fontawesome-svg-core"
@@ -82,8 +82,9 @@ const H1 = styled.h1`
   font-weight: 400;
 `
 
-class Header extends React.Component {
-  handleScroll = () => {
+// class Header extends React.Component {
+const Header = props => {
+  const handleScroll = () => {
     if (
       window.innerWidth < 600 &&
       (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
@@ -99,78 +100,82 @@ class Header extends React.Component {
     }
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll)
-  }
+  useEffect(() => {
+    window.addEventListener("scroll", () => handleScroll())
+    return window.removeEventListener("scroll", () => handleScroll())
+  }, [])
 
-  componetWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll)
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.handleScroll)
+  // }
+  // componetWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll)
+  // }
 
-  render() {
-    return (
-      <HeaderContainer id="header">
-        <HeaderTitle>
-          <H1>
-            <Link
-              to="/"
-              style={{
-                color: styles.headFontColor,
-                textDecoration: `none`,
-              }}
+  // render() {
+  return (
+    <HeaderContainer id="header">
+      <HeaderTitle>
+        <H1>
+          <Link
+            to="/"
+            style={{
+              color: styles.headFontColor,
+              textDecoration: `none`,
+            }}
+          >
+            {props.siteTitle}
+          </Link>
+        </H1>
+      </HeaderTitle>
+      <HeaderRight>
+        <ul>
+          <li style={{ marginBottom: `2px` }}>
+            <a
+              href="https://www.npmjs.com/package/reactime"
+              title="ReacTime NPM Package"
             >
-              {this.props.siteTitle}
-            </Link>
-          </H1>
-        </HeaderTitle>
-        <HeaderRight>
-          <ul>
-            <li style={{ marginBottom: `2px` }}>
-              <a
-                href="https://www.npmjs.com/package/reactime"
-                title="ReacTime NPM Package"
-              >
-                npm
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-                title="ReacTime Chrome"
-              >
-                <FontAwesomeIcon icon={faChrome} />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/reactime" title="ReacTime Twitter">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/company/reactime"
-                title="ReacTime LinkedIn"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-            </li>
-            <li style={{ marginTop: `7px` }}>
-              <GitHubButton
-                href="https://github.com/open-source-labs/reactime"
-                data-color-scheme="no-preference: light; light: light; dark: light;"
-                data-size="medium"
-                data-show-count="true"
-                aria-label="Star open-source-labs/reactime on GitHub"
-              >
-                Star
-              </GitHubButton>
-            </li>
-          </ul>
-        </HeaderRight>
-      </HeaderContainer>
-    )
-  }
+              npm
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+              title="ReacTime Chrome"
+            >
+              <FontAwesomeIcon icon={faChrome} />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/reactime" title="ReacTime Twitter">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/company/reactime"
+              title="ReacTime LinkedIn"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+          </li>
+          <li style={{ marginTop: `7px` }}>
+            <GitHubButton
+              href="https://github.com/open-source-labs/reactime"
+              data-color-scheme="no-preference: light; light: light; dark: light;"
+              data-size="medium"
+              data-show-count="true"
+              aria-label="Star open-source-labs/reactime on GitHub"
+            >
+              Star
+            </GitHubButton>
+          </li>
+        </ul>
+      </HeaderRight>
+    </HeaderContainer>
+  )
 }
+// }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

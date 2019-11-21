@@ -314,7 +314,7 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
-hgroup {
+/* hgroup {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -323,7 +323,7 @@ hgroup {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 ul {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -336,7 +336,7 @@ ul {
   list-style-position: outside;
   list-style-image: none;
 }
-ol {
+/* ol {
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
@@ -347,8 +347,8 @@ ol {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
-}
-dl {
+} */
+/* dl {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -367,7 +367,7 @@ dd {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 p {
   margin-left: 0;
   margin-right: 0;
@@ -378,7 +378,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-figure {
+/* figure {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -387,7 +387,7 @@ figure {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
+} */
 pre {
   margin-left: 0;
   margin-right: 0;
@@ -401,7 +401,7 @@ pre {
   word-wrap: normal;
   padding: 1.45rem;
 }
-table {
+/* table {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -414,8 +414,8 @@ table {
   line-height: 1.45rem;
   border-collapse: collapse;
   width: 100%;
-}
-fieldset {
+} */
+/* fieldset {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -444,8 +444,8 @@ form {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-noscript {
+} */
+/* noscript {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -454,8 +454,8 @@ noscript {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-}
-iframe {
+} */
+/* iframe {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -477,8 +477,8 @@ hr {
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
-}
-address {
+} */
+/* address {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -490,16 +490,18 @@ address {
 }
 b {
   font-weight: bold;
-}
+} */
 strong {
   font-weight: bold;
 }
-dt {
+
+/* dt {
   font-weight: bold;
 }
 th {
   font-weight: bold;
-}
+} */
+
 li {
   margin-bottom: calc(1.45rem / 2);
 }
@@ -535,11 +537,11 @@ code {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
-kbd {
+/* kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
-samp {
+} */
+/* samp {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
@@ -550,8 +552,8 @@ abbr {
 acronym {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
-}
-abbr[title] {
+} */
+/* abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
   text-decoration: none;
@@ -571,19 +573,20 @@ th {
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
-}
-th:first-child,
+} */
+/* th:first-child,
 td:first-child {
   padding-left: 0;
 }
 th:last-child,
 td:last-child {
   padding-right: 0;
-}
+} */
+
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
+  border-radius: 5px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
   padding: 0;
@@ -607,6 +610,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -616,4 +620,21 @@ pre tt:after {
 /** Custom **/
 .box--title {
   text-transform: uppercase;
+}
+
+.feaStyle {
+  transition: all 0.3s ease-in-out;
+}
+.feaStyle:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 20px;
+  transform: translate3d(0px, -1px, 0px);
+}
+
+.teamStyle {
+  /* transition: transform 300ms ease; */
+  transition: all 0.3s ease-in-out;
+}
+.teamStyle:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 15px;
+  transform: translate3d(0px, -2px, 0px);
 }

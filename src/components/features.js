@@ -55,7 +55,9 @@ const StyledGridElement = styled.div`
   height: 100px;
   margin: 10px;
   font-family: "Raleway", sans-serif;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(184, 196, 194, 0.25);
+  box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.2);
   h4 {
     color: ${styles.reactGreen};
     margin: 0;
@@ -75,29 +77,29 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
-              <StyledGridElement>
+              <StyledGridElement className="feaStyle">
                 <h4>React Hooks</h4>
                 <p>State tracking for useState, useEffect & more.</p>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="feaStyle">
                 <h4>Context API</h4>
                 <p>Additional Support for Context + useContext.</p>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="feaStyle">
                 <h4>React Router</h4>
                 <p>View page state and previous URLs.</p>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="feaStyle">
                 <h4>Stateful Components</h4>
                 <p>Prop-drilling? Track your state easily.</p>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="feaStyle">
                 <h4>Concurrent Mode</h4>
                 <p>
                   Experiment with new features like Suspense and useTransition.
                 </p>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="feaStyle">
                 <h4>TRY REACTIME WITH OUR DEMOS</h4>
                 <p>
                   <a href="http://reactime-demo1.us-east-1.elasticbeanstalk.com/">

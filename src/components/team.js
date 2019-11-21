@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import Footer from "../components/footer"
 
 import "./layout.css"
 
@@ -57,12 +58,14 @@ const StyledGridElement = styled.div`
   width: 200px;
   height: 100%;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
+  border: 1px solid rgba(184, 196, 194, 0.25);
+  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
   h4 {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: ${styles.reactGreen};
   }
@@ -113,14 +116,8 @@ const Layout = ({ children }) => {
   `)
 
   const getImage = personName => {
-    const image = data.images.edges.find(n => {
-      return n.node.name === personName
-    })
-
-    if (!image) {
-      return null
-    }
-
+    const image = data.images.edges.find(n => n.node.name === personName)
+    if (!image) return null
     const imageSizes = image.node.childImageSharp.sizes
     return (
       <Img
@@ -158,7 +155,7 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("andy")}
                 <div>
                   <div
@@ -187,7 +184,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> andywongdev
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("bryan")}
                 <div>
                   <div
@@ -216,7 +213,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> mylee1995
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("chris")}
                 <div>
                   <div
@@ -245,7 +242,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> chriswillsflannery
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("david")}
                 <div>
                   <div
@@ -275,7 +272,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> davidchai717
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("josh")}
                 <div>
                   <div
@@ -305,7 +302,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> joshua0308
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("pras")}
                 <div>
                   <div
@@ -334,7 +331,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> prasmalla
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("rajeeb")}
                 <div>
                   <div
@@ -364,7 +361,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> rajeebthegreat
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("rocky")}
                 <div>
                   <div
@@ -393,7 +390,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> rocky9413
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("ruth")}
                 <div>
                   <div
@@ -422,7 +419,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> peachiecodes
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("ryan")}
                 <div>
                   <div
@@ -451,7 +448,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> rydang
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("sierra")}
                 <div>
                   <div
@@ -481,7 +478,7 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} /> starkspark
                 </a>
               </StyledGridElement>
-              <StyledGridElement>
+              <StyledGridElement className="teamStyle">
                 {getImage("yujin")}
                 <div>
                   <div
@@ -511,11 +508,8 @@ const Layout = ({ children }) => {
                 </a>
               </StyledGridElement>
             </Grid>
-            <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
+            {/* {insert footer here} */}
+            <Footer />
           </StyledMain>
         </StyledDiv>
       </StyledWrapper>
