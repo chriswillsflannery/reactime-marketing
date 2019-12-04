@@ -102,7 +102,7 @@ const Layout = ({ children }) => {
               <StyledGridElement className="feaStyle">
                 <h4>TRY REACTIME WITH OUR DEMOS</h4>
                 <p>
-                  <a href="http://reactime-demo1.us-east-1.elasticbeanstalk.com/">
+                  <a href="https://joshua0308.github.io/calculator/">
                     Calculator
                   </a>{" "}
                   &amp;{" "}
