@@ -121,7 +121,7 @@ const Layout = ({ children }) => {
                 textAlign: `center`,
               }}
             >
-              Read more about what's new in version 3.0{" "}
+              Read more about what's new in Reactime{" "}
               <a
                 style={{ textDecoration: `none`, color: `#a83a32` }}
                 href="https://tinyurl.com/reactimeMedium"

@@ -92,7 +92,7 @@ const IndexPage = () => (
         }}
       >
         Visualizing, Recording, and Tracking <strong>STATE</strong> has never
-        been Simpler.
+        been simpler.
       </h4>
     </Features>
     <Installation>
