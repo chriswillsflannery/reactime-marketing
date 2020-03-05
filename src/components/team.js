@@ -134,13 +134,17 @@ const Layout = ({ children }) => {
   }
 
   const [bios, setBios] = useState({
+    Abaas: false,
     Andy: false,
     Bryan: false,
     Chris: false,
     David: false,
+    Ergi: false,
+    JoshuaH: false,
     Josh: false,
     Pras: false,
     Rajeeb: false,
+    Raymond: false,
     Rocky: false,
     Ruth: false,
     Ryan: false,
@@ -161,6 +165,27 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
+            <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("Abaas", e)}
+              >
+                {getImage("abaas")}
+                <h4>Abaas Khorrami</h4>
+                {bios.Abaas ? (
+                  <div className="content">
+                    <p>
+                      Abaas is an experienced full-stack developer based in New York who is passionate
+                      about React, TypeScript, and cryptocurrency. He was recently sponsored by
+                      SingleSprout to give a talk on concurrent rendering in React. He is a graduate
+                      of the University of Virginia, and previously worked in financial planning &
+                      analysis for a casino.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> dubalol
+                </a>
+              </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick("Andy", e)}
@@ -255,6 +280,61 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
+                onClick={e => handleClick("Ergi", e)}
+              >
+                {getImage("ergi")}
+                <h4>Ergi Shehu</h4>
+                {bios.Ergi ? (
+                  <div className="content">
+                    <p>
+                      David is a multicultural fullstack developer with a
+                      passion for React, SQL, and Express. He has an uncanny
+                      ability to explain complex topics, simply. He has a ton of
+                      love for j-pop, gadgets, and dad jokes (especially as a
+                      proud father to his exuberant dog, Ayumi, named after his
+                      favorite j-pop singer). Chai recently gave talks about
+                      React Fiber under the hood and an introduction to gRPCs.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Ergi516" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> ergi516
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("JoshuaH", e)}
+              >
+                {getImage("JH")}
+                <h4>Joshua Howard</h4>
+                {bios.JoshuaH ? (
+                  <div className="content">
+                    <p>
+                      Joshua’s passion lies in creating intuitive, highly-engaging user experiences.
+                      His background in NYC’s tech startup community gives him a unique perspective
+                      on what it takes to bring a product from the idea and design phases to a
+                      successful launch. He seamlessly transitions between prototyping platforms
+                      like Adobe XD and his favorite development tools, such as React and GraphQL.
+                      <br />
+                      <br />
+                      In his free time, he enjoys savory weekend brunches, talking about SpaceX, and
+                      doing spontaneous adventures with friends.
+                      <br />
+                      <span style={{fontStyle: 'italic'}}>
+                      Website:{' '}
+                      <a href="http://joshuahoward.tech/" title="Joshua's Website">
+                        joshuahoward.tech
+                      </a>
+                      </span>
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Joshua-Howard" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> joshua-howard
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
                 onClick={e => handleClick("Josh", e)}
               >
                 {getImage("josh")}
@@ -324,6 +404,29 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
+                onClick={e => handleClick("Raymond", e)}
+              >
+                {getImage("raymond")}
+                <h4>Raymond Kwan</h4>
+                {bios.Raymond ? (
+                  <div className="content">
+                    <p>
+                      Rajeeb is an experienced full stack software engineer
+                      primarily focused on React, NodeJS with a passion for
+                      solving real life problems with scalable and reliable
+                      applications. He recently gave a talk on Functional
+                      Programming Style and likes to tinker around with
+                      Haskell/Elm in his free time. Apart from coding, he likes
+                      hiking, cooking and practice mindfulness meditation.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/rkwn" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> rkwn
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
                 onClick={e => handleClick("Rocky", e)}
               >
                 {getImage("rocky")}
@@ -354,13 +457,11 @@ const Layout = ({ children }) => {
                 {bios.Ruth ? (
                   <div className="content">
                     <p>
-                      Ruth is a creative developer who loves simplicity in
-                      design and scalable, maintainable applications. She's
-                      passionate about Docker, Kubernetes, React Hooks,
-                      gRPC-web, Envy, and Twirp. In her spare time she can be
-                      found at Boston Celtics games, dabbling in art, or playing
-                      Blokus Trigon. She recently gave an intro talk about
-                      Kubernetes and another one about Golang with Andy.
+                    Ruth is a creative developer who loves simplicity in design and scalable,
+                    maintainable applications. She’s passionate about intertwining functional
+                    programming with JavaScript and modularized backend architecture. In her spare
+                    time, she can be found at Boston Celtics games and painting. She’s given talks
+                    about Kubernetes and Golang.
                     </p>
                   </div>
                 ) : null}
