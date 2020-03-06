@@ -174,11 +174,10 @@ const Layout = ({ children }) => {
                 {bios.Abaas ? (
                   <div className="content">
                     <p>
-                      Abaas is an experienced full-stack developer based in New York who is passionate
-                      about React, TypeScript, and cryptocurrency. He was recently sponsored by
-                      SingleSprout to give a talk on concurrent rendering in React. He is a graduate
-                      of the University of Virginia, and previously worked in financial planning &
-                      analysis for a casino.
+                    Abaas is an experienced fullstack developer based in New York who is passionate
+                    about React, TypeScript, authentication, and cryptocurrency. He was recently
+                    sponsored by SingleSprout to give a talk on concurrent rendering in React. He is
+                    a graduate of the University of Virginia.
                     </p>
                   </div>
                 ) : null}
