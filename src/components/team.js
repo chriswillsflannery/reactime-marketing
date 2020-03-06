@@ -287,13 +287,7 @@ const Layout = ({ children }) => {
                 {bios.Ergi ? (
                   <div className="content">
                     <p>
-                      David is a multicultural fullstack developer with a
-                      passion for React, SQL, and Express. He has an uncanny
-                      ability to explain complex topics, simply. He has a ton of
-                      love for j-pop, gadgets, and dad jokes (especially as a
-                      proud father to his exuberant dog, Ayumi, named after his
-                      favorite j-pop singer). Chai recently gave talks about
-                      React Fiber under the hood and an introduction to gRPCs.
+                      Coming Soon
                     </p>
                   </div>
                 ) : null}
@@ -411,13 +405,7 @@ const Layout = ({ children }) => {
                 {bios.Raymond ? (
                   <div className="content">
                     <p>
-                      Rajeeb is an experienced full stack software engineer
-                      primarily focused on React, NodeJS with a passion for
-                      solving real life problems with scalable and reliable
-                      applications. He recently gave a talk on Functional
-                      Programming Style and likes to tinker around with
-                      Haskell/Elm in his free time. Apart from coding, he likes
-                      hiking, cooking and practice mindfulness meditation.
+                      Coming Soon
                     </p>
                   </div>
                 ) : null}
