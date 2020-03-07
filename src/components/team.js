@@ -316,12 +316,9 @@ const Layout = ({ children }) => {
                       In his free time, he enjoys savory weekend brunches, talking about SpaceX, and
                       doing spontaneous adventures with friends.
                       <br />
-                      <span style={{fontStyle: 'italic'}}>
-                      Website:{' '}
-                      <a href="http://joshuahoward.tech/" title="Joshua's Website">
+                      <a style={{fontStyle: 'italic'}} href="http://joshuahoward.tech/" title="Joshua's Website">
                         joshuahoward.tech
                       </a>
-                      </span>
                     </p>
                   </div>
                 ) : null}
