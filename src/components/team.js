@@ -286,7 +286,10 @@ const Layout = ({ children }) => {
                 {bios.Ergi ? (
                   <div className="content">
                     <p>
-                      Coming Soon
+                      Ergi is a full stack developer from Brooklyn with a passion for React and client
+                      side frameworks. He is experienced in many forms with authentication. He
+                      recently gave a talk sponsored by SingleSprout on the differences between Vue
+                      and angular. Ergi loves traveling, working out and pizza!
                     </p>
                   </div>
                 ) : null}
@@ -303,7 +306,7 @@ const Layout = ({ children }) => {
                 {bios.JoshuaH ? (
                   <div className="content">
                     <p>
-                      Joshua’s passion lies in creating intuitive, highly-engaging user experiences.
+                      Joshua’s passion lies in creating aesthetically pleasing, highly-engaging user experiences.
                       His background in NYC’s tech startup community gives him a unique perspective
                       on what it takes to bring a product from the idea and design phases to a
                       successful launch. He seamlessly transitions between prototyping platforms
