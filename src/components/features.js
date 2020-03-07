@@ -140,7 +140,7 @@ const Layout = ({ children }) => {
               See the latest Reactime release notes {" "}
               <a
                 style={{ textDecoration: `none`, color: `#a83a32` }}
-                href="https://github.com/open-source-labs/reactime/releases"
+                href="https://github.com/open-source-labs/reactime/releases/tag/3.1.1"
               >
                 here
               </a>
