@@ -404,7 +404,11 @@ const Layout = ({ children }) => {
                 {bios.Raymond ? (
                   <div className="content">
                     <p>
-                      Coming Soon
+                      Raymond is a full-stack engineer based in New York. He is passionate about open
+                      source software and the democratizing power of technology. Other interests
+                      include exploring mountainous remote border regions, restaurant hopping,
+                      sous-vide, learning Chinese, and sharing funny comments discovered in large
+                      codebases.
                     </p>
                   </div>
                 ) : null}
