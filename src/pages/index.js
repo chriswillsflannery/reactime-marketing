@@ -55,6 +55,15 @@ const IndexPage = () => (
       <p
         style={{
           fontFamily: `Raleway`,
+          textAlign: `center`,
+          color: styles.reactGreen,
+        }}
+      >
+        Nominated for the Productivity Booster award at <a href="https://osawards.com/react/">React Open Source Awards 2020</a>!
+      </p>
+      <p
+        style={{
+          fontFamily: `Raleway`,
           fontSize: `16px`,
           color: styles.reactGreen,
           textAlign: `center`,
@@ -92,7 +101,7 @@ const IndexPage = () => (
         }}
       >
         Visualizing, Recording, and Tracking <strong>STATE</strong> has never
-        been Simpler.
+        been simpler.
       </h4>
     </Features>
     <Installation>

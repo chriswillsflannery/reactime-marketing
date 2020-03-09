@@ -95,7 +95,7 @@ const Layout = ({ children }) => {
                     </p>
                   </code>
                 </StyledPre>
-                If you are using Concurrent mode, call the library like below:
+                If you are using Concurrent Mode, call the library like below:
                 <br />
                 <StyledPre>
                   <code>

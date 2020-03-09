@@ -134,13 +134,17 @@ const Layout = ({ children }) => {
   }
 
   const [bios, setBios] = useState({
+    Abaas: false,
     Andy: false,
     Bryan: false,
     Chris: false,
     David: false,
+    Ergi: false,
+    JoshuaH: false,
     Josh: false,
     Pras: false,
     Rajeeb: false,
+    Raymond: false,
     Rocky: false,
     Ruth: false,
     Ryan: false,
@@ -161,6 +165,26 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
+            <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("Abaas", e)}
+              >
+                {getImage("abaas")}
+                <h4>Abaas Khorrami</h4>
+                {bios.Abaas ? (
+                  <div className="content">
+                    <p>
+                      Abaas is an experienced fullstack developer based in New York who is passionate
+                      about React, TypeScript, authentication, and cryptocurrency. He was recently
+                      sponsored by SingleSprout to give a talk on concurrent rendering in React. He is
+                      a graduate of the University of Virginia.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> dubalol
+                </a>
+              </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick("Andy", e)}
@@ -255,6 +279,55 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
+                onClick={e => handleClick("Ergi", e)}
+              >
+                {getImage("ergi")}
+                <h4>Ergi Shehu</h4>
+                {bios.Ergi ? (
+                  <div className="content">
+                    <p>
+                      Ergi is a full stack developer from Brooklyn with a passion for React and client
+                      side frameworks. He is experienced in many forms with authentication. He
+                      recently gave a talk sponsored by SingleSprout on the differences between Vue
+                      and angular. Ergi loves traveling, working out and pizza!
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Ergi516" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> ergi516
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("JoshuaH", e)}
+              >
+                {getImage("JH")}
+                <h4>Joshua Howard</h4>
+                {bios.JoshuaH ? (
+                  <div className="content">
+                    <p>
+                      Joshua’s passion lies in creating aesthetically pleasing, highly-engaging user experiences.
+                      His background in NYC’s tech startup community gives him a unique perspective
+                      on what it takes to bring a product from the idea and design phases to a
+                      successful launch. He seamlessly transitions between prototyping platforms
+                      like Adobe XD and his favorite development tools, such as React and GraphQL.
+                      <br />
+                      <br />
+                      In his free time, he enjoys savory weekend brunches, talking about SpaceX, and
+                      doing spontaneous adventures with friends.
+                      <br />
+                      <a style={{fontStyle: 'italic'}} href="http://joshuahoward.tech/" title="Joshua's Website">
+                        joshuahoward.tech
+                      </a>
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Joshua-Howard" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> joshua-howard
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
                 onClick={e => handleClick("Josh", e)}
               >
                 {getImage("josh")}
@@ -324,6 +397,27 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
+                onClick={e => handleClick("Raymond", e)}
+              >
+                {getImage("raymond")}
+                <h4>Raymond Kwan</h4>
+                {bios.Raymond ? (
+                  <div className="content">
+                    <p>
+                      Raymond is a full-stack engineer based in New York. He is passionate about open
+                      source software and the democratizing power of technology. Other interests
+                      include exploring mountainous remote border regions, restaurant hopping,
+                      sous-vide, learning Chinese, and sharing funny comments discovered in large
+                      codebases.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/rkwn" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> rkwn
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
                 onClick={e => handleClick("Rocky", e)}
               >
                 {getImage("rocky")}
@@ -354,13 +448,11 @@ const Layout = ({ children }) => {
                 {bios.Ruth ? (
                   <div className="content">
                     <p>
-                      Ruth is a creative developer who loves simplicity in
-                      design and scalable, maintainable applications. She's
-                      passionate about Docker, Kubernetes, React Hooks,
-                      gRPC-web, Envy, and Twirp. In her spare time she can be
-                      found at Boston Celtics games, dabbling in art, or playing
-                      Blokus Trigon. She recently gave an intro talk about
-                      Kubernetes and another one about Golang with Andy.
+                    Ruth is a creative developer who loves simplicity in design and scalable,
+                    maintainable applications. She’s passionate about intertwining functional
+                    programming with JavaScript and modularized backend architecture. In her spare
+                    time, she can be found at Boston Celtics games and painting. She’s given talks
+                    about Kubernetes and Golang.
                     </p>
                   </div>
                 ) : null}

@@ -90,8 +90,8 @@ const Layout = ({ children }) => {
                 <p>View page state and previous URLs.</p>
               </StyledGridElement>
               <StyledGridElement className="feaStyle">
-                <h4>Stateful Components</h4>
-                <p>Prop-drilling? Track your state easily.</p>
+                <h4>TypeScript Support</h4>
+                <p>Prop-drilling in TypeScript? Track all state changes easily.</p>
               </StyledGridElement>
               <StyledGridElement className="feaStyle">
                 <h4>Concurrent Mode</h4>
@@ -121,10 +121,26 @@ const Layout = ({ children }) => {
                 textAlign: `center`,
               }}
             >
-              Read more about what's new in version 3.0{" "}
+              Read more about what's new in Reactime{" "}
               <a
                 style={{ textDecoration: `none`, color: `#a83a32` }}
                 href="https://tinyurl.com/reactimeMedium"
+              >
+                here
+              </a>
+            </h4>
+            <h4
+              style={{
+                fontWeight: `400`,
+                fontSize: `13px`,
+                color: styles.lightestGreen,
+                textAlign: `center`,
+              }}
+            >
+              See the latest Reactime release notes {" "}
+              <a
+                style={{ textDecoration: `none`, color: `#a83a32` }}
+                href="https://github.com/open-source-labs/reactime/releases/tag/3.1.1"
               >
                 here
               </a>
