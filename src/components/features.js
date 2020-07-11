@@ -13,15 +13,13 @@ import styled from "styled-components"
 import "./layout.css"
 
 const styles = {
-  reactGreen: `#072D2B`, //h4 font-color #072D2B
-  feaBColor: `#e0e3e4`, // feature bg-color #002e2b
-  lightestGreen: `#0c4c41`,
-  // reactGold: `#ECCB98`,
-  iconBColor: `#f8f9fa`, // feature icon bg #E4C2B3
+  reactGreen: `#487783`, //h4 font-color #072D2B
+  lightestGreen: `#BDD4DB`,
+  iconBColor: `#353C44`, // feature icon bg #E4C2B3
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.feaBColor};
+  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
 `
 
 const StyledDiv = styled.div`
@@ -63,6 +61,7 @@ const StyledGridElement = styled.div`
     margin: 0;
   }
   p {
+    color: white;
     text-align: center;
     margin-bottom: -5px;
     line-height: 20px;
@@ -102,11 +101,15 @@ const Layout = ({ children }) => {
               <StyledGridElement className="feaStyle">
                 <h4>TRY REACTIME WITH OUR DEMOS</h4>
                 <p>
-                  <a href="https://joshua0308.github.io/calculator/">
+                  <a 
+                  style={{ textDecoration: `none`, color: `#99A93A`, }}
+                  href="https://joshua0308.github.io/calculator/">
                     Calculator
                   </a>{" "}
                   &amp;{" "}
-                  <a href="http://reactime-demo2.us-east-1.elasticbeanstalk.com/">
+                  <a 
+                  style={{ textDecoration: `none`, color: `#99A93A`, }}
+                  href="http://reactime-demo2.us-east-1.elasticbeanstalk.com/">
                     Bitcoin Price
                   </a>
                   .
@@ -123,7 +126,7 @@ const Layout = ({ children }) => {
             >
               Read more about what's new in Reactime{" "}
               <a
-                style={{ textDecoration: `none`, color: `#a83a32` }}
+                style={{ textDecoration: `none`, color: `#62D6FB`, }}
                 href="https://tinyurl.com/reactimeMedium"
               >
                 here
@@ -139,7 +142,7 @@ const Layout = ({ children }) => {
             >
               See the latest Reactime release notes {" "}
               <a
-                style={{ textDecoration: `none`, color: `#a83a32` }}
+                style={{ textDecoration: `none`, color: `#62D6FB`, }}
                 href="https://github.com/open-source-labs/reactime/releases/tag/3.1.1"
               >
                 here

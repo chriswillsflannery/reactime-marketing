@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 :root {
-  --reactGreen: #072d2b;
-  --lighterGreen: #002e2b;
-  --lightestGreen: #0c4c41;
+  --reactGreen: #487783;
+  --lighterGreen: #487783;
+  --lightestGreen: #487783;
   --reactGold: #eccb98;
   --lighterGold: #e4c2b3;
 }
@@ -229,7 +229,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #487783;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -637,6 +637,6 @@ pre tt:after {
 .teamStyle:hover {
   cursor: pointer;
   /* box-shadow: rgba(75, 175, 225, 0.22) 5px 15px 25px 5px; */
-  box-shadow: rgba(10, 150, 50, 0.25) 5px 10px 20px 5px;
+  box-shadow: rgba(10, 134, 150, 0.25) 5px 10px 20px 5px;
   transform: translate3d(0px, -3px, 0px);
 }

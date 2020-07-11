@@ -18,13 +18,13 @@ const styles = {
   lightestGreen: `#0c4c41`,
   reactGold: `#ECCB98`,
   lighterGold: `#E4C2B3`,
-  redCode: `#a83a32`,
-  blueCode: `#265a87`,
+  redCode: `#99A93A`,
+  blueCode: `#6188B4`,
   white: `#fff`,
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.white};
+  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
 `
 
 const StyledDiv = styled.div`
@@ -41,6 +41,8 @@ const StyledMain = styled.main`
 `
 
 const StyledOL = styled.ol`
+  font-family: "Raleway", sans-serif;
+  color: #BDD4DB;
   @media (max-width: 700px) {
     max-width: 600px;
     padding: 0 40px;
@@ -51,6 +53,8 @@ const StyledPre = styled.pre`
   border-radius: 3px;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.15);
+  background: #1E1E1E;
+  color: white;
 `
 
 const Layout = ({ children }) => {

@@ -12,21 +12,19 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import Footer from "../components/footer"
 
 import "./layout.css"
 
 const styles = {
-  reactGreen: `#072D2B`, // h4
+  reactGreen: `white`, // h4
   // lighterGreen: `#002e2b`,
-  lightestGreen: `#0c4c41`, // hover, link color
-  teamBColor: `#f8f9fa`, // `#ECCB98`, // team background-color #f8f9fa
-  biosBColor: `#e6e6e6`, // `#E4C2B3`, // team bios bg-color #e6e6e6
-  redCode: `#a83a32`, // hover, link color
+  lightestGreen: `#62D6FB`, // hover, link color
+  biosBColor: `#353C44`, // `#E4C2B3`, // team bios bg-color #e6e6e6
+  redCode: `#62D6FB`, // hover, link color
 }
 
 const StyledWrapper = styled.div`
-  background: ${styles.teamBColor};
+  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%)
 `
 
 const StyledDiv = styled.div`
@@ -70,6 +68,7 @@ const StyledGridElement = styled.div`
     color: ${styles.reactGreen};
   }
   p {
+    color: white;
     text-align: justify-left;
     font-family: sans-serif;
     font-size: 12px;
@@ -80,7 +79,7 @@ const StyledGridElement = styled.div`
     position: relative;
     bottom: 8px;
     padding-top: 10px;
-    color: #000;
+    color: white;
     text-decoration: none;
     font-weight: 300;
   }
@@ -137,11 +136,15 @@ const Layout = ({ children }) => {
     Abaas: false,
     Andy: false,
     Bryan: false,
+    Carlos: false,
     Chris: false,
     David: false,
+    Edwin: false,
     Ergi: false,
+    Gabriela: false,
     JoshuaH: false,
     Josh: false,
+    Nat: false,
     Pras: false,
     Rajeeb: false,
     Raymond: false,
@@ -233,6 +236,23 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
+                onClick={e => handleClick("Carlos", e)}
+              >
+                {getImage("carlos")}
+                <h4>Carlos Perez</h4>
+                {bios.Carlos ? (
+                  <div className="content">
+                    <p>
+                      Carlos is an fullstack developer based in Los Angeles.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/crperezt" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> crperezt
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
                 onClick={e => handleClick("Chris", e)}
               >
                 {getImage("chris")}
@@ -279,6 +299,23 @@ const Layout = ({ children }) => {
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
+                onClick={e => handleClick("Edwin", e)}
+              >
+                {getImage("edwin")}
+                <h4>Edwin Menendez</h4>
+                {bios.Edwin ? (
+                  <div className="content">
+                    <p>
+                      Edwin is an fullstack developer based in Los Angeles.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/edwinjmenendez" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> edwinjmenendez
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
                 onClick={e => handleClick("Ergi", e)}
               >
                 {getImage("ergi")}
@@ -295,6 +332,40 @@ const Layout = ({ children }) => {
                 ) : null}
                 <a href="https://github.com/Ergi516" title="Github">
                   <FontAwesomeIcon icon={faGithub} /> ergi516
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("Gabriela", e)}
+              >
+                {getImage("gabriela")}
+                <h4>Gabriela Aquino</h4>
+                {bios.Gabriela ? (
+                  <div className="content">
+                    <p>
+                      Gabriela is an fullstack developer based in Los Angeles.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/aquinojardim" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> aquinojardim
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("Greg", e)}
+              >
+                {getImage("greg")}
+                <h4>Greg Panciera</h4>
+                {bios.Greg ? (
+                  <div className="content">
+                    <p>
+                      Greg is an fullstack developer based in Los Angeles.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/gpanciera" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> gpanciera
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -347,6 +418,23 @@ const Layout = ({ children }) => {
                 ) : null}
                 <a href="https://github.com/joshua0308" title="Github">
                   <FontAwesomeIcon icon={faGithub} /> joshua0308
+                </a>
+              </StyledGridElement>
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick("Nat", e)}
+              >
+                {getImage("nat")}
+                <h4>Nathanael Wa Mwenze</h4>
+                {bios.Nat ? (
+                  <div className="content">
+                    <p>
+                      Nathanael is an fullstack developer based in Los Angeles.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/nmwenz90" title="Github">
+                  <FontAwesomeIcon icon={faGithub} /> nmwenz90
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -530,8 +618,6 @@ const Layout = ({ children }) => {
                 </a>
               </StyledGridElement>
             </Grid>
-            {/* {insert footer here} */}
-            <Footer />
           </StyledMain>
         </StyledDiv>
       </StyledWrapper>

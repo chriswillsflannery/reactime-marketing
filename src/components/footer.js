@@ -5,7 +5,9 @@ const Footer = () => {
     <footer style={{marginTop: '2rem'}}>
       © {new Date().getFullYear()}, Built with
       {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      <a 
+      style={{ textDecoration: `none`, color: `#99A93A`, }}
+      href="https://www.gatsbyjs.org">Gatsby</a>
     </footer>
   )
 }
