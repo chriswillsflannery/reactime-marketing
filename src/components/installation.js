@@ -66,24 +66,35 @@ const Layout = ({ children }) => (
         <StyledMain>
           {children}
           <StyledOL>
-              <StyledPre>
-                <code>
-                  <p>
-                    Download{' '}<span style={{ color: styles.redCode }}>Reactime</span>{' '}extension from Chrome's Web Store.
-                    {' '}
-                  </p>
-                  <p>
-                    And that's it!{' '}
-                    <span style={{ color: styles.redCode }}>No NPM package needed!!!</span>
-                  </p>
-                  <p>
-                    <span style={{ color: styles.blueCode }}>***{' '}New perfomance features are not avalible on Redux applications{' '}***</span>
-                  </p>
-                </code>
-              </StyledPre>
+            <StyledPre>
               <code>
-                <OlderVersion />
+                <p>
+                    Download
+                  {' '}
+                  <span style={{ color: styles.redCode }}>Reactime</span>
+                  {' '}
+extension from Chrome's Web Store.
+                  {' '}
+                </p>
+                <p>
+                    And that's it!
+                  {' '}
+                  <span style={{ color: styles.redCode }}>No NPM package needed!!!</span>
+                </p>
+                <p>
+                  <span style={{ color: styles.blueCode }}>
+***
+                    {' '}
+New perfomance features are not avalible on Redux applications
+                    {' '}
+***
+                  </span>
+                </p>
               </code>
+            </StyledPre>
+            <code>
+              <OlderVersion />
+            </code>
           </StyledOL>
         </StyledMain>
       </StyledDiv>
