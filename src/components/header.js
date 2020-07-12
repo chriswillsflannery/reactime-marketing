@@ -13,11 +13,8 @@ import {
 config.autoAddCss = false
 
 const styles = {
-  // reactGreen: `#072D2B`,
-  // lighterGreen: `#002e2b`,
-  headerBColor: `#106153`, // #106153 // #0c4c41
-  // reactGold: `#ECCB98`,
-  headFontColor: `#f8f9fa`, // #f8f9fa
+  // headerBColor: //`#487783`,
+  headFontColor: `white`, // #BDD4DB
 }
 
 const HeaderContainer = styled.header`
@@ -29,7 +26,10 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: ${styles.headerBColor};
+  background: linear-gradient(298deg, rgba(46,52,58,1) 0%, rgba(0,0,0,1) 100%);
+
+
+
   transition: 0.2s;
   @media (max-width: 600px) {
     justify-content: center;
@@ -162,7 +162,7 @@ const Header = props => {
           <li style={{ marginTop: `7px` }}>
             <GitHubButton
               href="https://github.com/open-source-labs/reactime"
-              data-color-scheme="no-preference: light; light: light; dark: light;"
+              data-color-scheme="dark"
               data-size="medium"
               data-show-count="true"
               aria-label="Star open-source-labs/reactime on GitHub"

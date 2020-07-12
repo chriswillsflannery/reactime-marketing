@@ -15,11 +15,7 @@ import "./layout.css"
 
 // Background-color LOGO
 const StyledWrapper = styled.div`
-  background: linear-gradient(
-    325deg,
-    rgba(245, 245, 245, 0.95) 0%,
-    rgba(225, 225, 225, 0.95) 100%
-  );
+  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
   /* background: linear-gradient(
     354deg,
     rgba(236, 204, 151, 1) 0%,

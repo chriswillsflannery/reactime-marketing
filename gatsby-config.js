@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Reactime 3.1`,
+    title: `Reactime 4.0`,
     description: `Time travel debugger for React.`,
     author: `@reactime`,
   },
@@ -21,8 +21,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#323941`,
+        theme_color: `#323941`,
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
