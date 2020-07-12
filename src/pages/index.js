@@ -3,13 +3,12 @@
 import React from 'react';
 import Splash from '../components/splash';
 import VisualState from '../components/visualState';
-import OlderVersion from '../components/olderVersion';
 import Features from '../components/features';
 import Installation from '../components/installation';
 import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
-import demogif from '../images/demo.gif';
+import demogif from '../images/MyMovie.gif';
 import Footer from '../components/footer';
 
 const styles = {
@@ -145,7 +144,6 @@ has never
         <strong>Meet the Team</strong>
       </h2>
     </Team>
-    <OlderVersion />
     {/* {insert footer here} */}
     <Footer />
   </>

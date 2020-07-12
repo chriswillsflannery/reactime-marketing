@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable max-len */
+/* eslint-disable react/jsx-filename-extension */
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -5,46 +8,46 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from "react"
-import PropTypes from "prop-types"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import "./layout.css"
+import './layout.css';
 
 const styles = {
-  reactGreen: `white`, // h4
+  reactGreen: 'white', // h4
   // lighterGreen: `#002e2b`,
-  lightestGreen: `#62D6FB`, // hover, link color
-  biosBColor: `#353C44`, // `#E4C2B3`, // team bios bg-color #e6e6e6
-  redCode: `#62D6FB`, // hover, link color
-}
+  lightestGreen: '#62D6FB', // hover, link color
+  biosBColor: '#353C44', // `#E4C2B3`, // team bios bg-color #e6e6e6
+  redCode: '#62D6FB', // hover, link color
+};
 
 const StyledWrapper = styled.div`
   background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%)
-`
+`;
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
-`
+`;
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-`
+`;
 
 const StyledGridElement = styled.div`
   display: flex;
@@ -93,7 +96,7 @@ const StyledGridElement = styled.div`
   a:hover {
     color: ${styles.redCode};
   }
-`
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -112,25 +115,25 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   const getImage = personName => {
-    const image = data.images.edges.find(n => n.node.name === personName)
-    if (!image) return null
-    const imageSizes = image.node.childImageSharp.sizes
+    const image = data.images.edges.find(n => n.node.name === personName);
+    if (!image) return null;
+    const imageSizes = image.node.childImageSharp.sizes;
     return (
       <Img
         style={{
-          borderRadius: `100px`,
-          marginTop: `10px`,
-          width: `100px`,
-          height: `100px`,
+          borderRadius: '100px',
+          marginTop: '10px',
+          width: '100px',
+          height: '100px',
         }}
         alt={personName}
         sizes={imageSizes}
       />
-    )
-  }
+    );
+  };
 
   const [bios, setBios] = useState({
     Abaas: false,
@@ -153,13 +156,13 @@ const Layout = ({ children }) => {
     Ryan: false,
     Sierra: false,
     Yujin: false,
-  })
+  });
 
   const handleClick = (name, event) => {
     if (!event.target.href) {
-      setBios(Object.assign({}, bios, { [name]: !bios[name] }))
+      setBios({ ...bios, [name]: !bios[name] });
     }
-  }
+  };
 
   return (
     <>
@@ -168,11 +171,11 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <Grid>
-            <StyledGridElement
+              <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Abaas", e)}
+                onClick={e => handleClick('Abaas', e)}
               >
-                {getImage("abaas")}
+                {getImage('abaas')}
                 <h4>Abaas Khorrami</h4>
                 {bios.Abaas ? (
                   <div className="content">
@@ -185,14 +188,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/dubalol" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> dubalol
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+dubalol
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Andy", e)}
+                onClick={e => handleClick('Andy', e)}
               >
-                {getImage("andy")}
+                {getImage('andy')}
                 <h4>Andy Wong</h4>
                 {bios.Andy ? (
                   <div className="content">
@@ -208,14 +213,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/andywongdev" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> andywongdev
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+andywongdev
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Bryan", e)}
+                onClick={e => handleClick('Bryan', e)}
               >
-                {getImage("bryan")}
+                {getImage('bryan')}
                 <h4>Bryan Lee</h4>
                 {bios.Bryan ? (
                   <div className="content">
@@ -231,14 +238,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/mylee1995" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> mylee1995
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+mylee1995
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Carlos", e)}
+                onClick={e => handleClick('Carlos', e)}
               >
-                {getImage("carlos")}
+                {getImage('carlos')}
                 <h4>Carlos Perez</h4>
                 {bios.Carlos ? (
                   <div className="content">
@@ -248,14 +257,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/crperezt" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> crperezt
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+crperezt
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Chris", e)}
+                onClick={e => handleClick('Chris', e)}
               >
-                {getImage("chris")}
+                {getImage('chris')}
                 <h4>Chris Flannery</h4>
                 {bios.Chris ? (
                   <div className="content">
@@ -271,14 +282,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/chriswillsflannery" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> chriswillsflannery
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+chriswillsflannery
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("David", e)}
+                onClick={e => handleClick('David', e)}
               >
-                {getImage("david")}
+                {getImage('david')}
                 <h4>David Chai</h4>
                 {bios.David ? (
                   <div className="content">
@@ -294,14 +307,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/davidchai717" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> davidchai717
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+davidchai717
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Edwin", e)}
+                onClick={e => handleClick('Edwin', e)}
               >
-                {getImage("edwin")}
+                {getImage('edwin')}
                 <h4>Edwin Menendez</h4>
                 {bios.Edwin ? (
                   <div className="content">
@@ -311,14 +326,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/edwinjmenendez" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> edwinjmenendez
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+edwinjmenendez
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Ergi", e)}
+                onClick={e => handleClick('Ergi', e)}
               >
-                {getImage("ergi")}
+                {getImage('ergi')}
                 <h4>Ergi Shehu</h4>
                 {bios.Ergi ? (
                   <div className="content">
@@ -331,14 +348,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/Ergi516" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> ergi516
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+ergi516
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Gabriela", e)}
+                onClick={e => handleClick('Gabriela', e)}
               >
-                {getImage("gabriela")}
+                {getImage('gabriela')}
                 <h4>Gabriela Aquino</h4>
                 {bios.Gabriela ? (
                   <div className="content">
@@ -348,14 +367,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/aquinojardim" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> aquinojardim
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+aquinojardim
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Greg", e)}
+                onClick={e => handleClick('Greg', e)}
               >
-                {getImage("greg")}
+                {getImage('greg')}
                 <h4>Greg Panciera</h4>
                 {bios.Greg ? (
                   <div className="content">
@@ -365,14 +386,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/gpanciera" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> gpanciera
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+gpanciera
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("JoshuaH", e)}
+                onClick={e => handleClick('JoshuaH', e)}
               >
-                {getImage("JH")}
+                {getImage('JH')}
                 <h4>Joshua Howard</h4>
                 {bios.JoshuaH ? (
                   <div className="content">
@@ -387,21 +410,23 @@ const Layout = ({ children }) => {
                       In his free time, he enjoys savory weekend brunches, talking about SpaceX, and
                       doing spontaneous adventures with friends.
                       <br />
-                      <a style={{fontStyle: 'italic'}} href="http://joshuahoward.tech/" title="Joshua's Website">
+                      <a style={{ fontStyle: 'italic' }} href="http://joshuahoward.tech/" title="Joshua's Website">
                         joshuahoward.tech
                       </a>
                     </p>
                   </div>
                 ) : null}
                 <a href="https://github.com/Joshua-Howard" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> joshua-howard
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+joshua-howard
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Josh", e)}
+                onClick={e => handleClick('Josh', e)}
               >
-                {getImage("josh")}
+                {getImage('josh')}
                 <h4>Josh Kim</h4>
                 {bios.Josh ? (
                   <div className="content">
@@ -417,14 +442,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/joshua0308" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> joshua0308
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+joshua0308
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Nat", e)}
+                onClick={e => handleClick('Nat', e)}
               >
-                {getImage("nat")}
+                {getImage('nat')}
                 <h4>Nathanael Wa Mwenze</h4>
                 {bios.Nat ? (
                   <div className="content">
@@ -434,14 +461,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/nmwenz90" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> nmwenz90
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+nmwenz90
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Pras", e)}
+                onClick={e => handleClick('Pras', e)}
               >
-                {getImage("pras")}
+                {getImage('pras')}
                 <h4>Prasanna Malla</h4>
                 {bios.Pras ? (
                   <div className="content">
@@ -457,14 +486,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/prasmalla" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> prasmalla
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+prasmalla
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Rajeeb", e)}
+                onClick={e => handleClick('Rajeeb', e)}
               >
-                {getImage("rajeeb")}
+                {getImage('rajeeb')}
                 <h4>Rajeeb Banstola</h4>
                 {bios.Rajeeb ? (
                   <div className="content">
@@ -480,14 +511,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/rajeebthegreat" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> rajeebthegreat
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+rajeebthegreat
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Raymond", e)}
+                onClick={e => handleClick('Raymond', e)}
               >
-                {getImage("raymond")}
+                {getImage('raymond')}
                 <h4>Raymond Kwan</h4>
                 {bios.Raymond ? (
                   <div className="content">
@@ -501,14 +534,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/rkwn" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> rkwn
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+rkwn
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Rocky", e)}
+                onClick={e => handleClick('Rocky', e)}
               >
-                {getImage("rocky")}
+                {getImage('rocky')}
                 <h4>Rocky Lin</h4>
                 {bios.Rocky ? (
                   <div className="content">
@@ -524,14 +559,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/rocky9413" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> rocky9413
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+rocky9413
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Ruth", e)}
+                onClick={e => handleClick('Ruth', e)}
               >
-                {getImage("ruth")}
+                {getImage('ruth')}
                 <h4>Ruth Anam</h4>
                 {bios.Ruth ? (
                   <div className="content">
@@ -545,14 +582,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/peachiecodes" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> peachiecodes
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+peachiecodes
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Ryan", e)}
+                onClick={e => handleClick('Ryan', e)}
               >
-                {getImage("ryan")}
+                {getImage('ryan')}
                 <h4>Ryan Dang</h4>
                 {bios.Ryan ? (
                   <div className="content">
@@ -568,14 +607,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/rydang" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> rydang
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+rydang
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Sierra", e)}
+                onClick={e => handleClick('Sierra', e)}
               >
-                {getImage("sierra")}
+                {getImage('sierra')}
                 <h4>Sierra Swaby</h4>
                 {bios.Sierra ? (
                   <div className="content">
@@ -591,14 +632,16 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/starkspark" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> starkspark
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+starkspark
                 </a>
               </StyledGridElement>
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick("Yujin", e)}
+                onClick={e => handleClick('Yujin', e)}
               >
-                {getImage("yujin")}
+                {getImage('yujin')}
                 <h4>Yujin Kang</h4>
                 {bios.Yujin ? (
                   <div className="content">
@@ -614,7 +657,9 @@ const Layout = ({ children }) => {
                   </div>
                 ) : null}
                 <a href="https://github.com/yujinkay" title="Github">
-                  <FontAwesomeIcon icon={faGithub} /> yujinkay
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+yujinkay
                 </a>
               </StyledGridElement>
             </Grid>
@@ -622,11 +667,11 @@ const Layout = ({ children }) => {
         </StyledDiv>
       </StyledWrapper>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

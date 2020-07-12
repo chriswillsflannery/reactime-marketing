@@ -12,7 +12,7 @@ html {
   font-family: "Raleway", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: var(--reactGreen);
+  background-color: black;
 }
 body {
   margin: 0;
