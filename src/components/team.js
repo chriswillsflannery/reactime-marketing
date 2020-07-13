@@ -190,7 +190,7 @@ const Layout = ({ children }) => {
                 <a href="https://github.com/dubalol" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-dubalol
+                  dubalol
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -215,7 +215,7 @@ dubalol
                 <a href="https://github.com/andywongdev" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-andywongdev
+                  andywongdev
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -240,7 +240,7 @@ andywongdev
                 <a href="https://github.com/mylee1995" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-mylee1995
+                  mylee1995
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -259,7 +259,7 @@ mylee1995
                 <a href="https://github.com/crperezt" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-crperezt
+                  crperezt
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -284,7 +284,7 @@ crperezt
                 <a href="https://github.com/chriswillsflannery" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-chriswillsflannery
+                  chriswillsflannery
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -309,7 +309,7 @@ chriswillsflannery
                 <a href="https://github.com/davidchai717" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-davidchai717
+                  davidchai717
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -328,7 +328,7 @@ davidchai717
                 <a href="https://github.com/edwinjmenendez" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-edwinjmenendez
+                  edwinjmenendez
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -350,7 +350,7 @@ edwinjmenendez
                 <a href="https://github.com/Ergi516" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-ergi516
+                  ergi516
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -369,7 +369,8 @@ ergi516
                 <a href="https://github.com/aquinojardim" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-aquinojardim
+                  {' '}
+                  aquinojardim
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -381,14 +382,14 @@ aquinojardim
                 {bios.Greg ? (
                   <div className="content">
                     <p>
-                      Greg is an fullstack developer based in Los Angeles.
+                      Greg is a software engineer based in Chicago, with a background in music production and music technology. He’s passionate about the arts and about finding innovative applications for technology. He received his BS in Computer Engineering from the University of Michigan.
                     </p>
                   </div>
                 ) : null}
                 <a href="https://github.com/gpanciera" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-gpanciera
+                  gpanciera
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -419,7 +420,7 @@ gpanciera
                 <a href="https://github.com/Joshua-Howard" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-joshua-howard
+                  joshua-howard
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -444,7 +445,7 @@ joshua-howard
                 <a href="https://github.com/joshua0308" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-joshua0308
+                  joshua0308
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -452,18 +453,18 @@ joshua0308
                 onClick={e => handleClick('Nat', e)}
               >
                 {getImage('nat')}
-                <h4>Nathanael Wa Mwenze</h4>
+                <h4>Nate Wa Mwenze</h4>
                 {bios.Nat ? (
                   <div className="content">
                     <p>
-                      Nathanael is an fullstack developer based in Los Angeles.
+                      Nate is a full stack developer specializing in React and Node. He loves to create interactive and immersive products. He also loves to incorporate web audio in client side applications. He's hosted a tech-talk with Singlesprout Outside of software development he loves drawing, practicing yoga, playing retro 8 bit video games, and traveling to new cities.
                     </p>
                   </div>
                 ) : null}
                 <a href="https://github.com/nmwenz90" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-nmwenz90
+                  nmwenz90
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -488,7 +489,7 @@ nmwenz90
                 <a href="https://github.com/prasmalla" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-prasmalla
+                  prasmalla
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -513,7 +514,7 @@ prasmalla
                 <a href="https://github.com/rajeebthegreat" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-rajeebthegreat
+                  rajeebthegreat
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -536,7 +537,7 @@ rajeebthegreat
                 <a href="https://github.com/rkwn" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-rkwn
+                  rkwn
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -561,7 +562,7 @@ rkwn
                 <a href="https://github.com/rocky9413" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-rocky9413
+                  rocky9413
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -573,18 +574,18 @@ rocky9413
                 {bios.Ruth ? (
                   <div className="content">
                     <p>
-                    Ruth is a creative developer who loves simplicity in design and scalable,
-                    maintainable applications. She’s passionate about intertwining functional
-                    programming with JavaScript and modularized backend architecture. In her spare
-                    time, she can be found at Boston Celtics games and painting. She’s given talks
-                    about Kubernetes and Golang.
+                      Ruth is a creative developer who loves simplicity in design and scalable,
+                      maintainable applications. She’s passionate about intertwining functional
+                      programming with JavaScript and modularized backend architecture. In her spare
+                      time, she can be found at Boston Celtics games and painting. She’s given talks
+                      about Kubernetes and Golang.
                     </p>
                   </div>
                 ) : null}
                 <a href="https://github.com/peachiecodes" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-peachiecodes
+                  peachiecodes
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -609,7 +610,7 @@ peachiecodes
                 <a href="https://github.com/rydang" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-rydang
+                  rydang
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -634,7 +635,7 @@ rydang
                 <a href="https://github.com/starkspark" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-starkspark
+                  starkspark
                 </a>
               </StyledGridElement>
               <StyledGridElement
@@ -659,7 +660,7 @@ starkspark
                 <a href="https://github.com/yujinkay" title="Github">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
-yujinkay
+                  yujinkay
                 </a>
               </StyledGridElement>
             </Grid>
