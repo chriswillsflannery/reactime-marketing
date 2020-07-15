@@ -130,14 +130,6 @@ has never
       <h2 style={{ color: styles.reactGreen }}>
         <strong>Simple Installation</strong>
       </h2>
-      <h6>
-        {/* <a
-          style={{ textDecoration: 'none', color: styles.redCode }}
-          href="https://www.youtube.com/watch?v=lmG1X7Kf6zo&t="
-        >
-          Youtube Tutorial
-        </a> */}
-      </h6>
     </Installation>
     <Team>
       <h2 style={{ color: styles.reactGreen }}>
