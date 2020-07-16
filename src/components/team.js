@@ -20,7 +20,6 @@ import './layout.css';
 
 const styles = {
   reactGreen: 'white', // h4
-  // lighterGreen: `#002e2b`,
   lightestGreen: '#62D6FB', // hover, link color
   biosBColor: '#353C44', // `#E4C2B3`, // team bios bg-color #e6e6e6
   redCode: '#62D6FB', // hover, link color
@@ -89,10 +88,7 @@ const StyledGridElement = styled.div`
   a {
     text-decoration: none;
   }
-  /* h4:hover {
-    cursor: pointer;
-    color: ${styles.lightestGreen};
-  } */
+
   a:hover {
     color: ${styles.redCode};
   }

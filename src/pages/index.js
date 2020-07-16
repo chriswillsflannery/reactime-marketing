@@ -125,6 +125,14 @@ Track, Revert, Visualize
 has never
         been simpler.
       </h4>
+      <h4
+          style={{
+          fontWeight: '400',
+          fontSize: '13px',
+          color: styles.lightestGreen,
+          textAlign: 'center',
+        }}
+      >Support for: Classes, React Hooks, Context API, Redux,Material UI, React-Router and TypeScript</h4>
     </Features>
     <Installation>
       <h2 style={{ color: styles.reactGreen }}>

@@ -83,11 +83,11 @@ extension from Chrome's Web Store.
                 </p>
                 <p>
                   <span style={{ color: styles.blueCode }}>
-***
+                    ***
                     {' '}
-New perfomance features are not avalible on Redux applications
+                    New performance features only available for apps running in development mode
                     {' '}
-***
+                    ***
                   </span>
                 </p>
               </code>

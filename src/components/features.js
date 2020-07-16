@@ -54,7 +54,7 @@ const StyledGridElement = styled.div`
   justify-content: center;
   background: ${styles.iconBColor};
   width: 295px;
-  height: 150px;
+  height: 120px;
   margin: 10px;
   font-family: "Raleway", sans-serif;
   border-radius: 5px;
@@ -72,7 +72,7 @@ const StyledGridElement = styled.div`
     margin-bottom: 1px;
   }
   h6 {
-    color: black;
+    color: ${styles.lightestGreen};
     text-align: center;
     margin-bottom: 1px;
   }
@@ -88,97 +88,62 @@ const Layout = ({ children }) => (
             <StyledGridElement className="feaStyle">
               <h4>Time Travel Tree Display</h4>
               <p>See your application state values on each change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** Full Support ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Time Travel State History Graphic</h4>
               <p>See your application state history and branch from old state.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** Full Support ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Time Travel Live Render</h4>
               <p>See your application DOM follow each state change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API,</h6>
-                <h6>Redux, Material UI and TypeScript</h6>
-                <h6>*** No support React-Router ***</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** No support React-Router ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Performance Render Time Display</h4>
               <p>Keep track of your application render time on state change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API,</h6>
-                <h6>Material UI and TypeScript</h6>
-                <h6>*** No support for Redux ***</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** No support for Redux ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Components Performance Graphic</h4>
               <p>Vizualise your application and render time of components on state change.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API,</h6>
-                <h6>Material UI and TypeScript</h6>
-                <h6>*** No support for Redux ***</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** No support for Redux ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Diff Mode</h4>
               <p>Compare state changes.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** Full Support ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Import and Export</h4>
               <p>Save your state history for future tests.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** Full Support ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
               <h4>Persist mode</h4>
               <p>Keep your state changes on app reload.</p>
-              <StyledGridElement className="feaStyle">
-                <h6>Support for:</h6>
-                <h6>Classes, React Hooks, Context API, Redux,</h6>
-                <h6>Material UI, React-Router and TypeScript</h6>
-              </StyledGridElement>
+              <br />
+              <h6>*** Full Support ***</h6>
             </StyledGridElement>
             <StyledGridElement className="feaStyle">
-              <h4>TRY REACTIME WITH OUR DEMOS</h4>
+              <h4>TRY REACTIME</h4>
+              <h6>Clone this repo and demo yourself</h6>
+              <br />
               <p>
                 <a
                   style={{ textDecoration: 'none', color: '#99A93A' }}
-                  href="https://joshua0308.github.io/calculator/"
+                  href="https://github.com/aquinojardim/calculator.git"
                 >
                   Calculator
                 </a>
-                {' '}
-                &amp;
-                {' '}
-                <a
-                  style={{ textDecoration: 'none', color: '#99A93A' }}
-                  href="http://reactime-demo2.us-east-1.elasticbeanstalk.com/"
-                >
-                  Bitcoin Price
-                </a>
-                .
               </p>
             </StyledGridElement>
           </Grid>
