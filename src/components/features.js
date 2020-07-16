@@ -217,7 +217,7 @@ const Layout = ({ children }) => (
           >
             <a
               style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://tinyurl.com/reactimeMedium"
+              href="https://dev.to/edwinjmenendez/reactime-4-0-state-debugging-time-travel-tool-kof"
             >
               Reactime 4.0 State Debugging Time Travel Tool
             </a>
