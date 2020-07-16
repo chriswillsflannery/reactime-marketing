@@ -190,13 +190,21 @@ const Layout = ({ children }) => (
               textAlign: 'center',
             }}
           >
-            Read more about what's new in Reactime
-            {' '}
+            Read more about Reactime
+          </h4>
+          <h4
+            style={{
+              fontWeight: '400',
+              fontSize: '13px',
+              color: styles.lightestGreen,
+              textAlign: 'center',
+            }}
+          >
             <a
               style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://tinyurl.com/reactimeMedium"
+              href="https://medium.com/@aquinojardim/react-fiber-reactime-4-0-f200f02e7fa8"
             >
-              here
+              React Fiber & Reactime 4.0
             </a>
           </h4>
           <h4
@@ -207,14 +215,26 @@ const Layout = ({ children }) => (
               textAlign: 'center',
             }}
           >
-            See the latest Reactime release notes
-            {' '}
-            {' '}
             <a
               style={{ textDecoration: 'none', color: '#62D6FB' }}
-              href="https://github.com/open-source-labs/reactime/releases/tag/3.1.1"
+              href="https://tinyurl.com/reactimeMedium"
             >
-              here
+              Reactime 4.0 State Debugging Time Travel Tool
+            </a>
+          </h4>
+          <h4
+            style={{
+              fontWeight: '400',
+              fontSize: '13px',
+              color: styles.lightestGreen,
+              textAlign: 'center',
+            }}
+          >
+            <a
+              style={{ textDecoration: 'none', color: '#62D6FB' }}
+              href="https://tinyurl.com/reactimeMedium"
+            >
+              Time Traveling State Debugger — Reactime 3.0
             </a>
           </h4>
         </StyledMain>
