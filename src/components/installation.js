@@ -83,13 +83,24 @@ extension from Chrome's Web Store.
                 </p>
                 <p>
                   <span style={{ color: styles.blueCode }}>
-***
+                    ***
                     {' '}
-New perfomance features are not avalible on Redux applications
+                    New performance features only available for apps running in development mode
                     {' '}
-***
+                    ***
                   </span>
                 </p>
+              </code>
+            </StyledPre>
+            <StyledPre>
+              <code>
+                <h6>
+                  <a
+                  style={{ textDecoration: 'none', color: styles.redCode }}
+                  href="https://youtu.be/q7qP2a9KEnk"
+                  > Youtube Tutorial </a>
+                </h6>
+                <iframe title="tutorial" width="560" height="315" src="https://www.youtube.com/embed/q7qP2a9KEnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </code>
             </StyledPre>
             <code>
