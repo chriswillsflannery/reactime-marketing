@@ -8,7 +8,6 @@ import demogifold from '../images/demo.gif';
 const styles = {
   reactGreen: '#487783',
   redCode: '#99A93A',
-  iconBColor: '#1E1E1E',
 };
 
 const OlderVersion = () => {
@@ -24,16 +23,7 @@ const OlderVersion = () => {
     <>
       {clicked ? (
         <>
-          <button 
-            style={{
-            color: 'white',
-            background: `${styles.iconBColor}`,
-            textAlign: 'center',
-            borderRadius: '3px',
-            border: '1px solid rgba(184, 196, 194, 0.25)',
-            }}
-            onClick={() => handleClick()}
-          >
+          <button onClick={() => handleClick()}>
           Hide older version documenation
           </button>
           <InstallationOlder>
@@ -59,16 +49,7 @@ const OlderVersion = () => {
           </VisualStateOlder>
         </>
       ) : (
-        <button 
-          style={{
-            color: 'white',
-            background: `${styles.iconBColor}`,
-            textAlign: 'center',
-            borderRadius: '3px',
-            border: '1px solid rgba(184, 196, 194, 0.25)',
-          }}
-          onClick={() => handleClick()}
-        > Show older version documenation </button>
+        <button onClick={() => handleClick()}> Show older version documenation </button>
       )}
     </>
   );

@@ -11,19 +11,24 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
-  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
+  @media only screen and (max-height: 570px) {
+    margin-top: 200px;
+  }
 `;
 
 const StyledDiv = styled.div`
+  display: flex;
   margin: 0 auto;
   max-width: 1024px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  height: 80vh;
+  align-items: center;
 `;
 
 const StyledMain = styled.main`
   display: flex;
-  flex-direction: column;
+  @media only screen and (max-width: 720px) {
+    flex-direction: column;
+  }
   align-items: center;
 `;
 
@@ -31,7 +36,15 @@ const Layout = ({ children }) => (
   <>
     <StyledWrapper>
       <StyledDiv>
-        <StyledMain>{children}</StyledMain>
+        <StyledMain
+          data-sal="fade"
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="600"
+          data-sal-easing="ease-out"
+        >
+          {children}
+        </StyledMain>
       </StyledDiv>
     </StyledWrapper>
   </>
