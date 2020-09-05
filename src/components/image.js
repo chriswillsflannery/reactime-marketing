@@ -15,7 +15,11 @@ import styled from "styled-components"
  */
 
 const StyledImage = styled(Img)`
-  min-width: 200px;
+  min-width: 300px;
+  max-width: 600px;
+  @media only screen and (min-width: 700px) {
+    margin-right: 50px;
+  }
 `
 
 const Image = () => {
@@ -23,7 +27,7 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "reactime-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }

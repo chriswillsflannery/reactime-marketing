@@ -20,13 +20,13 @@ import './layout.css';
 
 const styles = {
   reactGreen: 'white', // h4
+  // lighterGreen: `#002e2b`,
   lightestGreen: '#62D6FB', // hover, link color
-  biosBColor: '#353C44', // `#E4C2B3`, // team bios bg-color #e6e6e6
+  biosBColor: '#242529', // `#E4C2B3`, // team bios bg-color #e6e6e6
   redCode: '#62D6FB', // hover, link color
 };
 
 const StyledWrapper = styled.div`
-  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%)
 `;
 
 const StyledDiv = styled.div`
@@ -46,6 +46,8 @@ const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+ 
+}
 `;
 
 const StyledGridElement = styled.div`
@@ -61,10 +63,13 @@ const StyledGridElement = styled.div`
   border-radius: 5px;
   position: relative;
   border: 1px solid rgba(184, 196, 194, 0.25);
-  box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  @media only screen and (max-width: 480px) {
+    width: 40%;
+  }
   h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 4px;
     font-weight: 600;
     text-align: center;
     color: ${styles.reactGreen};
@@ -79,16 +84,20 @@ const StyledGridElement = styled.div`
   }
   a[title="Github"] {
     position: relative;
+    font-family: "Raleway", sans-serif;
     bottom: 8px;
     padding-top: 10px;
-    color: white;
+    color: lightgray;
     text-decoration: none;
     font-weight: 300;
   }
   a {
     text-decoration: none;
   }
-
+  /* h4:hover {
+    cursor: pointer;
+    color: ${styles.lightestGreen};
+  } */
   a:hover {
     color: ${styles.redCode};
   }
@@ -141,8 +150,12 @@ const Layout = ({ children }) => {
     Edwin: false,
     Ergi: false,
     Gabriela: false,
+    Haejin: false,
+    Hien: false,
+    Jack: false,
     JoshuaH: false,
     Josh: false,
+    Kevin: false,
     Nat: false,
     Pras: false,
     Rajeeb: false,
@@ -248,7 +261,7 @@ const Layout = ({ children }) => {
                 {bios.Carlos ? (
                   <div className="content">
                     <p>
-                    Carlos is a full-stack developer with a passion for optimized code and test-driven development. He is experienced in React, Node.js, SQL and NoSQL, and recently gave a sponsored talk on caching techniques in web development. In his free time, he enjoys playing with his dog (Penny), mindfulness meditation, gaming, and outdoors activities.
+                      Carlos is a full-stack developer with a passion for optimized code and test-driven development. He is experienced in React, Node.js, SQL and NoSQL, and recently gave a sponsored talk on caching techniques in web development. In his free time, he enjoys playing with his dog (Penny), mindfulness meditation, gaming, and outdoors activities.
                     </p>
                   </div>
                 ) : null}
@@ -317,7 +330,7 @@ const Layout = ({ children }) => {
                 {bios.Edwin ? (
                   <div className="content">
                     <p>
-                    Edwin is a driven software engineer from Los Angeles, CA who is passionate about solving real life problems and making a difference in the engineering field. He is passionate about contributing to open source software, continuing to improve software, and has a passion for solving algorithms,. Edwin is experienced in Node.js, Express, React, JavaScript, and Python. Aside from coding, some of Edwin's interests include playing basketball, watching the NBA (Lakers Fan) loves to make people laugh, loves talking about math and physics, and traveling around the world trying to find the best burger place!
+                      Edwin is a driven software engineer from Los Angeles, CA who is passionate about solving real life problems and making a difference in the engineering field. He is passionate about contributing to open source software, continuing to improve software, and has a passion for solving algorithms,. Edwin is experienced in Node.js, Express, React, JavaScript, and Python. Aside from coding, some of Edwin's interests include playing basketball, watching the NBA (Lakers Fan) loves to make people laugh, loves talking about math and physics, and traveling around the world trying to find the best burger place!
                     </p>
                   </div>
                 ) : null}
@@ -358,7 +371,7 @@ const Layout = ({ children }) => {
                 {bios.Gabriela ? (
                   <div className="content">
                     <p>
-                    Gabriela is a multicultural fullstack developer with a passion for React and build tools to help others. She has an ability to learn complex topics, on a fast and simply away. She has an unstoppable creator that loves to paint, sculpt and write. Gabi recently gave talks about React Router and author a blog about her coding journey and new developers technologies.
+                      Gabriela is a multicultural fullstack developer with a passion for React and build tools to help others. She has an ability to learn complex topics, on a fast and simply away. She has an unstoppable creator that loves to paint, sculpt and write. Gabi recently gave talks about React Router and author a blog about her coding journey and new developers technologies.
                     </p>
                   </div>
                 ) : null}
@@ -388,6 +401,68 @@ const Layout = ({ children }) => {
                   gpanciera
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Haejin', e)}
+              >
+                {getImage('haejin')}
+                <h4>Haejin Jo</h4>
+                {bios.Haejin ? (
+                  <div className="content">
+                    <p>
+                      Haejin is a lover of impactful online experiences and the humans that use them. With a background in enterprise-level C++ performance testing, her entry into the sometimes-arbitrary but always-exciting world of web has inspired newfound passions in client-side performance and state management at all layers of the stack. Whether it's testing out new programming paradigms or questioning abstractions, she'll meet you at whatever level you're on.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  haejinjo
+                </a>
+              </StyledGridElement>
+
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Hien', e)}
+              >
+                {getImage('hien')}
+                <h4>Hien Nguyen</h4>
+                {bios.Hien ? (
+                  <div className="content">
+                    <p>
+                      Hien is an experienced software engineer with incredible passion for solving difficult technical problems. He prioritizes user experience when building scalable full stack applications with React, Redux, Context API, and Node. Recently, he gave two amazing talks on React Hooks and and a well-known programming paradigm, Lazy Evaluation in JavaScript. He loves cooking, reading books, and driving across the country listening to Viet Pop music.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  hienqn
+                </a>
+              </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Jack', e)}
+              >
+                {getImage('jack')}
+                <h4>Jack Crish</h4>
+                {bios.Jack ? (
+                  <div className="content">
+                    <p>
+                      Jack is a Javascript developer experienced with React.js, Twilio and Chrome Extensions.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  jackc27
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('JoshuaH', e)}
@@ -444,6 +519,28 @@ const Layout = ({ children }) => {
                   joshua0308
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Kevin', e)}
+              >
+                {getImage('kevin')}
+                <h4>Kevin Fey</h4>
+                {bios.Kevin ? (
+                  <div className="content">
+                    <p>
+                      Kevin is an experienced full stack engineer specializing in front end development and React. Kevin uses his passion for dynamic user experience and side effect free State Management to craft beautiful intuitive web applications.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/dubalol" title="Github">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  kevinfey
+                </a>
+              </StyledGridElement>
+
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Nat', e)}

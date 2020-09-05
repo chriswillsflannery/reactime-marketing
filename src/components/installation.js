@@ -26,7 +26,7 @@ const styles = {
 };
 
 const StyledWrapper = styled.div`
-  background: radial-gradient(circle, rgba(53,60,68,1) 0%, rgba(0,0,0,1) 100%);
+  
 `;
 
 const StyledDiv = styled.div`
@@ -82,25 +82,8 @@ extension from Chrome's Web Store.
                   <span style={{ color: styles.redCode }}>No NPM package needed!!!</span>
                 </p>
                 <p>
-                  <span style={{ color: styles.blueCode }}>
-                    ***
-                    {' '}
-                    New performance features only available for apps running in development mode
-                    {' '}
-                    ***
-                  </span>
+                  
                 </p>
-              </code>
-            </StyledPre>
-            <StyledPre>
-              <code>
-                <h6>
-                  <a
-                  style={{ textDecoration: 'none', color: styles.redCode }}
-                  href="https://youtu.be/q7qP2a9KEnk"
-                  > Youtube Tutorial </a>
-                </h6>
-                <iframe title="tutorial" width="560" height="315" src="https://www.youtube.com/embed/q7qP2a9KEnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </code>
             </StyledPre>
             <code>

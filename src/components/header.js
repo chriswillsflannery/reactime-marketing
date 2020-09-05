@@ -12,8 +12,23 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 config.autoAddCss = false
 
+const handleScroll = () => {
+  if (
+    window.innerWidth < 600 &&
+    (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+  ) {
+    document.getElementById("header").style.padding = "50px"
+  } else if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 50
+  ) {
+    document.getElementById("header").style.padding = "30px"
+  } else {
+    document.getElementById("header").style.padding = "50px"
+  }
+}
+
 const styles = {
-  // headerBColor: //`#487783`,
   headFontColor: `white`, // #BDD4DB
 }
 
@@ -26,10 +41,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(298deg, rgba(46,52,58,1) 0%, rgba(0,0,0,1) 100%);
-
-
-
+  background: linear-gradient(#1c1d1f 75%, #FFFFFF00);
   transition: 0.2s;
   @media (max-width: 600px) {
     justify-content: center;
@@ -82,37 +94,12 @@ const H1 = styled.h1`
   font-weight: 400;
 `
 
-// class Header extends React.Component {
 const Header = props => {
-  const handleScroll = () => {
-    if (
-      window.innerWidth < 600 &&
-      (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
-    ) {
-      document.getElementById("header").style.padding = "50px"
-    } else if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      document.getElementById("header").style.padding = "30px"
-    } else {
-      document.getElementById("header").style.padding = "50px"
-    }
-  }
-
   useEffect(() => {
-    window.addEventListener("scroll", () => handleScroll())
-    return window.removeEventListener("scroll", () => handleScroll())
-  }, [])
+    window.addEventListener("scroll", () => handleScroll());
+    return window.removeEventListener("scroll", () => handleScroll());
+  }, []);
 
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.handleScroll)
-  // }
-  // componetWillUnmount() {
-  //   window.removeEventListener("scroll", this.handleScroll)
-  // }
-
-  // render() {
   return (
     <HeaderContainer id="header">
       <HeaderTitle>
@@ -122,6 +109,7 @@ const Header = props => {
             style={{
               color: styles.headFontColor,
               textDecoration: `none`,
+              fontWeight: 'bold',
             }}
           >
             {props.siteTitle}
