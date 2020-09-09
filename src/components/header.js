@@ -38,13 +38,32 @@ const HeaderContainer = styled.header`
   height: 30px;
   padding: 50px;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  background: linear-gradient(#1c1d1f 75%, #FFFFFF00);
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgb(28,29,31)), to(rgb(28,29,31, 0)));
+  background: -o-linear-gradient(rgb(28,29,31) 75%, rgb(28,29,31, 0));
+  background: linear-gradient(rgb(28,29,31) 75%, rgb(28,29,31, 0));
+
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
+
   @media (max-width: 600px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 `
@@ -120,22 +139,20 @@ const Header = props => {
         <ul>
           <li style={{ marginBottom: `2px` }}>
             <a
-              href="https://www.npmjs.com/package/reactime"
-              title="ReacTime NPM Package"
-            >
-              npm
-            </a>
-          </li>
-          <li>
-            <a
               href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
               title="ReacTime Chrome"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faChrome} />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/reactime" title="ReacTime Twitter">
+            <a href="https://twitter.com/reactime"
+              title="ReacTime Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
@@ -143,6 +160,8 @@ const Header = props => {
             <a
               href="https://linkedin.com/company/reactime"
               title="ReacTime LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
@@ -154,6 +173,8 @@ const Header = props => {
               data-size="medium"
               data-show-count="true"
               aria-label="Star open-source-labs/reactime on GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Star
             </GitHubButton>
