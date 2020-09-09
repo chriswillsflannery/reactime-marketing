@@ -38,9 +38,8 @@ const Layout = ({ children }) => (
       <StyledDiv>
         <StyledMain
           data-sal="fade"
-          data-sal="slide-up"
           data-sal-delay="100"
-          data-sal-duration="600"
+          data-sal-duration="700"
           data-sal-easing="ease-out"
         >
           {children}
