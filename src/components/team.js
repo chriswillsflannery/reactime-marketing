@@ -93,6 +93,7 @@ const StyledGridElement = styled.div`
   }
   a {
     text-decoration: none;
+    font-size: 0.8em;
   }
   /* h4:hover {
     cursor: pointer;
@@ -196,7 +197,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/dubalol" title="Github">
+                <a href="https://github.com/dubalol" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   dubalol
@@ -221,7 +222,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/andywongdev" title="Github">
+                <a href="https://github.com/andywongdev" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   andywongdev
@@ -246,7 +247,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/mylee1995" title="Github">
+                <a href="https://github.com/mylee1995" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   mylee1995
@@ -265,7 +266,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/crperezt" title="Github">
+                <a href="https://github.com/crperezt" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   crperezt
@@ -290,7 +291,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/chriswillsflannery" title="Github">
+                <a href="https://github.com/chriswillsflannery" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   chriswillsflannery
@@ -315,7 +316,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/davidchai717" title="Github">
+                <a href="https://github.com/davidchai717" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   davidchai717
@@ -334,7 +335,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/edwinjmenendez" title="Github">
+                <a href="https://github.com/edwinjmenendez" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   edwinjmenendez
@@ -356,7 +357,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/Ergi516" title="Github">
+                <a href="https://github.com/Ergi516" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   ergi516
@@ -375,7 +376,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/aquinojardim" title="Github">
+                <a href="https://github.com/aquinojardim" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   {' '}
@@ -395,7 +396,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/gpanciera" title="Github">
+                <a href="https://github.com/gpanciera" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   gpanciera
@@ -415,7 +416,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/dubalol" title="Github">
+                <a href="https://github.com/dubalol" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   haejinjo
@@ -436,7 +437,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/dubalol" title="Github">
+                <a href="https://github.com/dubalol" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   hienqn
@@ -456,7 +457,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/dubalol" title="Github">
+                <a href="https://github.com/dubalol" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   jackc27
@@ -488,7 +489,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/Joshua-Howard" title="Github">
+                <a href="https://github.com/Joshua-Howard" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   joshua-howard
@@ -513,7 +514,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/joshua0308" title="Github">
+                <a href="https://github.com/joshua0308" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   joshua0308
@@ -533,7 +534,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/dubalol" title="Github">
+                <a href="https://github.com/dubalol" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   kevinfey
@@ -554,7 +555,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/nmwenz90" title="Github">
+                <a href="https://github.com/nmwenz90" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   nmwenz90
@@ -579,7 +580,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/prasmalla" title="Github">
+                <a href="https://github.com/prasmalla" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   prasmalla
@@ -604,7 +605,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/rajeebthegreat" title="Github">
+                <a href="https://github.com/rajeebthegreat" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   rajeebthegreat
@@ -627,7 +628,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/rkwn" title="Github">
+                <a href="https://github.com/rkwn" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   rkwn
@@ -652,7 +653,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/rocky9413" title="Github">
+                <a href="https://github.com/rocky9413" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   rocky9413
@@ -675,7 +676,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/peachiecodes" title="Github">
+                <a href="https://github.com/peachiecodes" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   peachiecodes
@@ -700,7 +701,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/rydang" title="Github">
+                <a href="https://github.com/rydang" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   rydang
@@ -725,7 +726,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/starkspark" title="Github">
+                <a href="https://github.com/starkspark" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   starkspark
@@ -750,7 +751,7 @@ const Layout = ({ children }) => {
                     </p>
                   </div>
                 ) : null}
-                <a href="https://github.com/yujinkay" title="Github">
+                <a href="https://github.com/yujinkay" title="Github" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   yujinkay
