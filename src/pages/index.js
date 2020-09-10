@@ -47,35 +47,40 @@ const SplashDescription = styled.div`
   font-size: 1.5em;
 `;
 
+const DemoGifDescription = styled.h2`
+  text-align: center;
+  padding: 40px;
+
+  @media only screen and (max-width: 700px) {
+    padding: 0;
+  }
+`;
+
 const DemoGif = styled.img`
   @media only screen and (max-width: 700px) {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0px;
+    max-width: 90%;
   }
   @media only screen and (min-width: 700px) {
     minWidth: 40vw;
     maxWidth: 800px;
+    box-shadow: 5px 10px 15px black;
   }
-  box-shadow: 5px 10px 15px black;
-  margin: 30px;
+  margin: 30px 0px 30px 0px;
 `;
+
+const FeaturesTitle = styled.h2`
+  font-weight: 700;
+`
 
 const IndexPage = () => (
   <>
     <Splash>
       <SEO title="Home" />
-      <h1
+      <div
         style={{
-          fontFamily: 'Raleway',
-          fontSize: '1.5rem',
-          fontWeight: '500',
-          letterSpacing: '2px',
-          color: styles.reactGreen,
           margin: '80px 0 60px 0',
-          textAlign: 'center'
         }}
-      ></h1>
+      ></div>
       <SplashContainer>
         <Image />
         <SplashDescription>
@@ -106,6 +111,7 @@ const IndexPage = () => (
               }}
               href="https://osawards.com/react/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               React Open Source Awards 2020
               </a>
@@ -129,6 +135,7 @@ const IndexPage = () => (
             }}
             href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <strong>Download Now</strong>
           </a>
@@ -137,16 +144,16 @@ const IndexPage = () => (
     </Splash>
     <div id='demo'>
       <VisualState>
-        <h2 style={{ textAlign: 'center', padding: '40px' }}>
+        <DemoGifDescription>
           Track, Revert, <br />and Visualize your State
-      </h2>
-        <DemoGif src={demogif} alt="ReacTime Demo" />
+      </DemoGifDescription>
+        <DemoGif style={{ textAlign: 'center' }} src={demogif} alt="ReacTime Demo" />
       </VisualState>
     </div>
     <Features>
-      <h2>
-        <strong>Features</strong>
-      </h2>
+      <FeaturesTitle>
+        Features
+      </FeaturesTitle>
     </Features>
 
     <Team>
@@ -167,6 +174,7 @@ const IndexPage = () => (
             style={{ textDecoration: 'none', color: styles.redCode }}
             href="https://github.com/open-source-labs/reactime"
             target="_blank"
+            rel="noopener noreferrer"
           >
             contributing?
             </a>

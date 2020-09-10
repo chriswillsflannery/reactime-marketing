@@ -158,6 +158,8 @@ const Layout = ({ children }) => (
                   <a
                     style={{ textDecoration: 'none', color: '#99A93A' }}
                     href="https://joshua0308.github.io/calculator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Calculator
                 </a>{' '}
@@ -165,6 +167,8 @@ const Layout = ({ children }) => (
                   <a
                     style={{ textDecoration: 'none', color: '#99A93A' }}
                     href="http://reactime-demo2.us-east-1.elasticbeanstalk.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Bitcoin Price
                 </a>

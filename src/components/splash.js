@@ -24,6 +24,10 @@ const StyledDiv = styled.div`
   @media only screen and (max-width: 700px) {
     height: 90vh;
   }
+  /* IPAD PORTRAIT MODE */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+    height: 70vh;
+  }
   display: flex;
   align-items: center;
   padding: 0px 1.0875rem 1.45rem;
