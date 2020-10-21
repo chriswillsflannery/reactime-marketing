@@ -148,6 +148,7 @@ const Layout = ({ children }) => {
     Bryan: false,
     Carlos: false,
     Chris: false,
+    ChrisG: false, 
     David: false,
     Edwin: false,
     Ergi: false,
@@ -324,6 +325,31 @@ const Layout = ({ children }) => {
                   chriswillsflannery
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('ChrisG', e)}
+              >
+                {getImage('chrisG')}
+                <h4>Chris Guizzetti</h4>
+                {bios.ChrisG ? (
+                  <div className="content">
+                    <p>
+                    Christopher is an empathetic and passionate Software Engineer, experienced in developing 
+                    full-stack JavaScript applications and modularized React/Redux front ends. He prides himself 
+                    in his eagerness to learn and loves to dive deep on complex topics. In his free time he is 
+                    an avid traveler who enjoys the opportunity to experience new cultures and meet new people, 
+                    and enjoys being out in nature. 
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/guizzettic" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  guizzettic
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('David', e)}
