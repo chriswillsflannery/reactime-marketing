@@ -143,6 +143,7 @@ const Layout = ({ children }) => {
 
   const [bios, setBios] = useState({
     Abaas: false,
+    AlexL: false,
     Andy: false,
     Bryan: false,
     Carlos: false,
@@ -205,7 +206,29 @@ const Layout = ({ children }) => {
                 </a>
               </StyledGridElement>
               
-        
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('AlexL', e)}
+              >
+                {getImage('alexL')}
+                <h4>Alex Landeros</h4>
+                {bios.AlexL ? (
+                  <div className="content">
+                    <p>
+                    Alexander is a thoughtful software engineer who enjoys breaking down complex ideas and bringing them to life through 
+                    code with a passion for React, Express, and SQL. He loves contributing to open-source projects and maintains a 
+                    strong growth mindset to improve himself both as a human and an engineer. Alexander recently gave a talk on the 
+                    benefits of using AWS in the wild. In his free time he enjoys shredding the gnar snowboarding at Mammoth Mountain, 
+                    Wim Hoff breathing, spicy salsa and searching for the perfect street tacos.  
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/AlexanderLanderos" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  AlexanderLanderos
+                </a>
+              </StyledGridElement>
 
               <StyledGridElement
                 className="teamStyle"
