@@ -8,7 +8,7 @@ import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import styled from 'styled-components';
-import demogif from '../images/MyMovie.gif';
+import demogif from '../images/react-calculator-demo.gif';
 import Footer from '../components/footer';
 
 const styles = {
