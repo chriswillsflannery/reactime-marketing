@@ -154,6 +154,7 @@ const Layout = ({ children }) => {
     Haejin: false,
     Hien: false,
     Jack: false,
+    Jason: false,
     JoshuaH: false,
     Josh: false,
     Kevin: false,
@@ -203,6 +204,9 @@ const Layout = ({ children }) => {
                   dubalol
                 </a>
               </StyledGridElement>
+              
+        
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Andy', e)}
@@ -461,6 +465,30 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   jackc27
+                </a>
+              </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Jason', e)}
+              >
+                {getImage('jason')}
+                <h4>Jason Victor</h4>
+                {bios.Jason ? (
+                  <div className="content">
+                    <p>
+                    Jason is a curiosly driven software engineer with a passion to solve today's problems with technology. 
+                    Specializing in front-end development he has a careful eye for the user experience and an application's 
+                    performance using React and various state managements such Redux, Recoil, hooks, or context API. 
+                    In his free time, he channels his inner Anthony Bourdain by traveling the world, 
+                    eating the obscure, and experiencing the unknown.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Theqwertypusher" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  Theqwertypusher
                 </a>
               </StyledGridElement>
 
