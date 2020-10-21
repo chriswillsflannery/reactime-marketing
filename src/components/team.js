@@ -167,7 +167,9 @@ const Layout = ({ children }) => {
     Rocky: false,
     Ruth: false,
     Ryan: false,
+    Sanjay: false,
     Sierra: false,
+    Vincent: false, 
     Yujin: false,
   });
 
@@ -784,6 +786,28 @@ const Layout = ({ children }) => {
                   rydang
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Sanjay', e)}
+              >
+                {getImage('sanjay')}
+                <h4>Sanjay Lavingia</h4>
+                {bios.Sanjay ? (
+                  <div className="content">
+                    <p>
+                    Sanjay is full-stack software engineer with particular interest in React. He is an active member
+                     of the open-source community and loves seeing small projects blossom into popular technologies. 
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/sanjaylavingia" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  sanjaylavingia
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Sierra', e)}
@@ -809,6 +833,27 @@ const Layout = ({ children }) => {
                   starkspark
                 </a>
               </StyledGridElement>
+              
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Vincent', e)}
+              >
+                {getImage('vincent')}
+                <h4>Vincent Nguyen</h4>
+                {bios.Vincent ? (
+                  <div className="content">
+                    <p>
+                      
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/VNguyenCode" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  VNguyenCode
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Yujin', e)}
