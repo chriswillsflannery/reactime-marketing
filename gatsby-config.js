@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `REACTIME 5.0`,
+    title: `REACTIME`,
     description: `Time travel debugger for React.`,
     author: `@reactime`,
   },
@@ -13,8 +13,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-manifest`,
