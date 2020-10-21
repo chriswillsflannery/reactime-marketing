@@ -843,7 +843,9 @@ const Layout = ({ children }) => {
                 {bios.Vincent ? (
                   <div className="content">
                     <p>
-                      
+                    Vincent is a full-stack software engineer with a particular focus in React. Prior, he worked at 
+                    Sonder as a strategy and operations associate. He's extremely passionate about wanting to make 
+                    an impact in the world, and is eager to one day participate in YCombinator
                     </p>
                   </div>
                 ) : null}
