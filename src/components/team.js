@@ -143,7 +143,7 @@ const Layout = ({ children }) => {
 
   const [bios, setBios] = useState({
     Abaas: false,
-    AlexL: false,
+    AlexanderL: false,
     Andy: false,
     Bryan: false,
     Carlos: false,
@@ -214,8 +214,8 @@ const Layout = ({ children }) => {
                 onClick={e => handleClick('AlexL', e)}
               >
                 {getImage('alexL')}
-                <h4>Alex Landeros</h4>
-                {bios.AlexL ? (
+                <h4>Alexander Landeros</h4>
+                {bios.AlexanderL ? (
                   <div className="content">
                     <p>
                     Alexander is a thoughtful software engineer who enjoys breaking down complex ideas and bringing them to life through 
