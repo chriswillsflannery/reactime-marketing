@@ -103,24 +103,8 @@ const Layout = ({ children }) => (
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Components Map</h4>
-                <p>Visualize relationships between components in a collapsible tree for a given snapshot.</p>
-              </StyledGridElement>
-            </ZoomInGridElement>
-
-            <ZoomInGridElement className="feaStyle">
-              <StyledGridElement>
                 <h4>Time Travel Live Render</h4>
                 <p>Simulate any state change from history in the DOM with a click of a button.</p>
-              </StyledGridElement>
-            </ZoomInGridElement>
-
-            <ZoomInGridElement className="feaStyle">
-              <StyledGridElement>
-                <h4>Atom and Selector Data Flow</h4>
-                <p>
-                  Visualize the data flow from atoms to selectors to components.
-  </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -135,10 +119,27 @@ const Layout = ({ children }) => (
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Components Performance</h4>
+                <h4>Components Map Display</h4>
+                <p>Visualize relationships between components in a collapsible tree for a given snapshot.</p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Atom and Selector Relationships</h4>
                 <p>
-                  Visualize the relative latency introduced by rerendering each component on state change.
-</p>
+                  Visualize the mapping of Atoms and Selectors to components in Recoil Apps
+                </p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+          
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Components Performance Display</h4>
+                <p>
+                  Visualize the relative latency trends introduced by re-rendering each component on state change.
+                </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -153,26 +154,17 @@ const Layout = ({ children }) => (
             </ZoomInGridElement>
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Try Reactime With Our Demos</h4>
+                <h4>Try Reactime With a demo</h4>
                 <p>
                   <a
                     style={{ textDecoration: 'none', color: '#99A93A' }}
-                    href="https://joshua0308.github.io/calculator/"
+                    href="https://github.com/calebpollman/react-calculator"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Calculator
+                    React Calculator
                 </a>{' '}
-                &amp;{' '}
-                  <a
-                    style={{ textDecoration: 'none', color: '#99A93A' }}
-                    href="http://reactime-demo2.us-east-1.elasticbeanstalk.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Bitcoin Price
-                </a>
-                .
+              
               </p>
               </StyledGridElement>
             </ZoomInGridElement>

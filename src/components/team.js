@@ -143,10 +143,12 @@ const Layout = ({ children }) => {
 
   const [bios, setBios] = useState({
     Abaas: false,
+    AlexL: false,
     Andy: false,
     Bryan: false,
     Carlos: false,
     Chris: false,
+    ChrisG: false, 
     David: false,
     Edwin: false,
     Ergi: false,
@@ -154,6 +156,7 @@ const Layout = ({ children }) => {
     Haejin: false,
     Hien: false,
     Jack: false,
+    Jason: false,
     JoshuaH: false,
     Josh: false,
     Kevin: false,
@@ -164,7 +167,9 @@ const Layout = ({ children }) => {
     Rocky: false,
     Ruth: false,
     Ryan: false,
+    Sanjay: false,
     Sierra: false,
+    Vincent: false, 
     Yujin: false,
   });
 
@@ -203,6 +208,31 @@ const Layout = ({ children }) => {
                   dubalol
                 </a>
               </StyledGridElement>
+              
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('AlexL', e)}
+              >
+                {getImage('alexL')}
+                <h4>Alex Landeros</h4>
+                {bios.AlexL ? (
+                  <div className="content">
+                    <p>
+                    Alexander is a thoughtful software engineer who enjoys breaking down complex ideas and bringing them to life through 
+                    code with a passion for React, Express, and SQL. He loves contributing to open-source projects and maintains a 
+                    strong growth mindset to improve himself both as a human and an engineer. Alexander recently gave a talk on the 
+                    benefits of using AWS in the wild. In his free time he enjoys shredding the gnar snowboarding at Mammoth Mountain, 
+                    Wim Hoff breathing, spicy salsa and searching for the perfect street tacos.  
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/AlexanderLanderos" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  AlexanderLanderos
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Andy', e)}
@@ -297,6 +327,31 @@ const Layout = ({ children }) => {
                   chriswillsflannery
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('ChrisG', e)}
+              >
+                {getImage('chrisG')}
+                <h4>Chris Guizzetti</h4>
+                {bios.ChrisG ? (
+                  <div className="content">
+                    <p>
+                    Christopher is an empathetic and passionate Software Engineer, experienced in developing 
+                    full-stack JavaScript applications and modularized React/Redux front ends. He prides himself 
+                    in his eagerness to learn and loves to dive deep on complex topics. In his free time he is 
+                    an avid traveler who enjoys the opportunity to experience new cultures and meet new people, 
+                    and enjoys being out in nature. 
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/guizzettic" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  guizzettic
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('David', e)}
@@ -461,6 +516,30 @@ const Layout = ({ children }) => {
                   <FontAwesomeIcon icon={faGithub} />
                   {' '}
                   jackc27
+                </a>
+              </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Jason', e)}
+              >
+                {getImage('jason')}
+                <h4>Jason Victor</h4>
+                {bios.Jason ? (
+                  <div className="content">
+                    <p>
+                    Jason is a curiosly driven software engineer with a passion to solve today's problems with technology. 
+                    Specializing in front-end development he has a careful eye for the user experience and an application's 
+                    performance using React and various state managements such Redux, Recoil, hooks, or context API. 
+                    In his free time, he channels his inner Anthony Bourdain by traveling the world, 
+                    eating the obscure, and experiencing the unknown.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Theqwertypusher" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  Theqwertypusher
                 </a>
               </StyledGridElement>
 
@@ -707,6 +786,28 @@ const Layout = ({ children }) => {
                   rydang
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Sanjay', e)}
+              >
+                {getImage('sanjay')}
+                <h4>Sanjay Lavingia</h4>
+                {bios.Sanjay ? (
+                  <div className="content">
+                    <p>
+                    Sanjay is full-stack software engineer with particular interest in React. He is an active member
+                     of the open-source community and loves seeing small projects blossom into popular technologies. 
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/sanjaylavingia" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  sanjaylavingia
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Sierra', e)}
@@ -732,6 +833,29 @@ const Layout = ({ children }) => {
                   starkspark
                 </a>
               </StyledGridElement>
+              
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Vincent', e)}
+              >
+                {getImage('vincent')}
+                <h4>Vincent Nguyen</h4>
+                {bios.Vincent ? (
+                  <div className="content">
+                    <p>
+                    Vincent is a full-stack software engineer with a particular focus in React. Prior, he worked at 
+                    Sonder as a strategy and operations associate. He's extremely passionate about wanting to make 
+                    an impact in the world, and is eager to one day participate in YCombinator
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/VNguyenCode" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  VNguyenCode
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Yujin', e)}
