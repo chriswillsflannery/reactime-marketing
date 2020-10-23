@@ -211,7 +211,7 @@ const Layout = ({ children }) => {
               
               <StyledGridElement
                 className="teamStyle"
-                onClick={e => handleClick('AlexL', e)}
+                onClick={e => handleClick('AlexanderL', e)}
               >
                 {getImage('alexL')}
                 <h4>Alexander Landeros</h4>
