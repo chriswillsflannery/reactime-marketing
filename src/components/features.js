@@ -18,7 +18,7 @@ import styled from 'styled-components';
 import './layout.css';
 
 const styles = {
-  reactGreen: '#427aa1', // h4 font-color #072D2B
+  reactGreen: '#62D6FB', // h4 font-color #072D2B
   lightestGreen: '#BDD4DB',
   gray: '#a3a3a3',
 
@@ -145,29 +145,41 @@ const Layout = ({ children }) => (
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Import, Export, and Persist</h4>
+                <h4>Download, Upload, and Persist</h4>
                 <p>
                   Save your state history for future tests.<br />Keep your state
                 changes on app reload.{' '}
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
+
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>Try Reactime With a demo</h4>
+                <h4>Re-render Optimization</h4>
                 <p>
-                  <a
-                    style={{ textDecoration: 'none', color: '#99A93A' }}
-                    href="https://github.com/calebpollman/react-calculator"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    React Calculator
-                </a>{' '}
-              
+                  Improve performance by preventing unnecessary render cycles.<br />{' '}
               </p>
               </StyledGridElement>
             </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Gatsby support</h4>
+                <p>
+                  Reactime offers fully support for Gatsy applications.<br />{' '}
+                </p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Next.js support</h4>
+                <p>
+                  Reactime offers debugging and performance tools for Next.js apps.<br />{' '}
+                </p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
           </Grid>
           <h4
             style={{

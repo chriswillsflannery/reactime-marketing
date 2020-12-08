@@ -79,7 +79,7 @@ extension from Chrome's Web Store.
                 <p>
                     And that's it!
                   {' '}
-                  <span style={{ color: styles.redCode }}>No NPM package needed!!!</span>
+                  <span style={{ color: styles.redCode }}>No NPM package needed!</span>
                 </p>
                 <p>
                   

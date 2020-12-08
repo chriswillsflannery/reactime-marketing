@@ -258,6 +258,27 @@ const Layout = ({ children }) => {
                   andywongdev
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Becca', e)}
+              >
+                {getImage('becca')}
+                <h4>Becca Viner</h4>
+                {bios.Becca ? (
+                  <div className="content">
+                    <p>
+                      Becca is a full stack engineer based in sunny Denver, CO with a passion for imaginary labrador retrievers . She builds useful fullstack applications with React and Node.js with a focus on performance and scalability. Aside from developing apps, Becca loves exploring the mountains especially by bike or board, dancing at Red Rocks shows, and listening to podcasts.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/rtviner" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  rtviner
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Bryan', e)}
@@ -283,6 +304,27 @@ const Layout = ({ children }) => {
                   mylee1995
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Caitlin', e)}
+              >
+                {getImage('caitlin')}
+                <h4>Caitlin Chan</h4>
+                {bios.Caitlin ? (
+                  <div className="content">
+                    <p>
+                      Caitlin is a fullstack software engineer with a passion for building applications that are mission-focused and solve real world problems. Her developer interests lie in making performant changes by decreasing time complexities and boosting human productivity with developer tools and operations. Caitlin was recently sponsored by SingleSprout to give a talk on serverless architecture, specifically AWS Lambda, and on a deep look into testing frameworks. In her free time, she enjoys mixing up cocktails in a punch bowl or visiting coffee shops solely to judge their interior designs.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/caitlinchan23" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  caitlinchan23
+                </a>
+              </StyledGridElement>
+
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Carlos', e)}
@@ -620,7 +662,26 @@ const Layout = ({ children }) => {
                 </a>
               </StyledGridElement>
 
-
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Mai', e)}
+              >
+                {getImage('mai')}
+                <h4>Kim Mai Nguyen</h4>
+                {bios.Mai ? (
+                  <div className="content">
+                    <p>
+                      Kim Mai is a full-stack software engineer who loves creating maintainable and scalable applications that are beautiful and that prioritize intuitive user experience. Excited by new technologies, she has given talks sponsored by SingleSprout on Deno.js and front-end framework. With a background in the performing arts, she is passionate about education, community building and cultural exchange. Prior to coding, she performed and led music workshops all around the world. An avid traveler, it is Kim Mai’s dream to visit every country in the next twenty years.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/Nkmai" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  Nkmai
+                </a>
+              </StyledGridElement>
+              
               <StyledGridElement
                 className="teamStyle"
                 onClick={e => handleClick('Nat', e)}
@@ -833,6 +894,26 @@ const Layout = ({ children }) => {
                   starkspark
                 </a>
               </StyledGridElement>
+
+              <StyledGridElement
+                className="teamStyle"
+                onClick={e => handleClick('Tania', e)}
+              >
+                {getImage('tania')}
+                <h4>Tania Lind</h4>
+                {bios.Tania ? (
+                  <div className="content">
+                    <p>
+                      Tania is a creative full-stack engineer interested in UI/UX development and minimalist design. She has a background in entrepreneurship and digital marketing. Stereotype challenger, traveler, writer.
+                    </p>
+                  </div>
+                ) : null}
+                <a href="https://github.com/lind-tania" title="Github" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {' '}
+                  lind-tania
+                </a>
+              </StyledGridElement>
               
               <StyledGridElement
                 className="teamStyle"
@@ -881,6 +962,7 @@ const Layout = ({ children }) => {
                   yujinkay
                 </a>
               </StyledGridElement>
+
             </Grid>
           </StyledMain>
         </StyledDiv>
