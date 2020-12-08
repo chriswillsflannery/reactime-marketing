@@ -8,14 +8,14 @@ import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import styled from 'styled-components';
-import demogif from '../images/react-calculator-demo.gif';
+import demogif from '../images/new-reactime.gif';
 import Footer from '../components/footer';
 
 const styles = {
   reactGreen: '#62D6FB',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
-  redCode: '#acbf60',
+  redCode: '#ff6569'
 };
 
 // Image AND Text
@@ -94,7 +94,7 @@ const IndexPage = () => (
               color: styles.lighterGreen
             }}
           >
-            The only time-travel debugging tool you need
+            React Performance Tool
           </p>
           <p
             style={{
@@ -115,7 +115,7 @@ const IndexPage = () => (
             >
               React Open Source Awards 2020
               </a>
-              !
+              
             </p>
           <a
             style={{
