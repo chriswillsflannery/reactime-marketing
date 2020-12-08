@@ -166,7 +166,7 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Gatsby support</h4>
                 <p>
-                  Reactime offers fully support for Gatsy applications.<br />{' '}
+                  Reactime offers full support for Gatsby applications.<br />{' '}
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
