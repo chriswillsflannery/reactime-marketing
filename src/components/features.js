@@ -9,47 +9,47 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import ZoomInGridElement from './zoomInGridElement';
+import React from 'react'
+import PropTypes from 'prop-types'
+import ZoomInGridElement from './zoomInGridElement'
 // import { useStaticQuery, graphql } from "gatsby"
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-import './layout.css';
+import './layout.css'
 
 const styles = {
   reactGreen: '#62D6FB', // h4 font-color #072D2B
   lightestGreen: '#BDD4DB',
   gray: '#a3a3a3',
 
-  iconBColor: '#242529' // feature icon bg #E4C2B3
-};
+  iconBColor: '#242529', // feature icon bg #E4C2B3
+}
 
 const StyledWrapper = styled.div`
   @media only screen and (max-height: 570px) {
     margin-top: 100px;
   }
-`;
+`
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
-`;
+`
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 40px;
-`;
+`
 
 const StyledGridElement = styled.div`
   display: flex;
@@ -86,7 +86,7 @@ const StyledGridElement = styled.div`
     margin-bottom: 1px;
     font-weight: 400;
   }
-`;
+`
 const Layout = ({ children }) => (
   <>
     <StyledWrapper>
@@ -97,14 +97,40 @@ const Layout = ({ children }) => (
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
                 <h4>State Snapshot Text Display</h4>
-                <p>See your application state in stylized, interactive JSON format.</p>
+                <p>
+                  See your application state in stylized, interactive JSON
+                  format.
+                </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
                 <h4>Time Travel Live Render</h4>
-                <p>Simulate any state change from history in the DOM with a click of a button.</p>
+                <p>
+                  Simulate any state change from history in the DOM with a click
+                  of a button.
+                </p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Save Snapshot Series</h4>
+                <p>
+                  Save a series of recorded state snapshots for analysis later
+                  on.
+                </p>
+              </StyledGridElement>
+            </ZoomInGridElement>
+
+            <ZoomInGridElement className="feaStyle">
+              <StyledGridElement>
+                <h4>Web Metrics</h4>
+                <p>
+                  Improve user experience with insight into Web Metrics such as
+                  LCP, FCP, FID, TTFB.
+                </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -112,15 +138,19 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Snapshot History Display</h4>
                 <p>
-                  Monitor history as you time travel or make new changes to state.
-              </p>
+                  Monitor history as you time travel or make new changes to
+                  state.
+                </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
                 <h4>Components Map Display</h4>
-                <p>Visualize relationships between components in a collapsible tree for a given snapshot.</p>
+                <p>
+                  Visualize relationships between components in a collapsible
+                  tree for a given snapshot.
+                </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -128,17 +158,18 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Atom and Selector Relationships</h4>
                 <p>
-                  Visualize the mapping of Atoms and Selectors to components in Recoil Apps
+                  Visualize the mapping of Atoms and Selectors to components in
+                  Recoil Apps
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
-          
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
                 <h4>Components Performance Display</h4>
                 <p>
-                  Visualize the relative latency trends introduced by re-rendering each component on state change.
+                  Visualize the relative latency trends introduced by
+                  re-rendering each component on state change.
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
@@ -147,8 +178,9 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Download, Upload, and Persist</h4>
                 <p>
-                  Save your state history for future tests.<br />Keep your state
-                changes on app reload.{' '}
+                  Save your state history for future tests.
+                  <br />
+                  Keep your state changes on app reload.{' '}
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
@@ -157,8 +189,9 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Re-render Optimization</h4>
                 <p>
-                  Improve performance by preventing unnecessary render cycles.<br />{' '}
-              </p>
+                  Improve performance by preventing unnecessary render cycles.
+                  <br />{' '}
+                </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -166,7 +199,8 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Gatsby support</h4>
                 <p>
-                  Reactime offers full support for Gatsby applications.<br />{' '}
+                  Reactime offers full support for Gatsby applications.
+                  <br />{' '}
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
@@ -175,18 +209,19 @@ const Layout = ({ children }) => (
               <StyledGridElement>
                 <h4>Next.js support</h4>
                 <p>
-                  Reactime offers debugging and performance tools for Next.js apps.<br />{' '}
+                  Reactime offers debugging and performance tools for Next.js
+                  apps.
+                  <br />{' '}
                 </p>
               </StyledGridElement>
             </ZoomInGridElement>
-
           </Grid>
           <h4
             style={{
               fontWeight: '400',
               fontSize: '13px',
               color: styles.lightestGreen,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             * Some features not available with every state managment solution.
@@ -195,10 +230,10 @@ const Layout = ({ children }) => (
       </StyledDiv>
     </StyledWrapper>
   </>
-);
+)
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
-};
+  children: PropTypes.node.isRequired,
+}
 
-export default Layout;
+export default Layout
