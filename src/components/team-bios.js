@@ -105,6 +105,7 @@ export const bios = {
   proud father to his exuberant dog, Ayumi, named after his
   favorite j-pop singer). Chai recently gave talks about
   React Fiber under the hood and an introduction to gRPCs.`,
+  davidB: `David Bernstein is a software engineer with expertise in Vue.js, React, Express, & Node, and a love of iterative thinking. He is focused on leveraging his engineering knowledge to solve macro-scale problems, and recently gave a talk about build tools. David is always seeking open source projects and teams to connect with. His interests include animal intelligence, the neurobiology of laughter, and Magic: The Gathering`,
   dennis: `Dennis is a Fullstack Software Engineer who is passionate
   about solving real-world problems through innovative
   software development. He is always looking to contribute
@@ -152,6 +153,7 @@ export const bios = {
   and state management at all layers of the stack. Whether
   it's testing out new programming paradigms or questioning
   abstractions, she'll meet you at whatever level you're on.`,
+  harry: `Harry Fox is a software engineer with a passion for React, Express, Relational Databases, and Vue. Always curious about technological trends, Harry recently presented a talk on the Internet of Things. His personal interests include roasting his own coffee beans in his back yard, hosting friends for card games, and finding new places to go hiking.`,
   hien: `Hien is an experienced software engineer with incredible
   passion for solving difficult technical problems. He
   prioritizes user experience when building scalable full
@@ -170,6 +172,7 @@ export const bios = {
   Recoil, hooks, or context API. In his free time, he
   channels his inner Anthony Bourdain by traveling the
   world, eating the obscure, and experiencing the unknown.`,
+  joe: `Joseph is a full stack software engineer with a special interest in data-structures. He strives to solve consumer-facing problems through a ground-up, first-principals development. Interested in Overlanding, Exploring the future through sci-fi, and Exploring the past through Dan Carlin’s history podcast.`,
   joshua: `Joshua’s passion lies in creating aesthetically pleasing,
   highly-engaging user experiences. His background in NYC’s
   tech startup community gives him a unique perspective on
@@ -211,6 +214,7 @@ export const bios = {
   Singlesprout Outside of software development he loves
   drawing, practicing yoga, playing retro 8 bit video games,
   and traveling to new cities.`,
+  nathan: `Nathan is a full-stack software engineer who loves to build out applications in React or Vue. He has a particular interest in server-less architecture and recently gave a talk on the JAMstack and lambda functions. His interests include competitive collectible card games, watching videos of delicious street food, and wielding the power of a laser pointer with his 3 cats.`,
   pras: `Pras is an experienced full stack software engineer
   passionate about mobile first progressive web apps,
   specializing in React and Node.js to build scalable and
