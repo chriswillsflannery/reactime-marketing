@@ -158,7 +158,7 @@ const IndexPage = () => (
 
     <Team>
       <h2 style={{ color: styles.reactGreen }}>
-        <strong>Meet the Team</strong>
+        <strong>Contributors</strong>
       </h2>
       <p
         style={{
