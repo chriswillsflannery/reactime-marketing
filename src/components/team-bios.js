@@ -47,7 +47,7 @@ export const bios = {
   talk about SQL database management, Bryan listens to John
   Mayer or plays ping pong in his downtime. He is a CS
   graduate of Boston College.`,
-  caitlyn: `Caitlin is a fullstack software engineer with a passion
+  caitlin: `Caitlin is a fullstack software engineer with a passion
   for building applications that are mission-focused and
   solve real world problems. Her developer interests lie in
   making performant changes by decreasing time complexities

@@ -70,7 +70,32 @@ const DemoGif = styled.img`
 
 const FeaturesTitle = styled.h2`
   font-weight: 700;
-`
+`;
+
+const DownloadButton = styled.div`
+  button {
+    font-family: Raleway;
+    text-decoration: none;
+    color: black;
+    background-color: ${styles.reactGreen};
+    border: none;
+    margin: 5px;
+    padding: 0px 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 10em;
+    border-radius: 5px;
+    opacity: 75%;
+    transition: 0.3s;
+  }
+  &:hover .download {
+    cursor: pointer;
+    opacity: 100%;
+  }
+`;
 
 const IndexPage = () => (
   <>
@@ -117,28 +142,16 @@ const IndexPage = () => (
               </a>
               
             </p>
-          <a
-            style={{
-              fontFamily: 'Raleway',
-              textDecoration: 'none',
-              color: 'black',
-              background: styles.reactGreen,
-              margin: '5px',
-              padding: '0px 1em',
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '3em',
-              width: '10em',
-              borderRadius: '5px',
-            }}
-            href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>Download Now</strong>
-          </a>
+            <DownloadButton>
+              <button
+                className='download'
+                href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Download Now</strong>
+              </button>
+            </DownloadButton>
         </SplashDescription>
       </SplashContainer>
     </Splash>
@@ -160,29 +173,7 @@ const IndexPage = () => (
       <h2 style={{ color: styles.reactGreen }}>
         <strong>Contributors</strong>
       </h2>
-      <p
-        style={{
-          fontFamily: 'Raleway',
-          color: styles.lighterGreen,
-          textAlign: 'center',
-          marginBottom: '18px'
-        }}
-      >
-        Interested in{' '}
-        <span>
-          <a
-            style={{ textDecoration: 'none', color: styles.redCode }}
-            href="https://github.com/open-source-labs/reactime"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            contributing?
-            </a>
-        </span>{' '}
-          Reactime is open-source. Help make React state debugging easier!
-        </p>
     </Team>
-
     <Footer />
   </>
 );
