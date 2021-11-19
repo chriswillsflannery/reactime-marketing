@@ -1,20 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import Chevron from './SVG/Chevron';
-import { bios } from './team-bios';
+import React, { useState } from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import Chevron from "./SVG/Chevron"
+import { bios } from "./team-bios"
 
-import './layout.css'
+import "./layout.css"
 
 const styles = {
-  white: 'white', // h4
+  white: "white", // h4
   lighterGreen: `#002e2b`,
-  lightestGreen: '#62D6FB', // hover, link color
-  biosBColor: '#242529', // `#E4C2B3`, // team bios bg-color #e6e6e6
-  redCode: '#ff6569', // hover, link color
+  lightestGreen: "#62D6FB", // hover, link color
+  biosBColor: "#242529", // `#E4C2B3`, // team bios bg-color #e6e6e6
+  redCode: "#ff6569", // hover, link color
 }
 
 const StyledWrapper = styled.div``
@@ -24,21 +24,21 @@ const StyledDiv = styled.div`
   max-width: 1024px;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
-`;
+`
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: 400px 400px;
   @media (max-width: 800px) {
-    grid-template-columns:  400px;
+    grid-template-columns: 400px;
   }
-`;
+`
 
 const StyledPersonExpander = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ const StyledPersonExpander = styled.div`
   svg.rotated {
     transform: rotate(90deg);
   }
-`;
+`
 
 const StyledExpanderHeader = styled.div`
   display: flex;
@@ -62,20 +62,20 @@ const StyledExpanderHeader = styled.div`
     font-weight: normal;
     padding: 10.5px;
     margin: 0 8px 0 8px;
-    color: ${styles.lightestGreen}
+    color: ${styles.lightestGreen};
   }
   .name {
     transition: 0.3s;
   }
   &:hover .name {
-    color: ${styles.white}
+    color: ${styles.white};
   }
-`;
+`
 
 const StyledExpanderBio = styled.div`
   color: white;
   font-family: sans-serif;
-`;
+`
 
 const ContributeLink = styled.span`
   a {
@@ -84,27 +84,29 @@ const ContributeLink = styled.span`
     transition: 0.3s;
   }
   &:hover .contribute {
-    color: #a64245; 
+    color: #a64245;
   }
-`;
+`
 
 const PersonExpander = ({ name, handle, bio }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false)
   return (
     <StyledPersonExpander>
       <StyledExpanderHeader onClick={() => setIsExpanded(!isExpanded)}>
-        <div className={isExpanded ? 'rotated' : ''} />
-        <a className="name" style = {{ textDecoration: 'none' }} href={`https://github.com/${handle}`} target="_blank">{name}</a>
+        <div className={isExpanded ? "rotated" : ""} />
+        <a
+          className="name"
+          style={{ textDecoration: "none" }}
+          href={`https://github.com/${handle}`}
+          target="_blank"
+        >
+          {name}
+        </a>
       </StyledExpanderHeader>
-      {isExpanded && (
-        <StyledExpanderBio>
-          {bios[bio]}
-        </StyledExpanderBio>
-      )}
+      {isExpanded && <StyledExpanderBio>{bios[bio]}</StyledExpanderBio>}
     </StyledPersonExpander>
-  );
+  )
 }
-
 
 const Layout = ({ children }) => {
   return (
@@ -114,10 +116,15 @@ const Layout = ({ children }) => {
           <StyledMain>
             {children}
             <StyledGrid>
-              <PersonExpander 
+              <PersonExpander
                 name="Abaas Khorrami"
                 handle="dubalol"
                 // bio="abaas"
+              />
+              <PersonExpander
+                name="Alex Gomez"
+                handle="alexgomez9"
+                // bio="chris"
               />
               <PersonExpander
                 name="Alexander Landeros"
@@ -193,6 +200,11 @@ const Layout = ({ children }) => {
                 name="Dennis Lopez"
                 handle="DennisLpz"
                 // bio="dennis"
+              />
+              <PersonExpander
+                name="Edar Liu"
+                handle="liuedar"
+                // bio="chris"
               />
               <PersonExpander
                 name="Edwin Menendez"
@@ -275,6 +287,11 @@ const Layout = ({ children }) => {
                 // bio="kim"
               />
               <PersonExpander
+                name="Kristina Wallen"
+                handle="kristinawallen"
+                // bio="chris"
+              />
+              <PersonExpander
                 name="Lina Shin"
                 handle="rxlina"
                 // bio="lina"
@@ -290,6 +307,11 @@ const Layout = ({ children }) => {
                 // bio="nathan"
               />
               <PersonExpander
+                name="Quan Le"
+                handle="blachfog"
+                // bio="chris"
+              />
+              <PersonExpander
                 name="Prasanna Malla"
                 handle="prasmalla"
                 // bio="pras"
@@ -303,6 +325,11 @@ const Layout = ({ children }) => {
                 name="Raymond Kwan"
                 handle="rkwn"
                 // bio="raymond"
+              />
+              <PersonExpander
+                name="Robert Maeda"
+                handle="robmaeda"
+                // bio="chris"
               />
               <PersonExpander
                 name="Rocky Lin"
@@ -356,13 +383,13 @@ const Layout = ({ children }) => {
 
       <p
         style={{
-          fontFamily: 'Raleway',
+          fontFamily: "Raleway",
           color: styles.white,
-          textAlign: 'center',
-          marginBottom: '18px'
+          textAlign: "center",
+          marginBottom: "18px",
         }}
       >
-        Interested in{' '}
+        Interested in{" "}
         <ContributeLink>
           <a
             className="contribute"
@@ -371,13 +398,12 @@ const Layout = ({ children }) => {
             rel="noopener noreferrer"
           >
             contributing
-            </a>
+          </a>
         </ContributeLink>
-          ? Reactime is an open-source product. Help make debugging React state easier!
-        </p>
+        ? Reactime is an open-source product. Help make debugging React state
+        easier!
+      </p>
     </>
-
-    
   )
 }
 
