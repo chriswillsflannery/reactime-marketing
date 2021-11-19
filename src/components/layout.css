@@ -502,4 +502,8 @@ pre tt:after {
   transform: translate3d(0px, -3px, 0px);
 }
 
+.download {
+  color: black;
+  text-decoration: none;
+}
 
