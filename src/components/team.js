@@ -120,6 +120,10 @@ const Layout = ({ children }) => {
                 // bio="abaas"
               />
               <PersonExpander
+                name="Alex Gomez"
+                handle="alexgomez9"
+              />
+              <PersonExpander
                 name="Alexander Landeros"
                 handle="AlexanderLanderos"
                 // bio="alexander"
@@ -193,6 +197,10 @@ const Layout = ({ children }) => {
                 name="Dennis Lopez"
                 handle="DennisLpz"
                 // bio="dennis"
+              />
+              <PersonExpander
+                name="Edar Liu"
+                handle="liuedar"
               />
               <PersonExpander
                 name="Edwin Menendez"
@@ -275,6 +283,10 @@ const Layout = ({ children }) => {
                 // bio="kim"
               />
               <PersonExpander
+                name="Kristina Wallen"
+                handle="kristinawallen"
+              />
+              <PersonExpander
                 name="Lina Shin"
                 handle="rxlina"
                 // bio="lina"
@@ -290,6 +302,10 @@ const Layout = ({ children }) => {
                 // bio="nathan"
               />
               <PersonExpander
+                name="Quan Le"
+                handle="blachfog"
+              />
+              <PersonExpander
                 name="Prasanna Malla"
                 handle="prasmalla"
                 // bio="pras"
@@ -303,6 +319,10 @@ const Layout = ({ children }) => {
                 name="Raymond Kwan"
                 handle="rkwn"
                 // bio="raymond"
+              />
+              <PersonExpander
+                name="Robert Maeda"
+                handle="robmaeda"
               />
               <PersonExpander
                 name="Rocky Lin"
@@ -377,7 +397,7 @@ const Layout = ({ children }) => {
         </p>
     </>
 
-    
+
   )
 }
 
