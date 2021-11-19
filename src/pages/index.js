@@ -129,6 +129,7 @@ const IndexPage = () => (
             }}
           >
             Nominated for the Productivity Booster award at{' '}
+            <br />
             <a
               style={{
                 textDecoration: 'none',
@@ -139,19 +140,21 @@ const IndexPage = () => (
               rel="noopener noreferrer"
             >
               React Open Source Awards 2020
+            </a>
+
+          </p>
+          <DownloadButton>
+            <button>
+              <a
+              className='download'
+              href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Download Now</strong>
               </a>
-              
-            </p>
-            <DownloadButton>
-              <button
-                className='download'
-                href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Download Now</strong>
-              </button>
-            </DownloadButton>
+            </button>
+          </DownloadButton>
         </SplashDescription>
       </SplashContainer>
     </Splash>
