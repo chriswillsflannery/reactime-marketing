@@ -149,6 +149,11 @@ const Layout = ({ children }) => {
                 // bio="becca"
               />
               <PersonExpander
+                name="Ben Michareune"
+                handle="bmichare"
+                // bio="andy"
+              />
+              <PersonExpander
                 name="Bryan Lee"
                 handle="mylee1995"
                 // bio="bryan"
@@ -182,6 +187,16 @@ const Layout = ({ children }) => {
                 name="Cole Styron"
                 handle="c-styr"
                 // bio="cole"
+              />
+              <PersonExpander
+                name="Daljit Gill"
+                handle="dgill05"
+                // bio="andy"
+              />
+              <PersonExpander
+                name="Dane Corpion"
+                handle="danecorpion"
+                // bio="andy"
               />
               <PersonExpander
                 name="David Bernstein"
@@ -281,6 +296,11 @@ const Layout = ({ children }) => {
                 name="Kim Mai Nguyen"
                 handle="Nkmai"
                 // bio="kim"
+              />
+              <PersonExpander
+                name="Kris Sorensen"
+                handle="kris-sorensen"
+                // bio="andy"
               />
               <PersonExpander
                 name="Kristina Wallen"
