@@ -8,8 +8,10 @@ import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import styled from 'styled-components';
-import demogif from '../images/new-reactime.gif';
+// import demogif from '../images/old/new-reactime.gif';
+import ReactimeFullLogo from '../images/ReactimeIO.png';
 import Footer from '../components/footer';
+import DescriptionContainer from '../containers/DescriptionContainer';
 
 const styles = {
   reactGreen: '#62D6FB',
@@ -103,73 +105,29 @@ const IndexPage = () => (
       <SEO title="Home" />
       <div
         style={{
-          margin: '80px 0 60px 0',
+          margin: '80px 0 80px 0',
         }}
       ></div>
       <SplashContainer>
         <Image />
-        <SplashDescription>
-          <p
-            style={{
-              fontFamily: 'Raleway',
-              lineHeight: '120%',
-              fontSize: '1.9rem',
-              fontWeight: '900',
-              textAlign: 'center',
-              color: styles.lighterGreen
-            }}
-          >
-            React Performance Tool
-          </p>
-          <p
-            style={{
-              fontFamily: 'Raleway',
-              textAlign: 'center',
-              color: styles.lighterGreen
-            }}
-          >
-            Nominated for the Productivity Booster award at{' '}
-            <br />
-            <a
-              style={{
-                textDecoration: 'none',
-                color: styles.redCode
-              }}
-              href="https://osawards.com/react/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React Open Source Awards 2020
-            </a>
-
-          </p>
-          <DownloadButton>
-            <button>
-              <a
-              className='download'
-              href="https://chrome.google.com/webstore/detail/reactime/cgibknllccemdnfhfpmjhffpjfeidjga?hl=en-US"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Download Now</strong>
-              </a>
-            </button>
-          </DownloadButton>
-        </SplashDescription>
+        <h1 className="main-h1">
+          React State Monitoring and Debugging with
+          <br/>
+          <span className="reactime-h1">Reactime</span>
+        </h1>
       </SplashContainer>
     </Splash>
+    <DescriptionContainer/>
     <div id='demo'>
       <VisualState>
         <DemoGifDescription>
           Track, Revert, <br />and Visualize your State
       </DemoGifDescription>
-        <DemoGif style={{ textAlign: 'center' }} src={demogif} alt="ReacTime Demo" />
+        <DemoGif style={{ textAlign: 'center' }} src={ReactimeFullLogo} alt="ReacTime Demo" /> 
       </VisualState>
     </div>
     <Features>
-      <FeaturesTitle>
         Features
-      </FeaturesTitle>
     </Features>
 
     <Team>

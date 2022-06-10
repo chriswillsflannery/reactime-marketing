@@ -1,16 +1,16 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useEffect } from "react"
-import styled from "styled-components"
-import GitHubButton from "react-github-btn"
-import { config } from "@fortawesome/fontawesome-svg-core"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React, { useEffect } from "react";
+import styled from "styled-components";
+import GitHubButton from "react-github-btn";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChrome,
   faLinkedinIn,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons"
-config.autoAddCss = false
+} from "@fortawesome/free-brands-svg-icons";
+config.autoAddCss = false;
 
 const handleScroll = () => {
   if (
@@ -26,11 +26,11 @@ const handleScroll = () => {
   } else {
     document.getElementById("header").style.padding = "50px"
   }
-}
+};
 
 const styles = {
   headFontColor: `white`, // #BDD4DB
-}
+};
 
 const HeaderContainer = styled.header`
   position: fixed;

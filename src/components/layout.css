@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-
 :root {
   --reactGreen: #474c55;
   --lighterGreen: #474c55;
@@ -8,12 +7,11 @@
   --lighterGold: #e4c2b3;
   --blue: #62D6FB;
 }
-
 html {
   font-family: "Raleway", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #1c1d1f;
+  background-color: #FFF;
 }
 body {
   margin: 0;
@@ -35,12 +33,10 @@ section,
 summary {
   display: block;
 }
-
 [hidden],
 template {
   display: none;
 }
-
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -49,13 +45,11 @@ a:active,
 a:hover {
   outline-width: 0;
 }
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-
 b,
 strong {
   font-weight: inherit;
@@ -64,7 +58,6 @@ strong {
 dfn {
   font-style: italic;
 }
-
 mark {
   background-color: #ff0;
   color: #000;
@@ -87,9 +80,11 @@ sup {
 }
 img {
   border-style: none;
+  border-radius: 10px;
 }
 svg:not(:root) {
   overflow: hidden;
+  border-radius: 10px;
 }
 code,
 kbd,
@@ -100,6 +95,7 @@ samp {
 }
 figure {
   margin: 1em 40px;
+  border-radius: 10px;
 }
 hr {
   box-sizing: content-box;
@@ -319,16 +315,6 @@ h6 {
   font-size: 0.78405rem;
   line-height: 1.1;
 }
-/* hgroup {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-} */
 ul {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -341,38 +327,6 @@ ul {
   list-style-position: outside;
   list-style-image: none;
 }
-/* ol {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-} */
-/* dl {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-dd {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-} */
 p {
   margin-left: 0;
   margin-right: 0;
@@ -383,29 +337,68 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-/* figure {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-} */
 pre {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 1.45rem;
   font-size: 0.85rem;
-  line-height: 1.42;
+  line-height: 1.5;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   overflow: auto;
   word-wrap: normal;
-  padding: 1.45rem;
+  padding: 1.5rem;
 }
+
+/* Reactime 14.0 CSS Edits */
+
+.main-h1 {
+  font-size: 3em;
+  margin: 1em;
+  color: #2d2d2f;
+}
+.reactime-h1 {
+  color: #62D6FB;
+}
+
+#home-features {
+  display: block;
+  align-items: center;
+  background: #FCF8E8;
+  text-align: center;
+}
+
+#home-features {
+ 
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+#feature-1 {
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin: 0 5em 0 5em;
+}
+
+#feature-2 {
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin: 0 5em 0 5em;
+}
+
+#feature-3 {
+  height: 300px;
+  width: 400px;
+  display: inline-block;
+  margin: 0 5em 0 5em;
+}
+
+/* End of Reactime 14.0 EDITS */
 
 li {
   margin-bottom: calc(1.45rem / 2);
@@ -442,7 +435,6 @@ code {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
-
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
@@ -471,18 +463,15 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
-
 /** Custom **/
 .box--title {
   text-transform: uppercase;
 }
-
 .feaStyle {
   transition: all 0.3s ease-in-out;
 }
@@ -490,7 +479,6 @@ pre tt:after {
   box-shadow: rgba(0, 0, 0, 0.22) 0px 10px 20px;
   transform: translate3d(0px, -1px, 0px);
 }
-
 .teamStyle {
   /* transition: transform 300ms ease; */
   transition: all 0.3s ease-in-out;
@@ -501,9 +489,7 @@ pre tt:after {
   box-shadow: rgba(30, 86, 171, 0.25) 5px 10px 20px 5px;
   transform: translate3d(0px, -3px, 0px);
 }
-
 .download {
   color: black;
   text-decoration: none;
 }
-

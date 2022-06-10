@@ -209,6 +209,11 @@ const Layout = ({ children }) => {
                 // bio="david"
               />
               <PersonExpander
+                name="David Kim"
+                handle="codejunkie7"
+                // bio="davidKim"
+              />
+              <PersonExpander
                 name="Dennis Lopez"
                 handle="DennisLpz"
                 // bio="dennis"
@@ -286,6 +291,11 @@ const Layout = ({ children }) => {
                 name="Kevin Fey"
                 handle="kevinfey"
                 // bio="kevin"
+              />
+              <PersonExpander
+                name="Kevin HoEun Lee"
+                handle="khobread"
+                // bio="KHL"
               />
               <PersonExpander
                 name="Kevin Ngo"

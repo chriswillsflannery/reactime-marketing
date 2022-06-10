@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `REACTIME`,
-    description: `Time travel debugger for React.`,
+    description: `Time Travel Debugger for React`,
     author: `@reactime`,
   },
   plugins: [
@@ -22,10 +22,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#323941`,
-        theme_color: `#323941`,
+        background_color: `#FAF9F6`,
+        theme_color: `#FAF9F6`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
+        icon: `src/images/ChromeTabLogo.png`, // This path is relative to the root of the site.
       },
     },
     {

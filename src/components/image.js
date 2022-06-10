@@ -15,19 +15,21 @@ import styled from "styled-components"
  */
 
 const StyledImage = styled(Img)`
-  min-width: 300px;
-  max-width: 600px;
+  min-width: 550px;
+  max-width: 550px;
+  border-radius: 10px;
+  margin: 3em;
   @media only screen and (min-width: 700px) {
-    margin-right: 50px;
+    ${'' /* margin-right: 50px; */}
   }
 `
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "reactime-logo.png" }) {
+      placeholderImage: file(relativePath: { eq: "LandingImage.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
