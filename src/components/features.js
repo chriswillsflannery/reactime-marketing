@@ -9,13 +9,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import ZoomInGridElement from './zoomInGridElement'
+import React from 'react';
+import PropTypes from 'prop-types';
+import ZoomInGridElement from './zoomInGridElement';
 // import { useStaticQuery, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import './layout.css'
+import '../styles/layout.scss';
 
 const styles = {
   reactGreen: '#62D6FB', // h4 font-color #072D2B

@@ -1,5 +1,4 @@
 import React from "react";
-
 import Splash from "../components/splash";
 import SEO from "../components/seo";
 

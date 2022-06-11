@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+
 :root {
   --reactGreen: #474c55;
   --lighterGreen: #474c55;
@@ -393,6 +394,43 @@ h3 {
   display: inline-block;
   margin: 0 5em 0 5em;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-gap: 15px
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.section {
+  border: 1px solid lightgray;
+  border-radius: .5rem;
+  padding: 10px;
+  cursor: pointer;
+  h3, p {
+    margin: 0;
+  };
+  p {
+    margin-top: 5px;
+    color: gray;
+  }
+}
+
+.image {
+  border-radius: .5rem;
+  margin: auto;
+}
+
+.imageContainer {
+  margin: auto;
+}
+
 
 /* End of Reactime 14.0 EDITS */
 

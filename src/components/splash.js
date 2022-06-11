@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import '../styles/layout.scss';
 
 // Background-color LOGO
 const StyledWrapper = styled.div`

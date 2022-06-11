@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import ReactimeFullLogo from '../images/ReactimeIO.png';
 import Footer from '../components/footer';
 import DescriptionContainer from '../containers/DescriptionContainer';
-import FeaturesContainer from  '../containers/FeaturesContainer';
+import GifFeatures from  '../containers/GifFeatures';
 
 const styles = {
   reactGreen: '#62D6FB',
@@ -118,11 +118,11 @@ const IndexPage = () => (
         </h1>
       </SplashContainer>
     </Splash>
-    <DescriptionContainer/>
+    <DescriptionContainer />
     <div className="features-gif">
-      <VisualState>
-        <FeaturesContainer/>
-      </VisualState>
+      
+      <GifFeatures />
+    
     </div>
     <Features>
         Features

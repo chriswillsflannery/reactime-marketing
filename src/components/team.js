@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Chevron from './SVG/Chevron';
 import { bios } from './team-bios';
 
-import './layout.css'
+import '../styles/layout.scss';
 
 const styles = {
   white: 'white', // h4
@@ -184,6 +184,11 @@ const Layout = ({ children }) => {
                 // bio="chrisG"
               />
               <PersonExpander
+                name="Chris LeBrett"
+                handle="fscgolden"
+                // bio="chrisLebrett"
+              />
+              <PersonExpander
                 name="Cole Styron"
                 handle="c-styr"
                 // bio="cole"
@@ -353,6 +358,11 @@ const Layout = ({ children }) => {
               <PersonExpander
                 name="Robert Maeda"
                 handle="robmaeda"
+              />
+              <PersonExpander
+                name="Robert Tipton"
+                handle="RobbyTipton"
+                // bio="robbyT"
               />
               <PersonExpander
                 name="Rocky Lin"

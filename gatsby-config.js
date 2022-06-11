@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-scroll-reveal`,
     {
@@ -31,7 +32,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-zopfli",
       options: {
-        extensions: ["css", "html", "js", "svg"],
+        extensions: ["css", "html", "js", "svg", "scss"],
         path: "zopfli",
       },
     },
