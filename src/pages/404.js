@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-import Splash from "../components/splash"
-import SEO from "../components/seo"
+import Splash from "../components/splash";
+import SEO from "../components/seo";
 
 const NotFoundPage = () => (
   <Splash>
@@ -9,6 +9,6 @@ const NotFoundPage = () => (
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Splash>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

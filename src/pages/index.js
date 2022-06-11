@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import ReactimeFullLogo from '../images/ReactimeIO.png';
 import Footer from '../components/footer';
 import DescriptionContainer from '../containers/DescriptionContainer';
+// import FeaturesContainer from  '../containers/FeaturesContainer';
 
 const styles = {
   reactGreen: '#62D6FB',
@@ -118,14 +119,17 @@ const IndexPage = () => (
       </SplashContainer>
     </Splash>
     <DescriptionContainer/>
-    <div id='demo'>
+    {/* <div className="features-gif">
+      <FeaturesContainer/>
+    </div> */}
+     {/* <div id='demo'>
       <VisualState>
         <DemoGifDescription>
           Track, Revert, <br />and Visualize your State
       </DemoGifDescription>
-        <DemoGif style={{ textAlign: 'center' }} src={ReactimeFullLogo} alt="ReacTime Demo" /> 
+        <DemoGif style={{ textAlign: 'center' }} src={demogif} alt="ReacTime Demo" />
       </VisualState>
-    </div>
+    </div> */}
     <Features>
         Features
     </Features>
