@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import styled from "styled-components"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"; 
+import styled from "styled-components";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -16,9 +16,9 @@ import styled from "styled-components"
 
 const StyledImage = styled(Img)`
   min-width: 550px;
-  max-width: 550px;
+  max-width: 800px;
   border-radius: 10px;
-  margin: 3em;
+  margin: 2em;
   @media only screen and (min-width: 700px) {
     ${'' /* margin-right: 50px; */}
   }
@@ -40,4 +40,4 @@ const Image = () => {
   return <StyledImage fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-export default Image
+export default Image;

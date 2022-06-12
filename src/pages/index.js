@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { useMediaQuery } from 'usehooks-ts';
 import Splash from '../components/splash';
 import VisualState from '../components/visualState';
 import Features from '../components/features';
@@ -13,6 +14,7 @@ import ReactimeFullLogo from '../images/ReactimeIO.png';
 import Footer from '../components/footer';
 import DescriptionContainer from '../containers/DescriptionContainer';
 import GifFeatures from  '../containers/GifFeatures';
+import TerminalWindow from '../components/TerminalWindow';
 
 const styles = {
   reactGreen: '#62D6FB',
@@ -100,41 +102,52 @@ const DownloadButton = styled.div`
   }
 `;
 
-const IndexPage = () => (
-  <>
-    <Splash>
-      <SEO title="Home" />
-      <div
-        style={{
-          margin: '80px 0 80px 0',
-        }}
-      ></div>
-      <SplashContainer>
-        <Image />
-        <h1 className="main-h1">
-          React State Monitoring and Debugging with
-          <br/>
-          <span className="reactime-h1">Reactime</span>
-        </h1>
-      </SplashContainer>
-    </Splash>
-    <DescriptionContainer />
-    <div className="features-gif">
-      
-      <GifFeatures />
-    
-    </div>
-    <Features>
-        Features
-    </Features>
 
-    <Team>
-      <h2 style={{ color: styles.reactGreen }}>
-        <strong>Contributors</strong>
-      </h2>
-    </Team>
-    <Footer />
-  </>
-);
+const IndexPage = () => {
+  const width545 = useMediaQuery("(min-width: 545px)");
+  return (
+    <>
+      <Splash>
+        <SEO title="Home" />
+        <div
+          style={{
+            margin: '80px 0 80px 0',
+          }}
+        ></div>
+        <SplashContainer>
+          <Image />
+          <h1 className="main-h1">
+            React State Monitoring and Debugging with
+            <br/>
+            <span className="reactime-h1">Reactime</span>
+          </h1>
+        </SplashContainer>
+      </Splash>
+      <DescriptionContainer />
+      <GifFeatures />
+      <TerminalWindow
+        command={
+          width545
+            ? "npm install --force"
+            : "npm install with the force given to U!"
+        }
+      >
+        <h4>
+          Get started easily with npm and instantly start monitoring web
+          vitals with each new commit
+        </h4>
+      </TerminalWindow>
+      <Features>
+          Features
+      </Features>
+      <Team>
+        <h2 style={{ color: styles.reactGreen }}>
+          <strong>Contributors</strong>
+        </h2>
+      </Team>
+      <Footer />
+    </>
+  )
+};
 
 export default IndexPage;

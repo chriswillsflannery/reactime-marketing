@@ -353,7 +353,7 @@ pre {
 }
 
 /* Reactime 14.0 CSS Edits */
-
+// Splash
 .main-h1 {
   font-size: 3em;
   margin: 1em;
@@ -363,15 +363,14 @@ pre {
   color: #62D6FB;
 }
 
+// DescriptionContainer
 #home-features {
   display: block;
   align-items: center;
-  background: #FCF8E8;
   text-align: center;
-}
-
-h3 {
-  padding-top: 10px;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 #feature-1 {
@@ -379,6 +378,10 @@ h3 {
   width: 400px;
   display: inline-block;
   margin: 0 5em 0 5em;
+  padding: 1em;
+  box-shadow: gray;
+  border: 1px solid #DCDCDC;
+  border-radius: 2em;
 }
 
 #feature-2 {
@@ -386,6 +389,10 @@ h3 {
   width: 400px;
   display: inline-block;
   margin: 0 5em 0 5em;
+  padding: 1em;
+  box-shadow: gray;
+  border: 1px solid #DCDCDC;
+  border-radius: 2em;
 }
 
 #feature-3 {
@@ -393,27 +400,47 @@ h3 {
   width: 400px;
   display: inline-block;
   margin: 0 5em 0 5em;
+  padding: 1em;
+  box-shadow: gray;
+  border: 1px solid #DCDCDC;
+  border-radius: 2em;
+}
+.first-icon {
+  font-size: 80px !important;
 }
 
+.second-icon {
+  font-size: 80px !important;
+}
+
+.third-icon {
+  font-size: 80px !important;
+}
+// GifFeatures
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
-  grid-gap: 15px
+  grid-gap: 15px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .sectionContainer {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1em;
+  align-items: left;
   justify-content: center;
 }
 
 .section {
   border: 1px solid lightgray;
+  width: 40em;
   border-radius: .5rem;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
   h3, p {
+    text-align: center;
     margin: 0;
   };
   p {
@@ -429,9 +456,54 @@ h3 {
 
 .imageContainer {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: right;
+}
+// Terminal Container
+.installationContainer {
+  position: relative;
+  margin: 0 2rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-gap: 2rem;
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+  padding: 2em 6em 2em 6em;
+}
+.terminalContainer {
+  min-height: 2rem !important;
+  text-align: left;
+  /* min-width: 25ch !important; */
 }
 
+.terminalContainer pre {
+  background-color: inherit;
+  margin: 0;
+}
 
+.copy {
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .terminalContainer:first-child {
+    grid-row: 2/2;
+  }
+
+  .terminalContainer:last-child {
+    grid-row: 1/2;
+  }
+}
 /* End of Reactime 14.0 EDITS */
 
 li {

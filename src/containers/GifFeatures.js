@@ -1,4 +1,3 @@
-// import Img from "gatsby-image";
 import React, { useState } from "react";
 import styles from "../styles/GifFeatures.module.scss";
 import { motion } from "framer-motion";
@@ -36,7 +35,7 @@ const GifFeatures = () => {
           className="image"
           src={gif}
           width={600}
-          height={431}
+          height={450}
           layout='intrinsic'
         />
       )}

@@ -15,14 +15,15 @@ import '../styles/layout.scss';
 
 // Background-color LOGO
 const StyledWrapper = styled.div`
+  padding-bottom: 2em;
 `
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
-  height: 100vh;
+  height: 70vh;
   @media only screen and (max-width: 700px) {
-    height: 90vh;
+    height: 70vh;
   }
   /* IPAD PORTRAIT MODE */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 

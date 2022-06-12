@@ -1,5 +1,9 @@
 import React from 'react';
 import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
+import HouseSidingIcon from '@mui/icons-material/HouseSiding';
+import SearchIcon from '@mui/icons-material/Search';
+import '../styles/DescriptionContainer.module.scss';
+import { motion } from "framer-motion";
 
 const DescriptionContainer = () => {
 
@@ -7,22 +11,25 @@ const DescriptionContainer = () => {
     <>
       <div id="home-features">
         <div id="feature-1">
-          <ConstructionOutlinedIcon fontSize="large"/>
+          <ConstructionOutlinedIcon className="first-icon" fontSize="large"/>
           <h3>
-            <strong>Performant</strong>
+            <strong>Incredibly Performant</strong>
           </h3>
+          <span className="span-1"><strong>Reactime lives within the Chrome extension environment, allowing it to utilize Chrome's V8 engine to analyze React applications seamlessly.</strong></span>
         </div>
         <div id="feature-2">
-        <ConstructionOutlinedIcon fontSize="large"/>
+        <HouseSidingIcon className="second-icon" fontSize="large"/>
           <h3>
-            <strong>Structured</strong>
+            <strong>Structured with Intention</strong>
           </h3>
+          <span className="span-2"><strong>Reactime was built with structure in mind, every feature is laid out clearly for developers to find and use.</strong> </span>
         </div>
         <div id="feature-3">
-        <ConstructionOutlinedIcon fontSize="large"/>
+        <SearchIcon className="third-icon" fontSize="large"/>
           <h3>
-            <strong>Intuitive</strong>
+            <strong>Intuitive Features</strong>
           </h3>
+          <span className="span-3"><strong>Created with developers in mind, Reactime has a wide set of features that gives React developers more insight on what is happening within their application.</strong></span>
         </div>
       </div>
     </>
