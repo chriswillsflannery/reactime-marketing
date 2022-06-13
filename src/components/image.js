@@ -2,7 +2,8 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image"; 
 import styled from "styled-components";
-
+import ShortMovie from '../images/ShortMovie.gif';
+import LandingImage from '../images/new-reactime.gif';
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -15,8 +16,8 @@ import styled from "styled-components";
  */
 
 const StyledImage = styled(Img)`
-  min-width: 550px;
-  max-width: 800px;
+  min-width: 1024px;
+  max-width: 2400px;
   border-radius: 10px;
   margin: 2em;
   @media only screen and (min-width: 700px) {
@@ -27,9 +28,9 @@ const StyledImage = styled(Img)`
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "LandingImage.png" }) {
+      file(relativePath: { eq: "ReactimeIO.png" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -37,7 +38,9 @@ const Image = () => {
     }
   `)
 
-  return <StyledImage fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <StyledImage fluid={data.file.childImageSharp.fluid} />
+  );
 }
 
 export default Image;

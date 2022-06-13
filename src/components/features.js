@@ -28,14 +28,14 @@ const styles = {
 const StyledWrapper = styled.div`
   @media only screen and (max-height: 570px) {
     margin-top: 100px;
+    padding-top: 2em;
   }
 `
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  padding-top: 2em;
 `
 
 const StyledMain = styled.main`
@@ -45,8 +45,8 @@ const StyledMain = styled.main`
 `
 
 const Grid = styled.div`
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
   justify-content: center;
   margin-bottom: 40px;
 `
@@ -59,11 +59,11 @@ const StyledGridElement = styled.div`
   justify-content: center;
   background: ${styles.iconBColor};
   padding: 20px;
-  width: 395px;
+  width: 355px;
   height: 120px;
   margin: 20px 10px 0px 10px;
-  font-family: 'Raleway', sans-serif;
-  border-radius: 5px;
+  font-family: 'Archivo', sans-serif;
+  border-radius: 10px;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.2);
   @media only screen and (max-width: 480px) {

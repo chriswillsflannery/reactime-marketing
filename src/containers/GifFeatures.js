@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../styles/GifFeatures.module.scss";
 import { motion } from "framer-motion";
 import MyMovie from '../images/MyMovie.gif';
 import MyMovieOld from '../images/MyMovieOld.gif';
@@ -14,7 +13,7 @@ const GifFeatures = () => {
       onClick={(_) => setSection(i)}
       className="section"
       initial={{ backgroundColor: "#ffffff" }}
-      animate={{ backgroundColor: section === i ? "#EDE7F6" : "#ffffff" }}
+      animate={{ backgroundColor: section === i ? "#E6F0F1" : "#ffffff" }}
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.98 }}
     >
@@ -37,6 +36,7 @@ const GifFeatures = () => {
           width={600}
           height={450}
           layout='intrinsic'
+          alt=""
         />
       )}
     </motion.div>

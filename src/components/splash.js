@@ -19,8 +19,11 @@ const StyledWrapper = styled.div`
 `
 
 const StyledDiv = styled.div`
-  margin: 0 auto;
+  margin: auto;
+  padding-bottom: 2em;
   max-width: 1024px;
+  white-space: normal;
+  align-items: center;
   height: 70vh;
   @media only screen and (max-width: 700px) {
     height: 70vh;
@@ -31,7 +34,7 @@ const StyledDiv = styled.div`
   }
   display: flex;
   align-items: center;
-  padding: 0px 1.0875rem 1.45rem;
+  ${'' /* padding: 0px 1.0875rem 1.45rem; */}
   padding-top: 0;
   line-height: 1.2rem;
 `

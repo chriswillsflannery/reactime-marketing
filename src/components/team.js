@@ -17,7 +17,11 @@ const styles = {
   redCode: '#ff6569', // hover, link color
 }
 
-const StyledWrapper = styled.div``
+const StyledWrapper = styled.div`
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+`
 
 const StyledDiv = styled.div`
   margin: 0 auto;
@@ -30,13 +34,15 @@ const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 `;
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: 400px 400px;
-  @media (max-width: 800px) {
-    grid-template-columns:  400px;
+  grid-template-columns: 300px 300px 300px 300px 300px;
+  @media (max-width: 1900px) {
+    grid-template-columns:  300px;
   }
 `;
 
@@ -68,7 +74,7 @@ const StyledExpanderHeader = styled.div`
     transition: 0.3s;
   }
   &:hover .name {
-    color: ${styles.white}
+    color: black;
   }
 `;
 
@@ -283,6 +289,11 @@ const Layout = ({ children }) => {
                 // bio="joshua"
               />
               <PersonExpander
+                name="Joseph Park"
+                handle="joeepark"
+                // bio="joeepark"
+              />
+              <PersonExpander
                 name="Joseph Stern"
                 handle="josephiswhere"
                 // bio="joe"
@@ -356,13 +367,13 @@ const Layout = ({ children }) => {
                 // bio="raymond"
               />
               <PersonExpander
-                name="Robert Maeda"
-                handle="robmaeda"
-              />
-              <PersonExpander
-                name="Robert Tipton"
+                name="Robby Tipton"
                 handle="RobbyTipton"
                 // bio="robbyT"
+              />
+              <PersonExpander
+                name="Robert Maeda"
+                handle="robmaeda"
               />
               <PersonExpander
                 name="Rocky Lin"
@@ -416,8 +427,8 @@ const Layout = ({ children }) => {
 
       <p
         style={{
-          fontFamily: 'Raleway',
-          color: styles.white,
+          fontFamily: 'Archivo',
+          color: 'black',
           textAlign: 'center',
           marginBottom: '18px'
         }}

@@ -2,14 +2,14 @@
 import React from 'react';
 const Footer = () => (
   
-  <footer style={{ marginTop: '2rem', color: 'white', fontFamily: "Raleway" }}>
+  <footer style={{ marginTop: '2rem', color: 'black', fontFamily: "Archivo" }}>
       ©
     {' '}
     {new Date().getFullYear()}
     , Built with
     {' '}
     <a
-      style = {{ textDecoration: 'none', color: '#ff6569', fontFamily: "Raleway" }}
+      style = {{ textDecoration: 'none', color: '#ff6569', fontFamily: "Archivo" }}
       href="https://www.gatsbyjs.org"
     >
 Gatsby

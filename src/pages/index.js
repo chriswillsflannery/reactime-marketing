@@ -15,9 +15,10 @@ import Footer from '../components/footer';
 import DescriptionContainer from '../containers/DescriptionContainer';
 import GifFeatures from  '../containers/GifFeatures';
 import TerminalWindow from '../components/TerminalWindow';
+import LandingImage from '../images/new-reactime.gif';
 
 const styles = {
-  reactGreen: '#62D6FB',
+  reactGreen: '#2D2D2F',
   lighterGreen: 'white',
   lightestGreen: '#BDD4DB',
   redCode: '#ff6569'
@@ -26,9 +27,11 @@ const styles = {
 // Image AND Text
 const SplashContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 800px) {
     font-size: 0.8em;
     flex-direction: column;
   }
@@ -38,48 +41,9 @@ const SplashContainer = styled.div`
   transform: translate(0px, 80px);
 `;
 
-// Text
-const SplashDescription = styled.div`
-  @media only screen and (max-width: 700px) {
-    margin-top 3em;
-  }
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 120%;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5em;
-`;
-
-const DemoGifDescription = styled.h2`
-  text-align: center;
-  padding: 40px;
-
-  @media only screen and (max-width: 700px) {
-    padding: 0;
-  }
-`;
-
-const DemoGif = styled.img`
-  @media only screen and (max-width: 700px) {
-    max-width: 90%;
-  }
-  @media only screen and (min-width: 700px) {
-    minWidth: 40vw;
-    maxWidth: 800px;
-    box-shadow: 5px 10px 15px black;
-  }
-  margin: 30px 0px 30px 0px;
-`;
-
-const FeaturesTitle = styled.h2`
-  font-weight: 700;
-`;
-
 const DownloadButton = styled.div`
   button {
-    font-family: Raleway;
+    font-family: Archivo;
     text-decoration: none;
     color: black;
     background-color: ${styles.reactGreen};
@@ -117,28 +81,49 @@ const IndexPage = () => {
         <SplashContainer>
           <Image />
           <h1 className="main-h1">
-            React State Monitoring and Debugging with
-            <br/>
-            <span className="reactime-h1">Reactime</span>
+            <span>
+              State Management and Time Travel Debugging
+            </span>
+            {/* <span className="reactime-h1">Reactime</span> */}
           </h1>
+          <h3>
+            <span>Reactime is an open source Chrome developer tool for time travel debugging and performance monitoring in React applications. Reactime enables developers to record snapshots of application state, jump between and inspect state snapshots, and monitor performance metrics such as component render time and render frequency.</span>
+          </h3>
+          <br/>
+          <br/>
         </SplashContainer>
       </Splash>
+      
       <DescriptionContainer />
-      <GifFeatures />
       <TerminalWindow
         command={
           width545
-            ? "npm install --force"
-            : "npm install with the force given to U!"
+            ? "git clone https://github.com/open-source-labs/reactime.git"
+            : "cd reactime"
         }
       >
-        <h4>
+        <h3>
           Get started easily with npm and instantly start monitoring web
           vitals with each new commit
-        </h4>
+        </h3>
       </TerminalWindow>
+      {/* <TerminalWindow
+        command={
+          width545
+            ? "npm install --force"
+            : "npm run build"
+        }
+      >
+        <h3>
+          Get started easily with npm and instantly start monitoring web
+          vitals with each new commit
+        </h3>
+      </TerminalWindow> */}
+      <GifFeatures /> 
       <Features>
-          Features
+        <h2 style={{ color: styles.reactGreen }}>
+          <strong>Additional Features</strong>
+        </h2>
       </Features>
       <Team>
         <h2 style={{ color: styles.reactGreen }}>
