@@ -100,11 +100,11 @@ const Layout = ({ children }) => (
           <Grid>
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>State Snapshot Text Display</h4>
-                <p>
-                  See your application state in stylized, interactive JSON
-                  format
-                </p>
+                  <h4>State Snapshot Text Display</h4>
+                  <p>
+                    See your application state in stylized, interactive JSON
+                    format
+                  </p>
               </StyledGridElement>
             </ZoomInGridElement>
 

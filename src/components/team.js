@@ -12,7 +12,7 @@ import '../styles/layout.scss';
 const styles = {
   white: 'white', // h4
   lighterGreen: `#002e2b`,
-  lightestGreen: '#62D6FB', // hover, link color
+  lightestGreen: '#303030', // hover, link color
   biosBColor: '#242529', // `#E4C2B3`, // team bios bg-color #e6e6e6
   redCode: '#ff6569', // hover, link color
 }
@@ -27,7 +27,10 @@ const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
   padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  padding-top: 5em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 const StyledMain = styled.main`
@@ -41,10 +44,13 @@ const StyledMain = styled.main`
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: 300px 300px 300px 300px 300px;
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr;
   }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 const StyledPersonExpander = styled.div`
@@ -75,7 +81,7 @@ const StyledExpanderHeader = styled.div`
     transition: 0.3s;
   }
   &:hover .name {
-    color: black;
+    color: #62D6FB;
   }
 `;
 

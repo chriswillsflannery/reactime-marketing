@@ -38,7 +38,9 @@ const Image = () => {
   `)
 
   return (
+    <div className="splash-logo">
     <StyledImage fluid={data.file.childImageSharp.fluid} />
+    </div>
   );
 }
 
