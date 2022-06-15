@@ -1,42 +1,56 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Chevron from './SVG/Chevron';
 import { bios } from './team-bios';
 
-import './layout.css'
+import '../styles/layout.scss';
 
 const styles = {
   white: 'white', // h4
   lighterGreen: `#002e2b`,
-  lightestGreen: '#62D6FB', // hover, link color
+  lightestGreen: '#303030', // hover, link color
   biosBColor: '#242529', // `#E4C2B3`, // team bios bg-color #e6e6e6
   redCode: '#ff6569', // hover, link color
 }
 
-const StyledWrapper = styled.div``
+const StyledWrapper = styled.div`
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+`
 
 const StyledDiv = styled.div`
   margin: 0 auto;
-  max-width: 1024px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  ${'' /* max-width: 1024px; */}
+  ${'' /* padding: 0px 1.0875rem 1.45rem; */}
+  ${'' /* padding-top: 5em; */}
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  transform: scale(0.9);
 `;
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: 400px 400px;
-  @media (max-width: 800px) {
-    grid-template-columns:  400px;
+  grid-template-columns: 400px 400px 400px 400px 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -58,7 +72,7 @@ const StyledExpanderHeader = styled.div`
   align-items: center;
   cursor: pointer;
   a {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: normal;
     padding: 10.5px;
     margin: 0 8px 0 8px;
@@ -68,7 +82,7 @@ const StyledExpanderHeader = styled.div`
     transition: 0.3s;
   }
   &:hover .name {
-    color: ${styles.white}
+    color: #62D6FB;
   }
 `;
 
@@ -113,7 +127,7 @@ const Layout = ({ children }) => {
         <StyledDiv>
           <StyledMain>
             {children}
-            <StyledGrid>
+            <StyledGrid className="TeamContainer">
               <PersonExpander 
                 name="Abaas Khorrami"
                 handle="dubalol"
@@ -184,6 +198,11 @@ const Layout = ({ children }) => {
                 // bio="chrisG"
               />
               <PersonExpander
+                name="Chris LeBrett"
+                handle="fscgolden"
+                // bio="chrisLebrett"
+              />
+              <PersonExpander
                 name="Cole Styron"
                 handle="c-styr"
                 // bio="cole"
@@ -207,6 +226,11 @@ const Layout = ({ children }) => {
                 name="David Chai"
                 handle="davidchai717"
                 // bio="david"
+              />
+              <PersonExpander
+                name="David Kim"
+                handle="codejunkie7"
+                // bio="davidKim"
               />
               <PersonExpander
                 name="Dennis Lopez"
@@ -273,6 +297,11 @@ const Layout = ({ children }) => {
                 // bio="joshua"
               />
               <PersonExpander
+                name="Joseph Park"
+                handle="joeepark"
+                // bio="joeepark"
+              />
+              <PersonExpander
                 name="Joseph Stern"
                 handle="josephiswhere"
                 // bio="joe"
@@ -286,6 +315,11 @@ const Layout = ({ children }) => {
                 name="Kevin Fey"
                 handle="kevinfey"
                 // bio="kevin"
+              />
+              <PersonExpander
+                name="Kevin HoEun Lee"
+                handle="khobread"
+                // bio="KHL"
               />
               <PersonExpander
                 name="Kevin Ngo"
@@ -339,6 +373,11 @@ const Layout = ({ children }) => {
                 name="Raymond Kwan"
                 handle="rkwn"
                 // bio="raymond"
+              />
+              <PersonExpander
+                name="Robby Tipton"
+                handle="RobbyTipton"
+                // bio="robbyT"
               />
               <PersonExpander
                 name="Robert Maeda"
@@ -396,8 +435,8 @@ const Layout = ({ children }) => {
 
       <p
         style={{
-          fontFamily: 'Raleway',
-          color: styles.white,
+          fontFamily: 'Archivo',
+          color: 'black',
           textAlign: 'center',
           marginBottom: '18px'
         }}

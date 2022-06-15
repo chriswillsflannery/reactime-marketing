@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`
+  padding: 2em;
   @media only screen and (max-height: 570px) {
     margin-top: 200px;
   }

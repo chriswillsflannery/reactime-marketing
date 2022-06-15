@@ -9,13 +9,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import ZoomInGridElement from './zoomInGridElement'
+import React from 'react';
+import PropTypes from 'prop-types';
+import ZoomInGridElement from './zoomInGridElement';
 // import { useStaticQuery, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import './layout.css'
+import '../styles/layout.scss';
 
 const styles = {
   reactGreen: '#62D6FB', // h4 font-color #072D2B
@@ -28,27 +28,32 @@ const styles = {
 const StyledWrapper = styled.div`
   @media only screen and (max-height: 570px) {
     margin-top: 100px;
+    ${'' /* padding-top: 2em; */}
   }
 `
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  ${'' /* padding-top: 2em; */}
 `
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: scale(0.8);
 `
 
 const Grid = styled.div`
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
   justify-content: center;
   margin-bottom: 40px;
+  @media only screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `
 
 const StyledGridElement = styled.div`
@@ -59,11 +64,11 @@ const StyledGridElement = styled.div`
   justify-content: center;
   background: ${styles.iconBColor};
   padding: 20px;
-  width: 395px;
+  width: 355px;
   height: 120px;
   margin: 20px 10px 0px 10px;
-  font-family: 'Raleway', sans-serif;
-  border-radius: 5px;
+  font-family: 'Archivo', sans-serif;
+  border-radius: 10px;
   border: 1px solid rgba(184, 196, 194, 0.25);
   box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.2);
   @media only screen and (max-width: 480px) {
@@ -96,11 +101,11 @@ const Layout = ({ children }) => (
           <Grid>
             <ZoomInGridElement className="feaStyle">
               <StyledGridElement>
-                <h4>State Snapshot Text Display</h4>
-                <p>
-                  See your application state in stylized, interactive JSON
-                  format
-                </p>
+                  <h4>State Snapshot Text Display</h4>
+                  <p>
+                    See your application state in stylized, interactive JSON
+                    format
+                  </p>
               </StyledGridElement>
             </ZoomInGridElement>
 
@@ -219,7 +224,7 @@ const Layout = ({ children }) => (
           <h4
             style={{
               fontWeight: '400',
-              fontSize: '13px',
+              fontSize: '14px',
               color: styles.lightestGreen,
               textAlign: 'center',
             }}

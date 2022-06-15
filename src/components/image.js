@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import styled from "styled-components"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image"; 
+import styled from "styled-components";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -15,19 +15,20 @@ import styled from "styled-components"
  */
 
 const StyledImage = styled(Img)`
-  min-width: 300px;
-  max-width: 600px;
+  min-width: 1024px;
+  max-width: 2400px;
+  border-radius: 10px;
+  margin: 0em;
   @media only screen and (min-width: 700px) {
-    margin-right: 50px;
   }
 `
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "reactime-logo.png" }) {
+      file(relativePath: { eq: "ReactimeIO.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -35,7 +36,11 @@ const Image = () => {
     }
   `)
 
-  return <StyledImage fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <div className="splash-logo">
+    <StyledImage fluid={data.file.childImageSharp.fluid} />
+    </div>
+  );
 }
 
-export default Image
+export default Image;

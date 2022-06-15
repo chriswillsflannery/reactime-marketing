@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import OlderVersion from './olderVersion';
 
-import './layout.css';
+import '../styles/layout.scss';
 
 const styles = {
   reactGreen: '#072D2B',
