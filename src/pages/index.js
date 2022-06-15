@@ -3,19 +3,14 @@
 import React from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 import NavBar from '../components/NavBar';
-import Splash from '../components/splash';
-import VisualState from '../components/visualState';
 import Features from '../components/features';
 import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
-import styled from 'styled-components';
-import ReactimeFullLogo from '../images/ReactimeIO.png';
 import Footer from '../components/footer';
 import DescriptionContainer from '../containers/DescriptionContainer';
 import GifFeatures from  '../containers/GifFeatures';
 import TerminalWindow from '../components/TerminalWindow';
-import LandingImage from '../images/new-reactime.gif';
 
 const styles = {
   reactGreen: '#2D2D2F',
@@ -24,58 +19,11 @@ const styles = {
   redCode: '#ff6569'
 };
 
-// Image AND Text
-// const SplashContainer = styled.div`
-//   // display: grid;
-//   // grid-template-columns: 1fr;
-//   // justify-content: center;
-//   // text-align: center;
-//   // align-items: center;
-//   // @media only screen and (max-width: 1000px) {
-//   //   display: grid;
-//   //   grid-template-columns: 1fr;
-//   // }
-//   ${'' /* @media only screen and (max-width: 800px) {
-//     font-size: 0.8em;
-//     flex-direction: column;
-//   }
-//   @media only screen and (max-height: 420px) {
-//     margin-top: 65px;
-//   } */}
-//   transform: translate(0px, 80px);
-// `;
-
-const DownloadButton = styled.div`
-  button {
-    font-family: Archivo;
-    text-decoration: none;
-    color: black;
-    background-color: ${styles.reactGreen};
-    border: none;
-    margin: 5px;
-    padding: 0px 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    width: 10em;
-    border-radius: 5px;
-    opacity: 75%;
-    transition: 0.3s;
-  }
-  &:hover .download {
-    cursor: pointer;
-    opacity: 100%;
-  }
-`;
-
 const IndexPage = () => {
   const width800 = useMediaQuery("(min-width: 800px)");
   return (
     <>
       <NavBar/>
-      {/* <Splash> */}
       <div className="splash-container">
         <SEO title="Home" />
         <div
@@ -100,7 +48,6 @@ const IndexPage = () => {
           <br/>
           <br/>
         </div>
-      {/* </Splash> */}
       <DescriptionContainer />
       <TerminalWindow
         command={

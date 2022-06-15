@@ -1,4 +1,12 @@
 import React from 'react';
+import GitHubButton from "react-github-btn"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faChrome,
+  faLinkedinIn,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons"
 
 const NavBar = () => {
   return (
@@ -12,6 +20,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FontAwesomeIcon icon={faChrome} />
           </a>
         </li>
         <li>
@@ -21,6 +30,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
         <li>
@@ -29,6 +39,7 @@ const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </li>  
         <li>

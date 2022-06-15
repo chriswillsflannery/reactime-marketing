@@ -1,16 +1,16 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React, { useEffect } from "react";
-import styled from "styled-components";
-import GitHubButton from "react-github-btn";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React, { useEffect } from "react"
+import styled from "styled-components"
+import GitHubButton from "react-github-btn"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChrome,
   faLinkedinIn,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-config.autoAddCss = false;
+} from "@fortawesome/free-brands-svg-icons"
+config.autoAddCss = false
 
 const handleScroll = () => {
   if (
@@ -26,11 +26,11 @@ const handleScroll = () => {
   } else {
     document.getElementById("header").style.padding = "50px"
   }
-};
+}
 
 const styles = {
   headFontColor: `white`, // #BDD4DB
-};
+}
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -43,24 +43,19 @@ const HeaderContainer = styled.header`
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgb(28,29,31)), to(rgb(28,29,31, 0)));
   background: -o-linear-gradient(rgb(28,29,31) 75%, rgb(28,29,31, 0));
   background: linear-gradient(rgb(28,29,31) 75%, rgb(28,29,31, 0));
-
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-
   @media (max-width: 600px) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
