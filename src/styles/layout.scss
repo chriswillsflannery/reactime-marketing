@@ -376,8 +376,8 @@ pre {
 }
 .navBarIcon {
   color: #487783;
-  font-weight: 600;
-  font-size: larger;
+  font-weight: 500;
+  font-size: large;
 }
 .navBarLeft {
   font-family: "Archivo";
@@ -429,6 +429,8 @@ pre {
 }
 .splash-info {
   text-align: center;
+  transform: scale(0.9);
+
 }
 .splash-logo {
   display: flex;
@@ -437,6 +439,7 @@ pre {
   padding-top: 4em;
   padding-bottom: 4em;
   margin: auto;
+  transform: scale(0.8);
 }
 // DescriptionContainer
 #home-features {
@@ -478,14 +481,15 @@ pre {
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 3em;
   padding-top: 4em;
   padding-bottom: 2em;
+  transform: scale(0.8);
 }
 .sectionContainer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 2em;
   justify-content: center;
   padding-right: 5em;
   padding-left: 1em;
@@ -511,8 +515,7 @@ pre {
   margin: auto;
 }
 .imageContainer {
-  padding-bottom: 3em;
-  padding-left: 5em;
+  // padding-bottom: 3em;
   margin: auto;
 }
 // Terminal Container
@@ -522,26 +525,23 @@ pre {
   display: grid;
   align-items: center;
   text-align: center;
-  grid-gap: 2rem;
+  grid-gap: 6rem;
   grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
   padding: 4em 6em 4em 6em;
+  transform: scale(0.8);
 }
 .terminal-window{
   padding-left: 8em;
   padding-right: 8em;
-  padding-top: 5em;
-  padding-bottom: 7em;
+  // padding-top: 5em;
+  // padding-bottom: 7em;
 }
 .terminal-header {
   align-items: center;
+  text-align: left;
   justify-content: center;
   margin: 0;
-}
-.terminal-instructions {
-  // text-align: left;
-  text-align: left;
-  line-height: 1.5em;
-  padding-left: 8em;
+  line-height: 1.5rem;
 }
 @media only screen and (max-width: 1000px) {
   .terminal-instructions {
@@ -566,6 +566,11 @@ pre {
   top: 55px;
   right: 15px;
   cursor: pointer;
+}
+// Contributors Section
+.TeamContainer {
+  display: grid;
+  transform: scale(0.8);
 }
 @media only screen and (max-width: 1000px) {
   .terminalContainer:first-child {

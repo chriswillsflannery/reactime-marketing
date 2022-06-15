@@ -20,7 +20,6 @@ const StyledImage = styled(Img)`
   border-radius: 10px;
   margin: 2em;
   @media only screen and (min-width: 700px) {
-    ${'' /* margin-right: 50px; */}
   }
 `
 

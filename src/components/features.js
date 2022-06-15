@@ -28,20 +28,21 @@ const styles = {
 const StyledWrapper = styled.div`
   @media only screen and (max-height: 570px) {
     margin-top: 100px;
-    padding-top: 2em;
+    ${'' /* padding-top: 2em; */}
   }
 `
 
 const StyledDiv = styled.div`
   margin: 0 auto;
   max-width: 1024px;
-  padding-top: 2em;
+  ${'' /* padding-top: 2em; */}
 `
 
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: scale(0.8);
 `
 
 const Grid = styled.div`
@@ -223,7 +224,7 @@ const Layout = ({ children }) => (
           <h4
             style={{
               fontWeight: '400',
-              fontSize: '13px',
+              fontSize: '14px',
               color: styles.lightestGreen,
               textAlign: 'center',
             }}

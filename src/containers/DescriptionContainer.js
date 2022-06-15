@@ -4,15 +4,12 @@ import performant from '../images/icons8-performance-64.png';
 import structure from '../images/icons8-structure-64.png';
 import easy from '../images/icons8-easy-return-64.png';
 
-import { motion } from "framer-motion";
-
 const DescriptionContainer = () => {
 
   return (
     <>
       <div id="home-features">
         <div id="feature-1">
-          {/* <ConstructionOutlinedIcon className="first-icon" fontSize="large"/> */}
           <img className="first-icon" src={performant}/>
           <h2>
             <strong>Incredibly Performant</strong>

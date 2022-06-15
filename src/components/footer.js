@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 const Footer = () => (
-  
+
   <footer style={{ marginTop: '2rem', color: 'black', fontFamily: "Archivo" }}>
       ©
     {' '}

@@ -74,11 +74,6 @@ const NavBar = ({ scrollYProgress }) => {
             )}
           </Button>
         </a>
-        {/* <Link href='/docs'>
-          <a>
-            <Button color='violet'>Docs</Button>
-          </a>
-        </Link> */}
       </div>
     </motion.div>
   );

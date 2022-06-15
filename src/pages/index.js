@@ -52,17 +52,18 @@ const IndexPage = () => {
           "npm run build" 
         ]}
       >
-        <h3 className="terminal-header">
-          Get started easily with npm and instantly start state debugging now!
-          <div className="terminal-instructions">
-            <br />
-            1. Clone repo from Reactime GitHub
-            <br />
-            2. Install dependencies inside repository
-            <br />
-            3. Start Reactime's development environment
-          </div>
-        </h3>
+        <div>
+          <h3 className="terminal-header">
+            Get started easily with npm and instantly start state debugging now!
+              <br />
+              <br />
+              1. Clone repo from Reactime GitHub
+              <br />
+              2. Install dependencies inside repository
+              <br />
+              3. Start Reactime's development environment
+            </h3>
+        </div>
       </TerminalWindow>
       </div>
       <GifFeatures /> 

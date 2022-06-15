@@ -27,7 +27,7 @@ const StyledDiv = styled.div`
   margin: 0 auto;
   ${'' /* max-width: 1024px; */}
   ${'' /* padding: 0px 1.0875rem 1.45rem; */}
-  padding-top: 5em;
+  ${'' /* padding-top: 5em; */}
   justify-content: center;
   align-items: center;
   text-align: center;

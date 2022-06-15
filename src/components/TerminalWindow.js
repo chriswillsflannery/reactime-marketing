@@ -7,11 +7,6 @@ import { motion } from "framer-motion";
 import { Popover, Text } from "@mantine/core";
 import '../styles/layout.scss';
 
-// interface TerminalProps {
-//   command: string;
-//   children?: JSX.Element;
-// }
-
 const TerminalWindow = ({ command, children }) => {
   const [termHover, setTermHover] = useState(false);
   const [copied, setCopied] = useState(false);
