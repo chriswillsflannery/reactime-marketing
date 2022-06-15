@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import StateSnapShotGIF from '../images/new-reactime.gif';
+import HistoryTree from '../images/history-tree.gif';
+import ActionComparison from '../images/action-comparison.gif';
 import { motion } from "framer-motion";
-import MyMovie from '../images/MyMovie.gif';
-import MyMovieOld from '../images/MyMovieOld.gif';
-import ShortMovie from '../images/ShortMovie.gif';
 
 const GifFeatures = () => {
   const [section, setSection] = useState(0);
@@ -33,8 +33,8 @@ const GifFeatures = () => {
         <img
           className="image"
           src={gif}
-          width={600}
-          height={450}
+          width={830} // Size specific to match sizes of GIFs uploaded
+          height={467} // Size specific to match sizes of GIFs uploaded
           layout='intrinsic'
           alt=""
         />
@@ -55,19 +55,19 @@ const sections = [
     title: "State SnapShot Display",
     description:
       "See your application state in a stylized and intereactive format, for clear concise state management.",
-    gif: MyMovie
+    gif: StateSnapShotGIF
   },
   {
     title: "Time Travel Rendering",
     description:
       "Simulate any state change from your DOM history, with a simple click of a button.",
-    gif: ShortMovie
+    gif: HistoryTree
   },
   {
-    title: "Web Metrics",
+    title: "Action Comparison & Snapshot Series",
     description:
-      "Improve user experience with insight into Web Metrics, such as LCP, FCP, FID, TTFB.",
-    gif: MyMovieOld
+      "Save a series of state snapshots and use it to analyze changes in component render performance between current and previous series of snapshots.",
+    gif: ActionComparison
   }
 ];
 

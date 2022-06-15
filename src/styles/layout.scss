@@ -360,19 +360,26 @@ pre {
   text-align: center;
   // color: #62D6FB;
 }
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .reactime-h1 {
   color: #2d2d2f;
 }
-
+.splash-info {
+  text-align: center;
+}
 // DescriptionContainer
 #home-features {
   display: grid;
-  grid-template-columns: 500px 500px 500px;
-  grid-gap: 1em;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-gap: 15px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   padding-bottom: 2em;
   padding-top: 2em;
 }
@@ -404,7 +411,7 @@ pre {
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
-  // grid-gap: ;
+  grid-gap: 15px;
   padding-top: 4em;
   padding-bottom: 2em;
 }
@@ -412,17 +419,16 @@ pre {
 .sectionContainer {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
-  align-items: center;
+  gap: 4px;
   justify-content: center;
-  padding-right: 250px;
+  // padding-right: 250px;
 }
 
 .section {
   border: 1px solid lightgray;
-  width: 40em;
+  // width: 40em;
   border-radius: .5rem;
-  padding: 1em;
+  padding: 10px;
   cursor: pointer;
   h3, p {
     text-align: center;
@@ -436,15 +442,31 @@ pre {
 
 .image {
   border-radius: .5rem;
+  margin: auto;
 }
 
 .imageContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  align-items: center;
-  justify-content: center;
-  padding-left: 250px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .splash-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .TeamContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #home-features {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 // Terminal Container
 .installationContainer {
@@ -476,10 +498,6 @@ pre {
 }
 
 @media only screen and (max-width: 1000px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-
   .terminalContainer:first-child {
     grid-row: 2/2;
   }

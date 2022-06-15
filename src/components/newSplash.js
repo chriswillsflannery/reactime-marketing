@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { useMediaQuery } from 'usehooks-ts';
-import NavBar from '../components/NavBar';
 import Splash from '../components/splash';
 import VisualState from '../components/visualState';
 import Features from '../components/features';
@@ -10,6 +9,7 @@ import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import styled from 'styled-components';
+// import demogif from '../images/old/new-reactime.gif';
 import ReactimeFullLogo from '../images/ReactimeIO.png';
 import Footer from '../components/footer';
 import DescriptionContainer from '../containers/DescriptionContainer';
@@ -25,25 +25,25 @@ const styles = {
 };
 
 // Image AND Text
-// const SplashContainer = styled.div`
-//   // display: grid;
-//   // grid-template-columns: 1fr;
-//   // justify-content: center;
-//   // text-align: center;
-//   // align-items: center;
-//   // @media only screen and (max-width: 1000px) {
-//   //   display: grid;
-//   //   grid-template-columns: 1fr;
-//   // }
-//   ${'' /* @media only screen and (max-width: 800px) {
-//     font-size: 0.8em;
-//     flex-direction: column;
-//   }
-//   @media only screen and (max-height: 420px) {
-//     margin-top: 65px;
-//   } */}
-//   transform: translate(0px, 80px);
-// `;
+const SplashContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  @media only screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  ${'' /* @media only screen and (max-width: 800px) {
+    font-size: 0.8em;
+    flex-direction: column;
+  }
+  @media only screen and (max-height: 420px) {
+    margin-top: 65px;
+  } */}
+  transform: translate(0px, 80px);
+`;
 
 const DownloadButton = styled.div`
   button {
@@ -70,19 +70,19 @@ const DownloadButton = styled.div`
   }
 `;
 
-const IndexPage = () => {
-  const width800 = useMediaQuery("(min-width: 800px)");
+
+const newSplash = () => {
+  const width545 = useMediaQuery("(min-width: 545px)");
   return (
     <>
-      <NavBar/>
-      {/* <Splash> */}
-      <div className="splash-container">
+      <Splash>
         <SEO title="Home" />
         <div
           style={{
             margin: '80px 0 80px 0',
           }}
         ></div>
+        <div className="container">
           <Image />
           <h1 className="main-h1">
             <span>
@@ -100,11 +100,12 @@ const IndexPage = () => {
           <br/>
           <br/>
         </div>
-      {/* </Splash> */}
+      </Splash>
+      
       <DescriptionContainer />
       <TerminalWindow
         command={
-          width800
+          width545
             ? "git clone https://github.com/open-source-labs/reactime.git"
             : "cd reactime"
         }

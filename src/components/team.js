@@ -41,8 +41,9 @@ const StyledMain = styled.main`
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: 300px 300px 300px 300px 300px;
-  @media (max-width: 1900px) {
-    grid-template-columns:  300px;
+  @media (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -119,7 +120,7 @@ const Layout = ({ children }) => {
         <StyledDiv>
           <StyledMain>
             {children}
-            <StyledGrid>
+            <StyledGrid className="TeamContainer">
               <PersonExpander 
                 name="Abaas Khorrami"
                 handle="dubalol"

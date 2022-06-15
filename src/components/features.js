@@ -49,6 +49,10 @@ const Grid = styled.div`
   grid-template-columns: 400px 400px 400px 400px;
   justify-content: center;
   margin-bottom: 40px;
+  @media only screen and (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `
 
 const StyledGridElement = styled.div`

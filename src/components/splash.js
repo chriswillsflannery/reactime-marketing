@@ -20,21 +20,13 @@ const StyledWrapper = styled.div`
 
 const StyledDiv = styled.div`
   margin: auto;
-  padding-bottom: 2em;
+  ${'' /* padding-bottom: 2em; */}
   max-width: 1024px;
   white-space: normal;
   align-items: center;
-  height: 70vh;
-  @media only screen and (max-width: 700px) {
-    height: 70vh;
-  }
-  /* IPAD PORTRAIT MODE */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
-    height: 70vh;
-  }
+  ${'' /* height: 70vh; */}
   display: flex;
   align-items: center;
-  ${'' /* padding: 0px 1.0875rem 1.45rem; */}
   padding-top: 0;
   line-height: 1.2rem;
 `
