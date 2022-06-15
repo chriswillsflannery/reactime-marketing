@@ -1,14 +1,12 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { useMediaQuery } from 'usehooks-ts';
 import NavBar from '../components/NavBar';
 import Features from '../components/features';
 import Team from '../components/team';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import Footer from '../components/footer';
-import DescriptionContainer from '../containers/DescriptionContainer';
 import GifFeatures from  '../containers/GifFeatures';
 import TerminalWindow from '../components/TerminalWindow';
 import { useViewportScroll } from 'framer-motion';
@@ -22,7 +20,6 @@ const styles = {
 
 const IndexPage = () => {
   const { scrollYProgress } = useViewportScroll();
-  const width800 = useMediaQuery("(min-width: 800px)");
   return (
     <>
       <NavBar scrollYProgress={scrollYProgress} />
@@ -46,18 +43,25 @@ const IndexPage = () => {
         <br/>
         <br/>
       </div>
-      <DescriptionContainer />
       <div className="terminal-window">
       <TerminalWindow
-        command={
-          width800
-            ? "git clone https://github.com/open-source-labs/reactime.git"
-            : "cd reactime"
-        }
+        command={[
+          "git clone https://github.com/open-source-labs/reactime.git",
+          "cd reactime",
+          "npm install --force",
+          "npm run build" 
+        ]}
       >
         <h3 className="terminal-header">
-          Get started easily with npm and instantly start monitoring web
-          vitals with each new commit
+          Get started easily with npm and instantly start state debugging now!
+          <div className="terminal-instructions">
+            <br />
+            1. Clone repo from Reactime GitHub
+            <br />
+            2. Install dependencies inside repository
+            <br />
+            3. Start Reactime's development environment
+          </div>
         </h3>
       </TerminalWindow>
       </div>

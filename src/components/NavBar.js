@@ -1,4 +1,4 @@
-// @ts-ignore
+//@ts-ignore
 import React, { useState, useEffect } from "react";
 import { Link } from 'gatsby';
 import { motion } from "framer-motion";
@@ -31,11 +31,9 @@ const NavBar = ({ scrollYProgress }) => {
           : "0 0 20px rgba(0, 0, 0, 0)",
       }}
     >
-      <Link to="/" style={{ textDecoration: 'none' }}>
-        <a className="navBarLeft">
-            <p className="name">REACTIME</p>
-        </a>
-      </Link>
+      <a className="navBarLeft">
+          <p className="name" textDecoration="none">REACTIME</p>
+      </a>
 
       <div className="navBarRight">
         <a
@@ -43,7 +41,7 @@ const NavBar = ({ scrollYProgress }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button variant='outline' color='blue' className="linkedIn">
+          <Button variant='outline' className="navBarIcon">
             LinkedIn
               <div>
                 <FontAwesomeIcon style={{ paddingLeft: '5px' }} icon={faLinkedin} />
@@ -55,7 +53,7 @@ const NavBar = ({ scrollYProgress }) => {
           target='_blank'
           rel='noreferrer'
         >
-          <Button variant='outline' color='blue' className="chromeStore">
+          <Button variant='outline' className="navBarIcon">
             Chrome
               <div>
                 <FontAwesomeIcon style={{ paddingLeft: '5px' }} icon={faChrome} />
@@ -67,7 +65,7 @@ const NavBar = ({ scrollYProgress }) => {
           target='_blank'
           rel='noreferrer'
         >
-          <Button variant='outline' color='blue' className="github">
+          <Button variant='outline' className="navBarIcon">
             GitHub
             {stars && (
               <div>
@@ -76,6 +74,11 @@ const NavBar = ({ scrollYProgress }) => {
             )}
           </Button>
         </a>
+        {/* <Link href='/docs'>
+          <a>
+            <Button color='violet'>Docs</Button>
+          </a>
+        </Link> */}
       </div>
     </motion.div>
   );

@@ -25,8 +25,8 @@ const StyledWrapper = styled.div`
 
 const StyledDiv = styled.div`
   margin: 0 auto;
-  max-width: 1024px;
-  padding: 0px 1.0875rem 1.45rem;
+  ${'' /* max-width: 1024px; */}
+  ${'' /* padding: 0px 1.0875rem 1.45rem; */}
   padding-top: 5em;
   justify-content: center;
   align-items: center;
@@ -43,14 +43,14 @@ const StyledMain = styled.main`
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px 300px;
+  grid-template-columns: 400px 400px 400px 400px 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   @media (max-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr;
   }
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 `;
 
 const StyledPersonExpander = styled.div`

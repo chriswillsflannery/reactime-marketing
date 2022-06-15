@@ -13,7 +13,7 @@ const GifFeatures = () => {
       onClick={(_) => setSection(i)}
       className="section"
       initial={{ backgroundColor: "#ffffff" }}
-      animate={{ backgroundColor: section === i ? "#E6F0F1" : "#ffffff" }}
+      animate={{ backgroundColor: section === i ? "#2D2D2F" : "#ffffff" }}
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.98 }}
     >
@@ -33,8 +33,8 @@ const GifFeatures = () => {
         <img
           className="image"
           src={gif}
-          width={830} // Size specific to match sizes of GIFs uploaded
-          height={467} // Size specific to match sizes of GIFs uploaded
+          width={900} // Size specific to match sizes of GIFs uploaded
+          height={500} // Size specific to match sizes of GIFs uploaded
           layout='intrinsic'
           alt=""
         />
