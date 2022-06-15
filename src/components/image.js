@@ -18,7 +18,7 @@ const StyledImage = styled(Img)`
   min-width: 1024px;
   max-width: 2400px;
   border-radius: 10px;
-  margin: 2em;
+  margin: 0em;
   @media only screen and (min-width: 700px) {
   }
 `
@@ -28,7 +28,7 @@ const Image = () => {
     query {
       file(relativePath: { eq: "ReactimeIO.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }

@@ -39,6 +39,7 @@ const StyledMain = styled.main`
   align-items: center;
   text-align: center;
   justify-content: center;
+  transform: scale(0.9);
 `;
 
 const StyledGrid = styled.div`
@@ -71,7 +72,7 @@ const StyledExpanderHeader = styled.div`
   align-items: center;
   cursor: pointer;
   a {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: normal;
     padding: 10.5px;
     margin: 0 8px 0 8px;

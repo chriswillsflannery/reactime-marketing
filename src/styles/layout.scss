@@ -295,7 +295,7 @@ h5 {
   font-family: "Archivo", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
+  font-size: 1rem;
   line-height: 1.1;
 }
 h6 {
@@ -313,7 +313,7 @@ h6 {
   font-family: "Archivo", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
+  font-size: 1rem;
   line-height: 1.1;
 }
 // ul {
@@ -406,9 +406,9 @@ pre {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 1rem;
+  // padding: 1rem;
   flex: 1;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   padding-left: 15em;
   padding-right: 15em;
   
@@ -436,8 +436,8 @@ pre {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  // padding-top: 1em;
+  // padding-bottom: 1em;
   margin: auto;
   transform: scale(0.8);
 }
@@ -643,7 +643,7 @@ li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 code {
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.45rem;
 }
 tt,
