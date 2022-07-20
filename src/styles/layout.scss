@@ -354,6 +354,9 @@ pre {
 
 /* Reactime 14.0 CSS Edits */
 // NavBar
+.navbarDisplay{
+  display: flex;
+}
 .navBarContainer {
   z-index: 5;
   position: fixed;
@@ -375,6 +378,11 @@ pre {
   color: #487783;
 }
 .navBarIcon {
+  color: #487783;
+  font-weight: 500;
+  font-size: large;
+}
+.navBarIconSmall {
   color: #487783;
   font-weight: 500;
   font-size: large;
@@ -409,8 +417,6 @@ pre {
   // padding: 1rem;
   flex: 1;
   padding-bottom: 1em;
-  padding-left: 15em;
-  padding-right: 15em;
   
 }
 .splash-header{
@@ -531,14 +537,14 @@ pre {
   transform: scale(0.8);
 }
 .terminal-window{
-  padding-left: 8em;
-  padding-right: 8em;
+  display: flex;
+  justify-content: center;
   // padding-top: 5em;
   // padding-bottom: 7em;
 }
 .terminal-header {
   align-items: center;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   margin: 0;
   line-height: 1.5rem;
@@ -580,10 +586,21 @@ pre {
     grid-row: 1/2;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 999px) {
+.spash-header-text {
+    font-size: 25px;
+  }
   .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0,1fr);
+    font-size: 1vw;
+  }
+  .sectionContainer {
+    padding-left: 2.5em;
+  }
+  .splash-logo {
+    padding-left: 1em;
+
   }
   .splash-container {
     display: grid;
@@ -593,15 +610,47 @@ pre {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .sectionContainer {
-    padding-left: 10em;
-    padding-right: 10em;
+  .terminal-window {
+    padding-left: 20em;
   }
-  .imageContainer {
-    display: flex;
-    justify-content: center;
-    padding-left: -5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBarIcon {
+    display : none;  
   }
+  .navBarIconList {
+    display: inline !important;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: inline;
+    position: relative;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+}
+
+
+.footer {
+  text-align: center;
 }
 /* End of Reactime 14.0 EDITS */
 
@@ -703,4 +752,37 @@ pre tt:after {
 .download {
   color: black;
   text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.navBarIconList {
+  display: none;
+  color: #487783;
+  font-weight: 500;
+  font-size: large;
 }

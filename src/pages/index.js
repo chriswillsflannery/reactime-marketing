@@ -29,7 +29,7 @@ const IndexPage = () => {
         <Image />
         <div className="splash-container">
         <h1 className="spash-header">
-          <span>
+          <span className="spash-header-text">
             State Management and Time Travel Debugging
           </span>
         </h1>
@@ -72,8 +72,9 @@ const IndexPage = () => {
           <strong>Additional Features</strong>
         </h2>
       </Features>
+    
       <Team>
-        <h2 style={{ color: styles.reactGreen }}>
+      <h2 style={{ color: styles.reactGreen }}>
           <strong>Contributors</strong>
         </h2>
       </Team>

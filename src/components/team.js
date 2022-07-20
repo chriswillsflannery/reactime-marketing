@@ -203,6 +203,11 @@ const Layout = ({ children }) => {
                 // bio="chrisLebrett"
               />
               <PersonExpander
+                name="Christina Or"
+                handle="christinaor"
+                // bio="chris"
+              />
+              <PersonExpander
                 name="Cole Styron"
                 handle="c-styr"
                 // bio="cole"
@@ -326,6 +331,11 @@ const Layout = ({ children }) => {
                 handle="kevin-ngo"
                 // bio="kevinN"
               />
+               <PersonExpander
+                name="Khanh Bui"
+                handle="AndyB909"
+                // bio="khanh"
+              />
               <PersonExpander
                 name="Kim Mai Nguyen"
                 handle="Nkmai"
@@ -356,13 +366,22 @@ const Layout = ({ children }) => {
                 // bio="nathan"
               />
               <PersonExpander
-                name="Quan Le"
-                handle="blachfog"
+                name="Ozair Ghulam"
+                handle="OzairGh"
+                // bio="Ozair"
+              />
+              <PersonExpander
+                name="Peng Dong"
+                handle="d28601581"
               />
               <PersonExpander
                 name="Prasanna Malla"
                 handle="prasmalla"
                 // bio="pras"
+              />
+              <PersonExpander
+                name="Quan Le"
+                handle="blachfog"
               />
               <PersonExpander
                 name="Rajeeb Banstola"
