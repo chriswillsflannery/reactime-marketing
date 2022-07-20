@@ -354,6 +354,9 @@ pre {
 
 /* Reactime 14.0 CSS Edits */
 // NavBar
+.navbarDisplay{
+  display: flex;
+}
 .navBarContainer {
   z-index: 5;
   position: fixed;
@@ -375,6 +378,11 @@ pre {
   color: #487783;
 }
 .navBarIcon {
+  color: #487783;
+  font-weight: 500;
+  font-size: large;
+}
+.navBarIconSmall {
   color: #487783;
   font-weight: 500;
   font-size: large;
@@ -579,10 +587,7 @@ pre {
   }
 }
 @media only screen and (max-width: 999px) {
-  .name  {
-    font-size: 20px;
-  }
-  .spash-header-text {
+.spash-header-text {
     font-size: 25px;
   }
   .container {
@@ -610,10 +615,37 @@ pre {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .navBarIcon {
-    font-size: 10px;
+    display : none;  
   }
+  .navBarIconList {
+    display: inline !important;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: inline;
+    position: relative;
+    right: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
 }
 
 
@@ -720,4 +752,37 @@ pre tt:after {
 .download {
   color: black;
   text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.navBarIconList {
+  display: none;
+  color: #487783;
+  font-weight: 500;
+  font-size: large;
 }
