@@ -19,7 +19,8 @@ const StyledImage = styled(Img)`
   max-width: 2400px;
   border-radius: 10px;
   margin: 0em;
-  @media only screen and (min-width: 700px) {
+  @media only screen and (max-width: 700px) {
+    min-width: 400px;
   }
 `
 

@@ -409,8 +409,6 @@ pre {
   // padding: 1rem;
   flex: 1;
   padding-bottom: 1em;
-  padding-left: 15em;
-  padding-right: 15em;
   
 }
 .splash-header{
@@ -531,14 +529,14 @@ pre {
   transform: scale(0.8);
 }
 .terminal-window{
-  padding-left: 8em;
-  padding-right: 8em;
+  display: flex;
+  justify-content: center;
   // padding-top: 5em;
   // padding-bottom: 7em;
 }
 .terminal-header {
   align-items: center;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   margin: 0;
   line-height: 1.5rem;
@@ -580,10 +578,24 @@ pre {
     grid-row: 1/2;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 999px) {
+  .name  {
+    font-size: 20px;
+  }
+  .spash-header-text {
+    font-size: 25px;
+  }
   .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0,1fr);
+    font-size: 1vw;
+  }
+  .sectionContainer {
+    padding-left: 2.5em;
+  }
+  .splash-logo {
+    padding-left: 1em;
+
   }
   .splash-container {
     display: grid;
@@ -593,15 +605,20 @@ pre {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .sectionContainer {
-    padding-left: 10em;
-    padding-right: 10em;
+  .terminal-window {
+    padding-left: 20em;
   }
-  .imageContainer {
-    display: flex;
-    justify-content: center;
-    padding-left: -5em;
+}
+
+@media only screen and (max-width: 500px) {
+  .navBarIcon {
+    font-size: 10px;
   }
+}
+
+
+.footer {
+  text-align: center;
 }
 /* End of Reactime 14.0 EDITS */
 
